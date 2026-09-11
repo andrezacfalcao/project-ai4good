@@ -1,0 +1,21 @@
+# Cartão de parâmetros — MLP-Grafo (Heart Disease)
+
+- **accuracy**: 0.77
+- **precision**: 0.788
+- **recall**: 0.788
+- **f1 score**: 0.788
+- **cv accuracy mean**: 0.855
+- **cv accuracy std**: 0.063
+- **learning rate**: 0.05
+- **l2 regularization**: 0.1
+- **activation**: relu (ocultas) / sigmoid (saída)
+- **architecture**: 13 | 8 | 5 | 1
+- **weight init**: he_normal
+- **optimizer**: mini-batch gradient descent
+- **batch size**: 32
+- **epochs**: 300
+- **loss**: binary_cross_entropy
+- **pre processing**: standardize (StandardScaler, fit no treino)
+- **train test split**: 80% / 20% (estratificado, duplicatas removidas antes)
+- **seed**: 42
+- **comentarios**: A padronizacao (StandardScaler) foi essencial: sem ela, a perda de treino fica estagnada perto de ln(2) e os pesos crescem sem controle (ver Secao 7) - o modelo simplesmente nao aprende. Alem disso, a base do Kaggle tem 723 linhas duplicadas; sem removê-las, o split 80/20 vaza pacientes entre treino e teste e infla a acuracia para ~100% de forma artificial (ver Secao 2). A regularizacao L2 (escolhida via validacao cruzada) reduziu o overfitting: acuracia de treino caiu de ~100% para 97%, mais proxima da acuracia de teste.
