@@ -82,9 +82,15 @@ class BaselineCNNLSTM(nn.Module):
         self.pool = nn.MaxPool1d(kernel_size=2, stride=2) # 13 -> 6 features
 
         # Agregador sequencial Bi-LSTM (núcleo do artigo: CNN + BiLSTM)
+        # CÓDIGO ANTIGO: self.lstm = nn.LSTM(input_size=16, hidden_size=hidden_dim, batch_first=True)
+        # ALTERADO: adicionado bidirectional=True — o código antigo era uma LSTM
+        # unidirecional comum, que não é a BiLSTM que o artigo (HCBiLSTM) usa.
         self.lstm = nn.LSTM(input_size=16, hidden_size=hidden_dim, batch_first=True, bidirectional=True)
 
         # Cabeça de classificação linear simples (hidden_dim*2: concatena as duas direções)
+        # CÓDIGO ANTIGO: self.fc = nn.Linear(hidden_dim, 1)
+        # ALTERADO: hidden_dim*2 em vez de hidden_dim — precisa dobrar porque a
+        # BiLSTM devolve dois estados finais (forward + backward) a concatenar.
         self.fc = nn.Linear(hidden_dim * 2, 1)
         self.sigmoid = nn.Sigmoid()
 
@@ -98,6 +104,8 @@ class BaselineCNNLSTM(nn.Module):
         lstm_in = c_out.permute(0, 2, 1)
         lstm_out, (h_n, _) = self.lstm(lstm_in) # lstm_out: (B, 6, 64), h_n: (2, B, 32)
 
+        # CÓDIGO ANTIGO: last_hidden = h_n[-1]  # (B, 32) — pegava só o último estado
+        # ALTERADO: agora concatena os dois estados finais da BiLSTM (forward + backward)
         last_hidden = torch.cat((h_n[0], h_n[1]), dim=1) # (B, 64) — concatena forward + backward
         out = self.fc(last_hidden)
         out = self.sigmoid(out)
