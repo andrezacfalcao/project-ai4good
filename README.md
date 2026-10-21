@@ -20,8 +20,9 @@ project-ai4good/
 ├── reports/                              # saídas geradas pelo notebook
 │   ├── model_card.md                     # cartão de parâmetros — pronto para colar num slide
 │   └── model_card.json
-└── docs/
-    └── SLIDES_CHECKLIST.md               # checklist de prints/slides para a apresentação
+├── docs/
+│   └── SLIDES_CHECKLIST.md               # checklist de prints/slides para a apresentação
+└── cp02_arquitetura/                     # artefato CP02: ModernTCN (ICLR 2024), reprodução e modificação (ver CONTEXT.md)
 ```
 
 ## Notebook

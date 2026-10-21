@@ -1,0 +1,3 @@
+fonte: https://github.com/luodhhh/ModernTCN commit 56a9a2c018385cd5acef015378cae7f084d1b11c (pasta ModernTCN-Long-term-forecasting), copiado sem alterações
+ajuste de compatibilidade (NumPy 2): np.Inf -> np.inf em utils/tools.py
+ajuste de dispositivo: exp/exp_basic.py usa a GPU do Mac (mps) quando não há CUDA (desligar com MODERNTCN_MPS=0)

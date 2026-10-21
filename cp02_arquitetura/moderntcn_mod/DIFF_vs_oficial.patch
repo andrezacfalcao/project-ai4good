@@ -1,0 +1,148 @@
+diff -ru --color=never -x checkpoints -x results -x test_results -x result.txt -x __pycache__ -x ORIGEM.txt -x MODIFICACAO.md -x DIFF_vs_oficial.patch moderntcn_oficial/models/ModernTCN.py moderntcn_mod/models/ModernTCN.py
+--- moderntcn_oficial/models/ModernTCN.py	2026-10-20 22:04:57
++++ moderntcn_mod/models/ModernTCN.py	2026-10-21 09:54:29
+@@ -1,3 +1,18 @@
++# =====================================================================================
++# CP02 · arq·c · item 5 (modificação arquitetural)
++#
++# Base:      ModernTCN (Luo e Wang, ICLR 2024), código oficial em ../../moderntcn_oficial
++# Mudança:   uma camada de auto-atenção sobre os patches, no fim de cada Block
++#            (classe PatchAttention, ativada por --use_attn 1; com 0 o modelo é o oficial).
++# Hipótese:  os kernels grandes (51) são filtros fixos; a atenção deixa o modelo ponderar o
++#            passado conforme a entrada, o que pode ajudar em séries não estacionárias (ETTh2).
++# Garantia:  o ganho gamma começa em 0 (ReZero), então no início o modelo é idêntico ao oficial
++#            (conferido por ../../testar_modificacao.py).
++# Resultado: não melhorou (MSE 0,2654 vs 0,2645; gamma aprendido ~0,02). Ver ../MODIFICACAO.md.
++#
++# Todos os trechos alterados estão marcados com "[MODIFICAÇÃO CP02]".
++# Para ver o que mudou em relação ao oficial: ../DIFF_vs_oficial.patch
++# =====================================================================================
+ import torch
+ from torch import nn
+ import torch.nn.functional as F
+@@ -123,8 +138,29 @@
+         if hasattr(self, 'small_conv'):
+             self.__delattr__('small_conv')
+ 
++class PatchAttention(nn.Module):
++    """[MODIFICAÇÃO CP02] auto-atenção sobre os patches de cada variável, com ganho inicial zero (ReZero).
++    Em x + gamma * Attn(LN(x)) com gamma=0 o bloco começa idêntico ao oficial.
++    Tokens = os N patches (84 em ETTh2) de cada variável; cada variável é tratada em separado."""
++    def __init__(self, dmodel, n_patches, heads=4, drop=0.1):
++        super(PatchAttention, self).__init__()
++        self.norm = nn.LayerNorm(dmodel)
++        self.pos = nn.Parameter(torch.zeros(1, n_patches, dmodel))
++        nn.init.trunc_normal_(self.pos, std=0.02)
++        self.attn = nn.MultiheadAttention(dmodel, heads, dropout=drop, batch_first=True)
++        self.gamma = nn.Parameter(torch.zeros(1))
++
++    def forward(self, x):  # x: [B, M, D, N]
++        B, M, D, N = x.shape
++        z = x.permute(0, 1, 3, 2).reshape(B * M, N, D)       # tokens = patches
++        h = self.norm(z) + self.pos[:, :N]
++        h, _ = self.attn(h, h, h, need_weights=False)
++        z = z + self.gamma * h
++        return z.reshape(B, M, N, D).permute(0, 1, 3, 2)
++
++
+ class Block(nn.Module):
+-    def __init__(self, large_size, small_size, dmodel, dff, nvars, small_kernel_merged=False, drop=0.1):
++    def __init__(self, large_size, small_size, dmodel, dff, nvars, small_kernel_merged=False, drop=0.1, n_patches=0):
+ 
+         super(Block, self).__init__()
+         self.dw = ReparamLargeKernelConv(in_channels=nvars * dmodel, out_channels=nvars * dmodel,
+@@ -151,6 +187,8 @@
+         self.ffn2drop2 = nn.Dropout(drop)
+ 
+         self.ffn_ratio = dff//dmodel
++        # [MODIFICAÇÃO CP02] módulo novo; n_patches=0 (use_attn=0) deixa o bloco igual ao oficial
++        self.patch_attn = PatchAttention(dmodel, n_patches, drop=drop) if n_patches > 0 else None
+     def forward(self,x):
+ 
+         input = x
+@@ -177,18 +215,20 @@
+         x = x.permute(0, 2, 1, 3)
+ 
+         x = input + x
++        if self.patch_attn is not None:  # [MODIFICAÇÃO CP02] atenção depois do bloco convolucional
++            x = self.patch_attn(x)
+         return x
+ 
+ 
+ class Stage(nn.Module):
+     def __init__(self, ffn_ratio, num_blocks, large_size, small_size, dmodel, dw_model, nvars,
+-                 small_kernel_merged=False, drop=0.1):
++                 small_kernel_merged=False, drop=0.1, n_patches=0):
+ 
+         super(Stage, self).__init__()
+         d_ffn = dmodel * ffn_ratio
+         blks = []
+         for i in range(num_blocks):
+-            blk = Block(large_size=large_size, small_size=small_size, dmodel=dmodel, dff=d_ffn, nvars=nvars, small_kernel_merged=small_kernel_merged, drop=drop)
++            blk = Block(large_size=large_size, small_size=small_size, dmodel=dmodel, dff=d_ffn, nvars=nvars, small_kernel_merged=small_kernel_merged, drop=drop, n_patches=n_patches)
+             blks.append(blk)
+ 
+         self.blocks = nn.ModuleList(blks)
+@@ -204,7 +244,7 @@
+ class ModernTCN(nn.Module):
+     def __init__(self,patch_size,patch_stride, stem_ratio, downsample_ratio, ffn_ratio, num_blocks, large_size, small_size, dims, dw_dims,
+                  nvars, small_kernel_merged=False, backbone_dropout=0.1, head_dropout=0.1, use_multi_scale=True, revin=True, affine=True,
+-                 subtract_last=False, freq=None, seq_len=512, c_in=7, individual=False, target_window=96):
++                 subtract_last=False, freq=None, seq_len=512, c_in=7, individual=False, target_window=96, use_attn=False):
+ 
+         super(ModernTCN, self).__init__()
+ 
+@@ -250,9 +290,14 @@
+ 
+         self.num_stage = len(num_blocks)
+         self.stages = nn.ModuleList()
++        # [MODIFICAÇÃO CP02] número de patches por estágio, para dimensionar a posição aprendida da atenção
++        n_patches = (seq_len + (patch_size - patch_stride) - patch_size) // patch_stride + 1 if patch_size != patch_stride else (seq_len - patch_size) // patch_stride + 1
+         for stage_idx in range(self.num_stage):
++            if stage_idx > 0:
++                n_patches = -(-n_patches // downsample_ratio)
+             layer = Stage(ffn_ratio, num_blocks[stage_idx], large_size[stage_idx], small_size[stage_idx], dmodel=dims[stage_idx],
+-                          dw_model=dw_dims[stage_idx], nvars=nvars, small_kernel_merged=small_kernel_merged, drop=backbone_dropout)
++                          dw_model=dw_dims[stage_idx], nvars=nvars, small_kernel_merged=small_kernel_merged, drop=backbone_dropout,
++                          n_patches=n_patches if use_attn else 0)
+             self.stages.append(layer)
+ 
+         # Multi scale fusing (if needed)
+@@ -368,6 +413,7 @@
+         self.subtract_last = configs.subtract_last
+ 
+         self.freq = configs.freq
++        self.use_attn = bool(getattr(configs, 'use_attn', 0))  # [MODIFICAÇÃO CP02] liga/desliga a atenção
+         self.seq_len = configs.seq_len
+         self.c_in = self.nvars,
+         self.individual = configs.individual
+@@ -384,14 +430,14 @@
+             self.decomp_module = series_decomp(self.kernel_size)
+             self.model_res = ModernTCN(patch_size=self.patch_size,patch_stride=self.patch_stride,stem_ratio=self.stem_ratio, downsample_ratio=self.downsample_ratio, ffn_ratio=self.ffn_ratio, num_blocks=self.num_blocks, large_size=self.large_size, small_size=self.small_size, dims=self.dims, dw_dims=self.dw_dims,
+                  nvars=self.nvars, small_kernel_merged=self.small_kernel_merged, backbone_dropout=self.drop_backbone, head_dropout=self.drop_head, use_multi_scale=self.use_multi_scale, revin=self.revin, affine=self.affine,
+-                 subtract_last=self.subtract_last, freq=self.freq, seq_len=self.seq_len, c_in=self.c_in, individual=self.individual, target_window=self.target_window)
++                 subtract_last=self.subtract_last, freq=self.freq, seq_len=self.seq_len, c_in=self.c_in, individual=self.individual, target_window=self.target_window, use_attn=self.use_attn)
+             self.model_trend = ModernTCN(patch_size=self.patch_size,patch_stride=self.patch_stride,stem_ratio=self.stem_ratio, downsample_ratio=self.downsample_ratio, ffn_ratio=self.ffn_ratio, num_blocks=self.num_blocks, large_size=self.large_size, small_size=self.small_size, dims=self.dims, dw_dims=self.dw_dims,
+                  nvars=self.nvars, small_kernel_merged=self.small_kernel_merged, backbone_dropout=self.drop_backbone, head_dropout=self.drop_head, use_multi_scale=self.use_multi_scale, revin=self.revin, affine=self.affine,
+-                 subtract_last=self.subtract_last, freq=self.freq, seq_len=self.seq_len, c_in=self.c_in, individual=self.individual, target_window=self.target_window)
++                 subtract_last=self.subtract_last, freq=self.freq, seq_len=self.seq_len, c_in=self.c_in, individual=self.individual, target_window=self.target_window, use_attn=self.use_attn)
+         else:
+             self.model = ModernTCN(patch_size=self.patch_size,patch_stride=self.patch_stride,stem_ratio=self.stem_ratio, downsample_ratio=self.downsample_ratio, ffn_ratio=self.ffn_ratio, num_blocks=self.num_blocks, large_size=self.large_size, small_size=self.small_size, dims=self.dims, dw_dims=self.dw_dims,
+                  nvars=self.nvars, small_kernel_merged=self.small_kernel_merged, backbone_dropout=self.drop_backbone, head_dropout=self.drop_head, use_multi_scale=self.use_multi_scale, revin=self.revin, affine=self.affine,
+-                 subtract_last=self.subtract_last, freq=self.freq, seq_len=self.seq_len, c_in=self.c_in, individual=self.individual, target_window=self.target_window)
++                 subtract_last=self.subtract_last, freq=self.freq, seq_len=self.seq_len, c_in=self.c_in, individual=self.individual, target_window=self.target_window, use_attn=self.use_attn)
+ 
+     def forward(self, x, te=None):
+ 
+diff -ru --color=never -x checkpoints -x results -x test_results -x result.txt -x __pycache__ -x ORIGEM.txt -x MODIFICACAO.md -x DIFF_vs_oficial.patch moderntcn_oficial/run.py moderntcn_mod/run.py
+--- moderntcn_oficial/run.py	2026-10-20 22:04:57
++++ moderntcn_mod/run.py	2026-10-21 09:54:29
+@@ -55,6 +55,8 @@
+ 
+ parser.add_argument('--small_kernel_merged', type=str2bool, default=False, help='small_kernel has already merged or not')
+ parser.add_argument('--call_structural_reparam', type=bool, default=False, help='structural_reparam after training')
++# [MODIFICAÇÃO CP02] flag nova: 0 = ModernTCN oficial, 1 = com atenção sobre patches
++parser.add_argument('--use_attn', type=int, default=0, help='MODIFICAÇÃO: atenção sobre patches (ReZero); 0 = modelo oficial')
+ parser.add_argument('--use_multi_scale', type=str2bool, default=True, help='use_multi_scale fusion')
+ 
+ 
