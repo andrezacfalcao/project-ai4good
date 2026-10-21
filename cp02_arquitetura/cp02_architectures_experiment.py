@@ -32,10 +32,11 @@ np.random.seed(SEED)
 torch.manual_seed(SEED)
 
 # Paths
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(BASE_DIR, "data", "heart.csv")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # cp02_arquitetura/
+ROOT_DIR = os.path.dirname(BASE_DIR)                   # raiz do repositório
+DATA_PATH = os.path.join(ROOT_DIR, "data", "heart.csv")
 REPORTS_DIR = os.path.join(BASE_DIR, "reports")
-OVERLEAF_FIG_DIR = os.path.join(os.path.dirname(BASE_DIR), "overleaf-relatorio", "figures")
+OVERLEAF_FIG_DIR = os.path.join(os.path.dirname(ROOT_DIR), "overleaf-relatorio", "figures")
 os.makedirs(REPORTS_DIR, exist_ok=True)
 os.makedirs(OVERLEAF_FIG_DIR, exist_ok=True)
 
