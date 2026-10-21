@@ -124,6 +124,6 @@ for r in R:
 if "ablacao" in M:
     nm = {"A_projeto_1.5B": "A: projeto, 1.5B, $T{=}0{,}3$", "B_sem_papel_1.5B": "B: sem papel nem JSON, 1.5B", "C_projeto_1.5B_T0.8": "C: projeto, 1.5B, $T{=}0{,}8$", "D_projeto_0.5B": "D: projeto, 0.5B, $T{=}0{,}3$"}
     pc = lambda v: f"{100*v:.0f}\\%"
-    lin = [f"{nm[c]} & {pc(a['fmt'])} & {pc(a['anchor'])} & {pc(a['copy_gt45'])} & {a['pair_sim']:.2f} & {a['words']:.0f} & {a['lat']:.1f} \\\\".replace(".", "{,}") for c, a in M["ablacao"].items()]
-    (SEC / "tab_ablacao.tex").write_text("\\begin{tabular}{lcccccc}\n\\toprule\nCondição & Formato & Tema & Cópia & Sim. & Palavras & Lat. (s) \\\\\n\\midrule\n" + "\n".join(lin) + "\n\\bottomrule\n\\end{tabular}\n")
+    lin = [f"{nm[c]} & {pc(a['fmt'])} & {pc(a['anchor'])} & {pc(a['copy_gt45'])} & {a['pair_sim']:.2f} & {a['words']:.0f} \\\\".replace(".", "{,}") for c, a in M["ablacao"].items()]
+    (SEC / "tab_ablacao.tex").write_text("\\begin{tabular}{lccccc}\n\\toprule\nCondição & Formato & Tema & Cópia & Sim. & Palavras \\\\\n\\midrule\n" + "\n".join(lin) + "\n\\bottomrule\n\\end{tabular}\n")
 json.dump(M, open(ARN / "analise/dados/metricas.json", "w"), ensure_ascii=False, indent=1); print(json.dumps({k: v for k, v in M.items() if k != "ablacao"}, ensure_ascii=False, indent=1))
