@@ -6,10 +6,10 @@ __pycache__/
 .csv
 /data
 
-# CP02: saídas de treino regeneráveis
-cp02_arquitetura/data/
-cp02_arquitetura/moderntcn_*/checkpoints/
-cp02_arquitetura/moderntcn_*/results/
-cp02_arquitetura/moderntcn_*/test_results/
-cp02_arquitetura/moderntcn_*/result.txt
-cp02_arquitetura/paper_moderntcn.pdf
+# arq-c: saídas de treino regeneráveis
+arq-c/data/
+arq-c/moderntcn_*/checkpoints/
+arq-c/moderntcn_*/results/
+arq-c/moderntcn_*/test_results/
+arq-c/moderntcn_*/result.txt
+arq-c/paper_moderntcn.pdf
