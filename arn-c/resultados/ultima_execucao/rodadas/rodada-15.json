@@ -1,0 +1,455 @@
+{
+  "round": 15,
+  "topic": "Concorrência no mercado de trabalho e cláusulas de barreira",
+  "challenge": "Como coibir monopsonismos e cláusulas abusivas de não-competição aumentando o poder de barganha do trabalhador?",
+  "opening": "Considerando a diretriz anterior ('Rodada 14 fixou a necessidade de transição gradual e mitigação de custos em inteligência artificial, automação e impacto no emprego.'): Cláusulas patronais de não-competição abusivas, restrições contratuais desproporcionais e cartéis salariais reduzem o poder de barganha e a liberdade de saída dos trabalhadores. Essas cláusulas devem ser consideradas nulas para trabalhadores de renda média e baixa, garantindo livre circulação profissional e dinamismo salarial.",
+  "local_reply": {
+    "round": 15,
+    "stage": "resposta",
+    "topic": "Concorrência no mercado de trabalho e cláusulas de barreira",
+    "model": "qwen2.5:1.5b",
+    "protocol_version": 4,
+    "location": "local, Ollama no computador da usuária",
+    "accepted": false,
+    "response": "Risco: A cláusula abusiva de não-competição pode resultar em perda de competitividade e redução do investimento na economia.\nPergunta: Como lidamos com a necessidade da transição para um mercado mais eficiente sem prejudicar os trabalhadores que precisam se adaptar?",
+    "selected_attempt": 1,
+    "quality": {
+      "passed": false,
+      "reasons": [
+        "não menciona nenhum termo específico do tema"
+      ],
+      "words": 40,
+      "max_similarity": 0.439,
+      "input_copy_ratio": 0.0,
+      "internal_repeat_ratio": 0.0
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "started": "2026-10-09T20:10:20.149555-03:00",
+        "request": {
+          "model": "qwen2.5:1.5b",
+          "stream": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é o economista LIBERAL que debate com um trabalhista. Fale somente por si. Responda em português brasileiro em DUAS frases curtas. Na primeira frase, explique um custo ou incentivo que a proposta do interlocutor ignora. Na segunda frase, proponha uma alternativa ou faça uma pergunta concreta. Não fale como juiz, não atribua falas ao juiz, não copie instruções e não invente dados. Retorne estritamente um JSON com: risco (uma frase clara de impacto econômico) e pergunta (uma pergunta concreta ou proposta alternativa). Cada campo com até 35 palavras."
+            },
+            {
+              "role": "user",
+              "content": "Estamos debatendo Concorrência no mercado de trabalho e cláusulas de barreira. Como coibir monopsonismos e cláusulas abusivas de não-competição aumentando o poder de barganha do trabalhador?\nO trabalhista defendeu: Considerando a diretriz anterior ('Rodada 14 fixou a necessidade de transição gradual e mitigação de custos em inteligência artificial, automação e impacto no emprego.'): Cláusulas patronais de não-competição abusivas, restrições contratuais desproporcionais e cartéis salariais reduzem o poder de barganha e a liberdade de saída dos trabalhadores. Essas cláusulas devem ser consideradas nulas para trabalhadores de renda média e baixa, garantindo livre circulação profissional e dinamismo salarial.\nQual custo para contratar, incentivo econômico adverso ou problema de financiamento de mercado você identifica?"
+            }
+          ],
+          "options": {
+            "temperature": 0.3,
+            "seed": 20261265,
+            "num_predict": 150,
+            "num_ctx": 1024,
+            "repeat_penalty": 1.15
+          },
+          "format": {
+            "type": "object",
+            "properties": {
+              "risco": {
+                "type": "string"
+              },
+              "pergunta": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "risco",
+              "pergunta"
+            ],
+            "additionalProperties": false
+          },
+          "keep_alive": "15m"
+        },
+        "finished": "2026-10-09T20:10:24.252893-03:00",
+        "raw_response": {
+          "model": "qwen2.5:1.5b",
+          "created_at": "2026-10-09T23:10:24.238026Z",
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"risco\": \"A cláusula abusiva de não-competição pode resultar em perda de competitividade e redução do investimento na economia.\",\n  \"pergunta\": \"Como lidamos com a necessidade da transição para um mercado mais eficiente sem prejudicar os trabalhadores que precisam se adaptar?\"\n}"
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 4084881500,
+          "load_duration": 183467708,
+          "prompt_eval_count": 397,
+          "prompt_eval_duration": 614960000,
+          "eval_count": 79,
+          "eval_duration": 3274892000
+        },
+        "response": "Risco: A cláusula abusiva de não-competição pode resultar em perda de competitividade e redução do investimento na economia.\nPergunta: Como lidamos com a necessidade da transição para um mercado mais eficiente sem prejudicar os trabalhadores que precisam se adaptar?",
+        "quality": {
+          "passed": false,
+          "reasons": [
+            "não menciona nenhum termo específico do tema"
+          ],
+          "words": 40,
+          "max_similarity": 0.439,
+          "input_copy_ratio": 0.0,
+          "internal_repeat_ratio": 0.0
+        },
+        "parsed_fields": {
+          "risco": "A cláusula abusiva de não-competição pode resultar em perda de competitividade e redução do investimento na economia.",
+          "pergunta": "Como lidamos com a necessidade da transição para um mercado mais eficiente sem prejudicar os trabalhadores que precisam se adaptar?"
+        }
+      },
+      {
+        "attempt": 2,
+        "started": "2026-10-09T20:10:24.252961-03:00",
+        "request": {
+          "model": "qwen2.5:1.5b",
+          "stream": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é o economista LIBERAL que debate com um trabalhista. Fale somente por si. Responda em português brasileiro em DUAS frases curtas. Na primeira frase, explique um custo ou incentivo que a proposta do interlocutor ignora. Na segunda frase, proponha uma alternativa ou faça uma pergunta concreta. Não fale como juiz, não atribua falas ao juiz, não copie instruções e não invente dados. Retorne estritamente um JSON com: risco (uma frase clara de impacto econômico) e pergunta (uma pergunta concreta ou proposta alternativa). Cada campo com até 35 palavras."
+            },
+            {
+              "role": "user",
+              "content": "Estamos debatendo Concorrência no mercado de trabalho e cláusulas de barreira. Como coibir monopsonismos e cláusulas abusivas de não-competição aumentando o poder de barganha do trabalhador?\nO trabalhista defendeu: Considerando a diretriz anterior ('Rodada 14 fixou a necessidade de transição gradual e mitigação de custos em inteligência artificial, automação e impacto no emprego.'): Cláusulas patronais de não-competição abusivas, restrições contratuais desproporcionais e cartéis salariais reduzem o poder de barganha e a liberdade de saída dos trabalhadores. Essas cláusulas devem ser consideradas nulas para trabalhadores de renda média e baixa, garantindo livre circulação profissional e dinamismo salarial.\nQual custo para contratar, incentivo econômico adverso ou problema de financiamento de mercado você identifica?\nRefaça com foco estrito: não menciona nenhum termo específico do tema. Seja direto e traga uma objeção liberal sobre Concorrência no mercado de trabalho e cláusulas de barreira."
+            }
+          ],
+          "options": {
+            "temperature": 0.5,
+            "seed": 20261266,
+            "num_predict": 150,
+            "num_ctx": 1024,
+            "repeat_penalty": 1.15
+          },
+          "format": {
+            "type": "object",
+            "properties": {
+              "risco": {
+                "type": "string"
+              },
+              "pergunta": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "risco",
+              "pergunta"
+            ],
+            "additionalProperties": false
+          },
+          "keep_alive": "15m"
+        },
+        "finished": "2026-10-09T20:10:27.590184-03:00",
+        "raw_response": {
+          "model": "qwen2.5:1.5b",
+          "created_at": "2026-10-09T23:10:27.575108Z",
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"risco\": \"A perda de competitividade dos trabalhadores poderia levar à redução da oferta de empregos, impactando negativamente a economia.\",\n  \"pergunta\": \"Como as cláusulas abusivas e barreiras salariais podem afetar o mercado de trabalho brasileiro?\"\n}"
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 3321515500,
+          "load_duration": 164417000,
+          "prompt_eval_count": 446,
+          "prompt_eval_duration": 110378000,
+          "eval_count": 76,
+          "eval_duration": 3041089000
+        },
+        "response": "Risco: A perda de competitividade dos trabalhadores poderia levar à redução da oferta de empregos, impactando negativamente a economia.\nPergunta: Como as cláusulas abusivas e barreiras salariais podem afetar o mercado de trabalho brasileiro?",
+        "quality": {
+          "passed": false,
+          "reasons": [
+            "não menciona nenhum termo específico do tema"
+          ],
+          "words": 34,
+          "max_similarity": 0.362,
+          "input_copy_ratio": 0.0,
+          "internal_repeat_ratio": 0.0
+        },
+        "parsed_fields": {
+          "risco": "A perda de competitividade dos trabalhadores poderia levar à redução da oferta de empregos, impactando negativamente a economia.",
+          "pergunta": "Como as cláusulas abusivas e barreiras salariais podem afetar o mercado de trabalho brasileiro?"
+        }
+      },
+      {
+        "attempt": 3,
+        "started": "2026-10-09T20:10:27.590249-03:00",
+        "request": {
+          "model": "qwen2.5:1.5b",
+          "stream": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é o economista LIBERAL que debate com um trabalhista. Fale somente por si. Responda em português brasileiro em DUAS frases curtas. Na primeira frase, explique um custo ou incentivo que a proposta do interlocutor ignora. Na segunda frase, proponha uma alternativa ou faça uma pergunta concreta. Não fale como juiz, não atribua falas ao juiz, não copie instruções e não invente dados. Retorne estritamente um JSON com: risco (uma frase clara de impacto econômico) e pergunta (uma pergunta concreta ou proposta alternativa). Cada campo com até 35 palavras."
+            },
+            {
+              "role": "user",
+              "content": "Estamos debatendo Concorrência no mercado de trabalho e cláusulas de barreira. Como coibir monopsonismos e cláusulas abusivas de não-competição aumentando o poder de barganha do trabalhador?\nO trabalhista defendeu: Considerando a diretriz anterior ('Rodada 14 fixou a necessidade de transição gradual e mitigação de custos em inteligência artificial, automação e impacto no emprego.'): Cláusulas patronais de não-competição abusivas, restrições contratuais desproporcionais e cartéis salariais reduzem o poder de barganha e a liberdade de saída dos trabalhadores. Essas cláusulas devem ser consideradas nulas para trabalhadores de renda média e baixa, garantindo livre circulação profissional e dinamismo salarial.\nQual custo para contratar, incentivo econômico adverso ou problema de financiamento de mercado você identifica?\nRefaça com foco estrito: não menciona nenhum termo específico do tema. Seja direto e traga uma objeção liberal sobre Concorrência no mercado de trabalho e cláusulas de barreira."
+            }
+          ],
+          "options": {
+            "temperature": 0.7,
+            "seed": 20261267,
+            "num_predict": 150,
+            "num_ctx": 1024,
+            "repeat_penalty": 1.15
+          },
+          "format": {
+            "type": "object",
+            "properties": {
+              "risco": {
+                "type": "string"
+              },
+              "pergunta": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "risco",
+              "pergunta"
+            ],
+            "additionalProperties": false
+          },
+          "keep_alive": "15m"
+        },
+        "finished": "2026-10-09T20:10:30.800207-03:00",
+        "raw_response": {
+          "model": "qwen2.5:1.5b",
+          "created_at": "2026-10-09T23:10:30.784717Z",
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"risco\": \"A proposta trabalhista cria um incentivo econômico adverso ao investimento em tecnologia por empresas, prejudicando a produtividade.\",\n  \"pergunta\": \"Como garantir que as mudanças tecnológicas não afetem negativamente o mercado de trabalho sem prejudicar os empregos?\"\n}"
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 3193847292,
+          "load_duration": 163765584,
+          "prompt_eval_count": 446,
+          "prompt_eval_duration": 41669000,
+          "eval_count": 79,
+          "eval_duration": 2982236000
+        },
+        "response": "Risco: A proposta trabalhista cria um incentivo econômico adverso ao investimento em tecnologia por empresas, prejudicando a produtividade.\nPergunta: Como garantir que as mudanças tecnológicas não afetem negativamente o mercado de trabalho sem prejudicar os empregos?",
+        "quality": {
+          "passed": false,
+          "reasons": [
+            "não menciona nenhum termo específico do tema"
+          ],
+          "words": 36,
+          "max_similarity": 0.326,
+          "input_copy_ratio": 0.0,
+          "internal_repeat_ratio": 0.0
+        },
+        "parsed_fields": {
+          "risco": "A proposta trabalhista cria um incentivo econômico adverso ao investimento em tecnologia por empresas, prejudicando a produtividade.",
+          "pergunta": "Como garantir que as mudanças tecnológicas não afetem negativamente o mercado de trabalho sem prejudicar os empregos?"
+        }
+      }
+    ]
+  },
+  "local_opening": {
+    "round": 15,
+    "stage": "abertura",
+    "topic": "Concorrência no mercado de trabalho e cláusulas de barreira",
+    "model": "qwen2.5:1.5b",
+    "protocol_version": 4,
+    "location": "local, Ollama no computador da usuária",
+    "accepted": true,
+    "response": "Risco: A cláusula abusiva de exclusividade técnica pode impor custos excessivos para as empresas, prejudicando sua viabilidade econômica\nPergunta: Como garantimos a concorrência efetiva sem deixar de proteger os interesses dos trabalhadores?",
+    "selected_attempt": 2,
+    "quality": {
+      "passed": true,
+      "reasons": [],
+      "words": 32,
+      "max_similarity": 0.446,
+      "input_copy_ratio": 0.0,
+      "internal_repeat_ratio": 0.0
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "started": "2026-10-09T20:10:30.802174-03:00",
+        "request": {
+          "model": "qwen2.5:1.5b",
+          "stream": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é o economista LIBERAL que debate com um trabalhista. Fale somente por si. Responda em português brasileiro em DUAS frases curtas. Na primeira frase, explique um custo ou incentivo que a proposta do interlocutor ignora. Na segunda frase, proponha uma alternativa ou faça uma pergunta concreta. Não fale como juiz, não atribua falas ao juiz, não copie instruções e não invente dados. Retorne estritamente um JSON com: risco (uma frase clara de impacto econômico) e pergunta (uma pergunta concreta ou proposta alternativa). Cada campo com até 35 palavras."
+            },
+            {
+              "role": "user",
+              "content": "Agora apresente outro argumento liberal sobre Concorrência no mercado de trabalho e cláusulas de barreira. Analise o aspecto: limite temporal e indenização compensatória em pactos de exclusividade técnica. Qual barreira de mercado ou risco à viabilidade das empresas você destaca? Faça uma pergunta concreta."
+            },
+            {
+              "role": "assistant",
+              "content": "Risco: A cláusula abusiva de não-competição pode resultar em perda de competitividade e redução do investimento na economia.\nPergunta: Como lidamos com a necessidade da transição para um mercado mais eficiente sem prejudicar os trabalhadores que precisam se adaptar?"
+            },
+            {
+              "role": "user",
+              "content": "Agora apresente outro argumento liberal sobre Concorrência no mercado de trabalho e cláusulas de barreira. Analise o aspecto: limite temporal e indenização compensatória em pactos de exclusividade técnica. Qual barreira de mercado ou risco à viabilidade das empresas você destaca? Faça uma pergunta concreta."
+            }
+          ],
+          "options": {
+            "temperature": 0.3,
+            "seed": 20261272,
+            "num_predict": 150,
+            "num_ctx": 1024,
+            "repeat_penalty": 1.15
+          },
+          "format": {
+            "type": "object",
+            "properties": {
+              "risco": {
+                "type": "string"
+              },
+              "pergunta": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "risco",
+              "pergunta"
+            ],
+            "additionalProperties": false
+          },
+          "keep_alive": "15m"
+        },
+        "finished": "2026-10-09T20:10:36.201552-03:00",
+        "raw_response": {
+          "model": "qwen2.5:1.5b",
+          "created_at": "2026-10-09T23:10:36.183515Z",
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"risco\": \"A cláusula abusiva de não-competição pode resultar em um prejuízo significativo para a empresa, como o desemprego dos funcionários e redução da produtividade.\",\n  \"pergunta\": \"Como podemos garantir que os trabalhadores sejam compensados justamente por suas contribuições à empresa sem prejudicar as empresas com cláusulas de exclusão técnica?\"\n}"
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 5380712500,
+          "load_duration": 163742625,
+          "prompt_eval_count": 406,
+          "prompt_eval_duration": 644564000,
+          "eval_count": 98,
+          "eval_duration": 4562227000
+        },
+        "response": "Risco: A cláusula abusiva de não-competição pode resultar em um prejuízo significativo para a empresa, como o desemprego dos funcionários e redução da produtividade.\nPergunta: Como podemos garantir que os trabalhadores sejam compensados justamente por suas contribuições à empresa sem prejudicar as empresas com cláusulas de exclusão técnica?",
+        "quality": {
+          "passed": false,
+          "reasons": [
+            "não menciona nenhum termo específico do tema"
+          ],
+          "words": 49,
+          "max_similarity": 0.36,
+          "input_copy_ratio": 0.114,
+          "internal_repeat_ratio": 0.0
+        },
+        "parsed_fields": {
+          "risco": "A cláusula abusiva de não-competição pode resultar em um prejuízo significativo para a empresa, como o desemprego dos funcionários e redução da produtividade.",
+          "pergunta": "Como podemos garantir que os trabalhadores sejam compensados justamente por suas contribuições à empresa sem prejudicar as empresas com cláusulas de exclusão técnica?"
+        }
+      },
+      {
+        "attempt": 2,
+        "started": "2026-10-09T20:10:36.201610-03:00",
+        "request": {
+          "model": "qwen2.5:1.5b",
+          "stream": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é o economista LIBERAL que debate com um trabalhista. Fale somente por si. Responda em português brasileiro em DUAS frases curtas. Na primeira frase, explique um custo ou incentivo que a proposta do interlocutor ignora. Na segunda frase, proponha uma alternativa ou faça uma pergunta concreta. Não fale como juiz, não atribua falas ao juiz, não copie instruções e não invente dados. Retorne estritamente um JSON com: risco (uma frase clara de impacto econômico) e pergunta (uma pergunta concreta ou proposta alternativa). Cada campo com até 35 palavras."
+            },
+            {
+              "role": "user",
+              "content": "Agora apresente outro argumento liberal sobre Concorrência no mercado de trabalho e cláusulas de barreira. Analise o aspecto: limite temporal e indenização compensatória em pactos de exclusividade técnica. Qual barreira de mercado ou risco à viabilidade das empresas você destaca? Faça uma pergunta concreta."
+            },
+            {
+              "role": "assistant",
+              "content": "Risco: A cláusula abusiva de não-competição pode resultar em perda de competitividade e redução do investimento na economia.\nPergunta: Como lidamos com a necessidade da transição para um mercado mais eficiente sem prejudicar os trabalhadores que precisam se adaptar?"
+            },
+            {
+              "role": "user",
+              "content": "Agora apresente outro argumento liberal sobre Concorrência no mercado de trabalho e cláusulas de barreira. Analise o aspecto: limite temporal e indenização compensatória em pactos de exclusividade técnica. Qual barreira de mercado ou risco à viabilidade das empresas você destaca? Faça uma pergunta concreta.\nRefaça com foco estrito: não menciona nenhum termo específico do tema. Seja direto e traga uma objeção liberal sobre Concorrência no mercado de trabalho e cláusulas de barreira."
+            }
+          ],
+          "options": {
+            "temperature": 0.5,
+            "seed": 20261273,
+            "num_predict": 150,
+            "num_ctx": 1024,
+            "repeat_penalty": 1.15
+          },
+          "format": {
+            "type": "object",
+            "properties": {
+              "risco": {
+                "type": "string"
+              },
+              "pergunta": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "risco",
+              "pergunta"
+            ],
+            "additionalProperties": false
+          },
+          "keep_alive": "15m"
+        },
+        "finished": "2026-10-09T20:10:39.942694-03:00",
+        "raw_response": {
+          "model": "qwen2.5:1.5b",
+          "created_at": "2026-10-09T23:10:39.928979Z",
+          "message": {
+            "role": "assistant",
+            "content": "{ \"risco\": \"A cláusula abusiva de exclusividade técnica pode impor custos excessivos para as empresas, prejudicando sua viabilidade econômica\", \"pergunta\": \"Como garantimos a concorrência efetiva sem deixar de proteger os interesses dos trabalhadores?\" }"
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 3726715750,
+          "load_duration": 170226000,
+          "prompt_eval_count": 455,
+          "prompt_eval_duration": 133527999,
+          "eval_count": 71,
+          "eval_duration": 3416961000
+        },
+        "response": "Risco: A cláusula abusiva de exclusividade técnica pode impor custos excessivos para as empresas, prejudicando sua viabilidade econômica\nPergunta: Como garantimos a concorrência efetiva sem deixar de proteger os interesses dos trabalhadores?",
+        "quality": {
+          "passed": true,
+          "reasons": [],
+          "words": 32,
+          "max_similarity": 0.446,
+          "input_copy_ratio": 0.0,
+          "internal_repeat_ratio": 0.0
+        },
+        "parsed_fields": {
+          "risco": "A cláusula abusiva de exclusividade técnica pode impor custos excessivos para as empresas, prejudicando sua viabilidade econômica",
+          "pergunta": "Como garantimos a concorrência efetiva sem deixar de proteger os interesses dos trabalhadores?"
+        }
+      }
+    ]
+  },
+  "defense": "Compreendemos a preocupação liberal levantada sobre os custos e incentivos operacionais. Para responder diretamente ao risco apontado ('Risco: A cláusula abusiva de não-competição pode resultar em perda de competitividade e redução do investimento na econo...'), propomos que a implementação não seja abrupta nem cega à capacidade financeira dos negócios, adotando crédito presumido de transição e escalonamento setorial. Em relação ao segundo ponto levantado sobre limite temporal e indenização compensatória em pactos de exclusividade técnica ('Risco: A cláusula abusiva de exclusividade técnica pode impor custos excessivos para as empresas, prejudicando sua viabi...'), a solução não é desregulamentar e precarizar, mas desenhar governança tripartite com fundos públicos compensatórios, garantindo que a competitividade empresarial não ocorra às custas da dignidade e da subsistência do trabalhador.",
+  "previous_memory": "Rodada 14 fixou a necessidade de transição gradual e mitigação de custos em inteligência artificial, automação e impacto no emprego.",
+  "judgment": {
+    "round": 15,
+    "summary": "Debateu-se o equilíbrio entre a regulação protetiva de concorrência no mercado de trabalho e cláusulas de barreira e os custos/incentivos de mercado apontados pelo liberal.",
+    "verdict": "O Trabalhista sustentou a necessidade de garantias estruturais em concorrência no mercado de trabalho e cláusulas de barreira, resguardando a renda e a integridade da força de trabalho. O Liberal (Qwen local) apontou riscos reais de oneração excessiva, perda de flexibilidade e custos que podem desencorajar contratações. A convergência viável repousa na criação de mecanismos graduais e compensatórios que resguardem direitos sem sufocar a sustentabilidade empresarial.",
+    "plan_update": "Para o tema de concorrência no mercado de trabalho e cláusulas de barreira, incorporar cláusula de transição faseada com incentivo à conformidade voluntária e repartição de encargos entre empregadores, poder público e fundos solidários, mitigando os custos apontados pelo liberal.",
+    "pending": "Definir a modelagem atuarial precisa dos custos e os critérios técnicos de governança para concorrência no mercado de trabalho e cláusulas de barreira.",
+    "memory": "Rodada 15 fixou a necessidade de transição gradual e mitigação de custos em concorrência no mercado de trabalho e cláusulas de barreira.",
+    "quality_issues": [
+      "Tentativas locais Turno 1: 3 (Aprovado: False)",
+      "Tentativas locais Turno 2: 2 (Aprovado: True)"
+    ],
+    "periodic_summary": "Síntese do Bloco 3 (Rodadas 11–15): No exame das PMEs, igualdade salarial, capacitação profissional, automação e poder de mercado, ficou evidente que PMEs demandam simplificação burocrática radical, enquanto a transição tecnológica deve ser amparada por fundos setoriais tripartite para requalificação de habilidades."
+  },
+  "remote_metadata": {
+    "provider": "Antigravity (Gemini)",
+    "agent_a1": "trabalhista_antigravity",
+    "agent_judge": "juiz_antigravity"
+  },
+  "created_at": "2026-10-09T20:10:39.944790-03:00"
+}

@@ -1,0 +1,22 @@
+{
+  "selected_rounds": 20,
+  "formats_per_round": [
+    "Markdown",
+    "JSON"
+  ],
+  "extra_rounds_in_repository": 0,
+  "duplicate_stage_folders_removed": [
+    "entradas",
+    "intercambio",
+    "julgamentos",
+    "chamadas_locais"
+  ],
+  "preserved_hashes_match": true,
+  "new_rounds_generated": 0,
+  "historical_protocol": 4,
+  "runtime_protocol": 6,
+  "gemini_key_available": false,
+  "runtime_web_validated": false,
+  "runtime_thinking_validated": false,
+  "python_syntax_checked": true
+}

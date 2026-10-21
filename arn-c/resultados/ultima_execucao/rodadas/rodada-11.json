@@ -1,0 +1,385 @@
+{
+  "round": 11,
+  "topic": "Micro e pequenas empresas: regimes diferenciados",
+  "challenge": "Como adaptar regras trabalhistas ao porte do empregador sem rebaixar direitos humanos fundamentais?",
+  "opening": "Considerando a diretriz anterior ('Rodada 10 fixou a necessidade de transição gradual e mitigação de custos em proteção social portátil e transição profissional.'): Reconhecemos a relevância das micro e pequenas empresas na geração de empregos locais, admitindo desburocratização e simplificação de obrigações contábeis acessórias. No entanto, o núcleo essencial de direitos — salário mínimo, segurança, descanso e previdência — deve ser universal, para não criar uma cidadania de segunda classe.",
+  "local_reply": {
+    "round": 11,
+    "stage": "resposta",
+    "topic": "Micro e pequenas empresas: regimes diferenciados",
+    "model": "qwen2.5:1.5b",
+    "protocol_version": 4,
+    "location": "local, Ollama no computador da usuária",
+    "accepted": true,
+    "response": "Risco: A falta de transição gradual pode levar a um aumento desproporcional dos custos das micro e pequenas empresas com as obrigações trabalhistas, potencialmente afetando negativamente seu crescimento econômico.\nPergunta: Como garantir que esses empresários tenham acesso à proteção social sem comprometer suas operações fundamentais?",
+    "selected_attempt": 1,
+    "quality": {
+      "passed": true,
+      "reasons": [],
+      "words": 45,
+      "max_similarity": 0.403,
+      "input_copy_ratio": 0.0,
+      "internal_repeat_ratio": 0.0
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "started": "2026-10-09T20:09:25.113320-03:00",
+        "request": {
+          "model": "qwen2.5:1.5b",
+          "stream": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é o economista LIBERAL que debate com um trabalhista. Fale somente por si. Responda em português brasileiro em DUAS frases curtas. Na primeira frase, explique um custo ou incentivo que a proposta do interlocutor ignora. Na segunda frase, proponha uma alternativa ou faça uma pergunta concreta. Não fale como juiz, não atribua falas ao juiz, não copie instruções e não invente dados. Retorne estritamente um JSON com: risco (uma frase clara de impacto econômico) e pergunta (uma pergunta concreta ou proposta alternativa). Cada campo com até 35 palavras."
+            },
+            {
+              "role": "user",
+              "content": "Estamos debatendo Micro e pequenas empresas: regimes diferenciados. Como adaptar regras trabalhistas ao porte do empregador sem rebaixar direitos humanos fundamentais?\nO trabalhista defendeu: Considerando a diretriz anterior ('Rodada 10 fixou a necessidade de transição gradual e mitigação de custos em proteção social portátil e transição profissional.'): Reconhecemos a relevância das micro e pequenas empresas na geração de empregos locais, admitindo desburocratização e simplificação de obrigações contábeis acessórias. No entanto, o núcleo essencial de direitos — salário mínimo, segurança, descanso e previdência — deve ser universal, para não criar uma cidadania de segunda classe.\nQual custo para contratar, incentivo econômico adverso ou problema de financiamento de mercado você identifica?"
+            }
+          ],
+          "options": {
+            "temperature": 0.3,
+            "seed": 20261197,
+            "num_predict": 150,
+            "num_ctx": 1024,
+            "repeat_penalty": 1.15
+          },
+          "format": {
+            "type": "object",
+            "properties": {
+              "risco": {
+                "type": "string"
+              },
+              "pergunta": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "risco",
+              "pergunta"
+            ],
+            "additionalProperties": false
+          },
+          "keep_alive": "15m"
+        },
+        "finished": "2026-10-09T20:09:31.888866-03:00",
+        "raw_response": {
+          "model": "qwen2.5:1.5b",
+          "created_at": "2026-10-09T23:09:31.88023Z",
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"risco\": \"A falta de transição gradual pode levar a um aumento desproporcional dos custos das micro e pequenas empresas com as obrigações trabalhistas, potencialmente afetando negativamente seu crescimento econômico.\",\n  \"pergunta\": \"Como garantir que esses empresários tenham acesso à proteção social sem comprometer suas operações fundamentais?\"\n}"
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 6766094750,
+          "load_duration": 218087542,
+          "prompt_eval_count": 379,
+          "prompt_eval_duration": 794600000,
+          "eval_count": 89,
+          "eval_duration": 5745608000
+        },
+        "response": "Risco: A falta de transição gradual pode levar a um aumento desproporcional dos custos das micro e pequenas empresas com as obrigações trabalhistas, potencialmente afetando negativamente seu crescimento econômico.\nPergunta: Como garantir que esses empresários tenham acesso à proteção social sem comprometer suas operações fundamentais?",
+        "quality": {
+          "passed": true,
+          "reasons": [],
+          "words": 45,
+          "max_similarity": 0.403,
+          "input_copy_ratio": 0.0,
+          "internal_repeat_ratio": 0.0
+        },
+        "parsed_fields": {
+          "risco": "A falta de transição gradual pode levar a um aumento desproporcional dos custos das micro e pequenas empresas com as obrigações trabalhistas, potencialmente afetando negativamente seu crescimento econômico.",
+          "pergunta": "Como garantir que esses empresários tenham acesso à proteção social sem comprometer suas operações fundamentais?"
+        }
+      }
+    ]
+  },
+  "local_opening": {
+    "round": 11,
+    "stage": "abertura",
+    "topic": "Micro e pequenas empresas: regimes diferenciados",
+    "model": "qwen2.5:1.5b",
+    "protocol_version": 4,
+    "location": "local, Ollama no computador da usuária",
+    "accepted": true,
+    "response": "Risco: A mediação prévia obrigatória pode aumentar custos desnecessários para as micro e pequenas empresas.\nPergunta: Como garantir que essas empresas tenham uma medição eficaz sem comprometer a sua independência operacional?",
+    "selected_attempt": 3,
+    "quality": {
+      "passed": true,
+      "reasons": [],
+      "words": 31,
+      "max_similarity": 0.414,
+      "input_copy_ratio": 0.0,
+      "internal_repeat_ratio": 0.0
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "started": "2026-10-09T20:09:31.889860-03:00",
+        "request": {
+          "model": "qwen2.5:1.5b",
+          "stream": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é o economista LIBERAL que debate com um trabalhista. Fale somente por si. Responda em português brasileiro em DUAS frases curtas. Na primeira frase, explique um custo ou incentivo que a proposta do interlocutor ignora. Na segunda frase, proponha uma alternativa ou faça uma pergunta concreta. Não fale como juiz, não atribua falas ao juiz, não copie instruções e não invente dados. Retorne estritamente um JSON com: risco (uma frase clara de impacto econômico) e pergunta (uma pergunta concreta ou proposta alternativa). Cada campo com até 35 palavras."
+            },
+            {
+              "role": "user",
+              "content": "Agora apresente outro argumento liberal sobre Micro e pequenas empresas: regimes diferenciados. Analise o aspecto: dispensa de obrigações acessórias redundantes e mediação prévia obrigatória. Qual barreira de mercado ou risco à viabilidade das empresas você destaca? Faça uma pergunta concreta."
+            },
+            {
+              "role": "assistant",
+              "content": "Risco: A falta de transição gradual pode levar a um aumento desproporcional dos custos das micro e pequenas empresas com as obrigações trabalhistas, potencialmente afetando negativamente seu crescimento econômico.\nPergunta: Como garantir que esses empresários tenham acesso à proteção social sem comprometer suas operações fundamentais?"
+            },
+            {
+              "role": "user",
+              "content": "Agora apresente outro argumento liberal sobre Micro e pequenas empresas: regimes diferenciados. Analise o aspecto: dispensa de obrigações acessórias redundantes e mediação prévia obrigatória. Qual barreira de mercado ou risco à viabilidade das empresas você destaca? Faça uma pergunta concreta."
+            }
+          ],
+          "options": {
+            "temperature": 0.3,
+            "seed": 20261204,
+            "num_predict": 150,
+            "num_ctx": 1024,
+            "repeat_penalty": 1.15
+          },
+          "format": {
+            "type": "object",
+            "properties": {
+              "risco": {
+                "type": "string"
+              },
+              "pergunta": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "risco",
+              "pergunta"
+            ],
+            "additionalProperties": false
+          },
+          "keep_alive": "15m"
+        },
+        "finished": "2026-10-09T20:09:40.031648-03:00",
+        "raw_response": {
+          "model": "qwen2.5:1.5b",
+          "created_at": "2026-10-09T23:09:40.005023Z",
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"risco\": \"A falta de transição gradual pode levar a um aumento desproporcional dos custos das micro e pequenas empresas com as obrigações trabalhistas, potencialmente afetando negativamente seu crescimento econômico.\",\n  \"pergunta\": \"Como garantir que esses empresários tenham acesso à proteção social sem comprometer suas operações fundamentais?\"\n}"
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 8114618750,
+          "load_duration": 169085166,
+          "prompt_eval_count": 410,
+          "prompt_eval_duration": 1352981000,
+          "eval_count": 90,
+          "eval_duration": 6585655000
+        },
+        "response": "Risco: A falta de transição gradual pode levar a um aumento desproporcional dos custos das micro e pequenas empresas com as obrigações trabalhistas, potencialmente afetando negativamente seu crescimento econômico.\nPergunta: Como garantir que esses empresários tenham acesso à proteção social sem comprometer suas operações fundamentais?",
+        "quality": {
+          "passed": false,
+          "reasons": [
+            "mais de 45% dos trechos de seis palavras copiam a entrada",
+            "similaridade de pelo menos 85% com uma resposta local recente"
+          ],
+          "words": 45,
+          "max_similarity": 1.0,
+          "input_copy_ratio": 1.0,
+          "internal_repeat_ratio": 0.0
+        },
+        "parsed_fields": {
+          "risco": "A falta de transição gradual pode levar a um aumento desproporcional dos custos das micro e pequenas empresas com as obrigações trabalhistas, potencialmente afetando negativamente seu crescimento econômico.",
+          "pergunta": "Como garantir que esses empresários tenham acesso à proteção social sem comprometer suas operações fundamentais?"
+        }
+      },
+      {
+        "attempt": 2,
+        "started": "2026-10-09T20:09:40.031700-03:00",
+        "request": {
+          "model": "qwen2.5:1.5b",
+          "stream": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é o economista LIBERAL que debate com um trabalhista. Fale somente por si. Responda em português brasileiro em DUAS frases curtas. Na primeira frase, explique um custo ou incentivo que a proposta do interlocutor ignora. Na segunda frase, proponha uma alternativa ou faça uma pergunta concreta. Não fale como juiz, não atribua falas ao juiz, não copie instruções e não invente dados. Retorne estritamente um JSON com: risco (uma frase clara de impacto econômico) e pergunta (uma pergunta concreta ou proposta alternativa). Cada campo com até 35 palavras."
+            },
+            {
+              "role": "user",
+              "content": "Agora apresente outro argumento liberal sobre Micro e pequenas empresas: regimes diferenciados. Analise o aspecto: dispensa de obrigações acessórias redundantes e mediação prévia obrigatória. Qual barreira de mercado ou risco à viabilidade das empresas você destaca? Faça uma pergunta concreta."
+            },
+            {
+              "role": "assistant",
+              "content": "Risco: A falta de transição gradual pode levar a um aumento desproporcional dos custos das micro e pequenas empresas com as obrigações trabalhistas, potencialmente afetando negativamente seu crescimento econômico.\nPergunta: Como garantir que esses empresários tenham acesso à proteção social sem comprometer suas operações fundamentais?"
+            },
+            {
+              "role": "user",
+              "content": "Agora apresente outro argumento liberal sobre Micro e pequenas empresas: regimes diferenciados. Analise o aspecto: dispensa de obrigações acessórias redundantes e mediação prévia obrigatória. Qual barreira de mercado ou risco à viabilidade das empresas você destaca? Faça uma pergunta concreta.\nRefaça com foco estrito: mais de 45% dos trechos de seis palavras copiam a entrada, similaridade de pelo menos 85% com uma resposta local recente. Seja direto e traga uma objeção liberal sobre Micro e pequenas empresas: regimes diferenciados."
+            }
+          ],
+          "options": {
+            "temperature": 0.5,
+            "seed": 20261205,
+            "num_predict": 150,
+            "num_ctx": 1024,
+            "repeat_penalty": 1.15
+          },
+          "format": {
+            "type": "object",
+            "properties": {
+              "risco": {
+                "type": "string"
+              },
+              "pergunta": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "risco",
+              "pergunta"
+            ],
+            "additionalProperties": false
+          },
+          "keep_alive": "15m"
+        },
+        "finished": "2026-10-09T20:09:44.461234-03:00",
+        "raw_response": {
+          "model": "qwen2.5:1.5b",
+          "created_at": "2026-10-09T23:09:44.454434Z",
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"risco\": \"Aumento nas despesas operacionais das micro e pequenas empresas.\",\n  \"pergunta\": \"Como garantir que esses empresários tenham acesso à proteção social sem comprometer suas operações fundamentais?\"\n}"
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 4422008625,
+          "load_duration": 247847334,
+          "prompt_eval_count": 477,
+          "prompt_eval_duration": 363197000,
+          "eval_count": 56,
+          "eval_duration": 3803379000
+        },
+        "response": "Risco: Aumento nas despesas operacionais das micro e pequenas empresas.\nPergunta: Como garantir que esses empresários tenham acesso à proteção social sem comprometer suas operações fundamentais?",
+        "quality": {
+          "passed": false,
+          "reasons": [
+            "mais de 45% dos trechos de seis palavras copiam a entrada"
+          ],
+          "words": 26,
+          "max_similarity": 0.61,
+          "input_copy_ratio": 0.524,
+          "internal_repeat_ratio": 0.0
+        },
+        "parsed_fields": {
+          "risco": "Aumento nas despesas operacionais das micro e pequenas empresas.",
+          "pergunta": "Como garantir que esses empresários tenham acesso à proteção social sem comprometer suas operações fundamentais?"
+        }
+      },
+      {
+        "attempt": 3,
+        "started": "2026-10-09T20:09:44.461278-03:00",
+        "request": {
+          "model": "qwen2.5:1.5b",
+          "stream": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é o economista LIBERAL que debate com um trabalhista. Fale somente por si. Responda em português brasileiro em DUAS frases curtas. Na primeira frase, explique um custo ou incentivo que a proposta do interlocutor ignora. Na segunda frase, proponha uma alternativa ou faça uma pergunta concreta. Não fale como juiz, não atribua falas ao juiz, não copie instruções e não invente dados. Retorne estritamente um JSON com: risco (uma frase clara de impacto econômico) e pergunta (uma pergunta concreta ou proposta alternativa). Cada campo com até 35 palavras."
+            },
+            {
+              "role": "user",
+              "content": "Agora apresente outro argumento liberal sobre Micro e pequenas empresas: regimes diferenciados. Analise o aspecto: dispensa de obrigações acessórias redundantes e mediação prévia obrigatória. Qual barreira de mercado ou risco à viabilidade das empresas você destaca? Faça uma pergunta concreta."
+            },
+            {
+              "role": "assistant",
+              "content": "Risco: A falta de transição gradual pode levar a um aumento desproporcional dos custos das micro e pequenas empresas com as obrigações trabalhistas, potencialmente afetando negativamente seu crescimento econômico.\nPergunta: Como garantir que esses empresários tenham acesso à proteção social sem comprometer suas operações fundamentais?"
+            },
+            {
+              "role": "user",
+              "content": "Agora apresente outro argumento liberal sobre Micro e pequenas empresas: regimes diferenciados. Analise o aspecto: dispensa de obrigações acessórias redundantes e mediação prévia obrigatória. Qual barreira de mercado ou risco à viabilidade das empresas você destaca? Faça uma pergunta concreta.\nRefaça com foco estrito: mais de 45% dos trechos de seis palavras copiam a entrada. Seja direto e traga uma objeção liberal sobre Micro e pequenas empresas: regimes diferenciados."
+            }
+          ],
+          "options": {
+            "temperature": 0.7,
+            "seed": 20261206,
+            "num_predict": 150,
+            "num_ctx": 1024,
+            "repeat_penalty": 1.15
+          },
+          "format": {
+            "type": "object",
+            "properties": {
+              "risco": {
+                "type": "string"
+              },
+              "pergunta": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "risco",
+              "pergunta"
+            ],
+            "additionalProperties": false
+          },
+          "keep_alive": "15m"
+        },
+        "finished": "2026-10-09T20:09:49.390030-03:00",
+        "raw_response": {
+          "model": "qwen2.5:1.5b",
+          "created_at": "2026-10-09T23:09:49.375887Z",
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"risco\": \"A mediação prévia obrigatória pode aumentar custos desnecessários para as micro e pequenas empresas.\",\n  \"pergunta\": \"Como garantir que essas empresas tenham uma medição eficaz sem comprometer a sua independência operacional?\"\n}"
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 4913840625,
+          "load_duration": 213085459,
+          "prompt_eval_count": 461,
+          "prompt_eval_duration": 100442000,
+          "eval_count": 64,
+          "eval_duration": 4592668000
+        },
+        "response": "Risco: A mediação prévia obrigatória pode aumentar custos desnecessários para as micro e pequenas empresas.\nPergunta: Como garantir que essas empresas tenham uma medição eficaz sem comprometer a sua independência operacional?",
+        "quality": {
+          "passed": true,
+          "reasons": [],
+          "words": 31,
+          "max_similarity": 0.414,
+          "input_copy_ratio": 0.0,
+          "internal_repeat_ratio": 0.0
+        },
+        "parsed_fields": {
+          "risco": "A mediação prévia obrigatória pode aumentar custos desnecessários para as micro e pequenas empresas.",
+          "pergunta": "Como garantir que essas empresas tenham uma medição eficaz sem comprometer a sua independência operacional?"
+        }
+      }
+    ]
+  },
+  "defense": "Compreendemos a preocupação liberal levantada sobre os custos e incentivos operacionais. Para responder diretamente ao risco apontado ('Risco: A falta de transição gradual pode levar a um aumento desproporcional dos custos das micro e pequenas empresas com...'), propomos que a implementação não seja abrupta nem cega à capacidade financeira dos negócios, adotando crédito presumido de transição e escalonamento setorial. Em relação ao segundo ponto levantado sobre dispensa de obrigações acessórias redundantes e mediação prévia obrigatória ('Risco: A mediação prévia obrigatória pode aumentar custos desnecessários para as micro e pequenas empresas.\nPergunta: Co...'), a solução não é desregulamentar e precarizar, mas desenhar governança tripartite com fundos públicos compensatórios, garantindo que a competitividade empresarial não ocorra às custas da dignidade e da subsistência do trabalhador.",
+  "previous_memory": "Rodada 10 fixou a necessidade de transição gradual e mitigação de custos em proteção social portátil e transição profissional.",
+  "judgment": {
+    "round": 11,
+    "summary": "Debateu-se o equilíbrio entre a regulação protetiva de micro e pequenas empresas: regimes diferenciados e os custos/incentivos de mercado apontados pelo liberal.",
+    "verdict": "O Trabalhista sustentou a necessidade de garantias estruturais em micro e pequenas empresas: regimes diferenciados, resguardando a renda e a integridade da força de trabalho. O Liberal (Qwen local) apontou riscos reais de oneração excessiva, perda de flexibilidade e custos que podem desencorajar contratações. A convergência viável repousa na criação de mecanismos graduais e compensatórios que resguardem direitos sem sufocar a sustentabilidade empresarial.",
+    "plan_update": "Para o tema de micro e pequenas empresas: regimes diferenciados, incorporar cláusula de transição faseada com incentivo à conformidade voluntária e repartição de encargos entre empregadores, poder público e fundos solidários, mitigando os custos apontados pelo liberal.",
+    "pending": "Definir a modelagem atuarial precisa dos custos e os critérios técnicos de governança para micro e pequenas empresas: regimes diferenciados.",
+    "memory": "Rodada 11 fixou a necessidade de transição gradual e mitigação de custos em micro e pequenas empresas: regimes diferenciados.",
+    "quality_issues": [
+      "Tentativas locais Turno 1: 1 (Aprovado: True)",
+      "Tentativas locais Turno 2: 3 (Aprovado: True)"
+    ]
+  },
+  "remote_metadata": {
+    "provider": "Antigravity (Gemini)",
+    "agent_a1": "trabalhista_antigravity",
+    "agent_judge": "juiz_antigravity"
+  },
+  "created_at": "2026-10-09T20:09:49.395630-03:00"
+}

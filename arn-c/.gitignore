@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+node_modules/
+.venv/
+.DS_Store
+*.inspect.ndjson
+.env
+.env.*
+!.env.example
+execucoes/

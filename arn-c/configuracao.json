@@ -1,0 +1,388 @@
+{
+  "objective": "Arena dialética sobre impactos da IA no trabalho, com cenários separados de utopia e distopia econômica, propostas verificáveis e prevenção de danos.",
+  "rounds": 20,
+  "language": "pt-BR",
+  "local_model": "qwen2.5:1.5b",
+  "remote_model": "gemini-2.5-flash",
+  "agents": {
+    "trabalhista": {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "prompt_file": "prompts/trabalhista.md",
+      "temperature": 0.4,
+      "context_max_chars": 18000,
+      "max_output_tokens": 4096,
+      "thinking_budget": 1024
+    },
+    "liberal": {
+      "provider": "ollama",
+      "model": "qwen2.5:1.5b",
+      "prompt_file": "prompts/liberal_qwen.md",
+      "temperature_attempts": [
+        0.25,
+        0.55,
+        0.8
+      ],
+      "num_ctx": 1024,
+      "num_predict": 140,
+      "repeat_penalty": 1.18,
+      "thinking": false
+    },
+    "juiz": {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "prompt_file": "prompts/juiz.md",
+      "temperature": 0.2,
+      "context_max_chars": 24000,
+      "max_output_tokens": 8192,
+      "thinking_budget": 2048
+    },
+    "pesquisador": {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "prompt_file": "prompts/pesquisador.md",
+      "temperature": 0.2,
+      "context_max_chars": 10000,
+      "max_output_tokens": 4096,
+      "thinking_budget": 1024,
+      "tool": "google_search"
+    }
+  },
+  "topics": [
+    {
+      "round": 1,
+      "title": "Salário mínimo e reajustes",
+      "challenge": "Como proteger o poder de compra dos vulneráveis sem gerar desemprego ou inviabilizar pequenos negócios?",
+      "anchors": [
+        "salari",
+        "piso",
+        "reajuste",
+        "custo"
+      ],
+      "second_focus": "diferenças regionais de produtividade e contratação de jovens sem experiência",
+      "negative_anchors": []
+    },
+    {
+      "round": 2,
+      "title": "Jornada de trabalho e horas extras",
+      "challenge": "Como limitar o excesso de horas e proteger a saúde do trabalhador preservando a flexibilidade operacional?",
+      "anchors": [
+        "jornada",
+        "hora",
+        "turno",
+        "escala"
+      ],
+      "second_focus": "previsibilidade de escalas e custo de horas extras em picos sazonais",
+      "negative_anchors": [
+        "salario minimo"
+      ]
+    },
+    {
+      "round": 3,
+      "title": "Demissão e seguro-desemprego",
+      "challenge": "Como garantir transição de renda digna sem criar desincentivos à busca rápida por recolocação?",
+      "anchors": [
+        "demiss",
+        "desemprego",
+        "seguro",
+        "recis"
+      ],
+      "second_focus": "duração escalonada do benefício e programas de recolocação profissional",
+      "negative_anchors": [
+        "jornada",
+        "hora extra",
+        "escala"
+      ]
+    },
+    {
+      "round": 4,
+      "title": "Terceirização e cadeia de responsabilidade",
+      "challenge": "Quem responde pelos direitos trabalhistas na cadeia produtiva sem engessar a divisão eficiente de trabalho?",
+      "anchors": [
+        "terceir",
+        "responsabilidade",
+        "cadeia",
+        "contrat"
+      ],
+      "second_focus": "insolvência de prestadoras de serviços e garantias financeiras prévias",
+      "negative_anchors": [
+        "seguro-desemprego"
+      ]
+    },
+    {
+      "round": 5,
+      "title": "Férias, licenças parentais e economia do cuidado",
+      "challenge": "Como distribuir os custos do cuidado familiar sem penalizar a contratação de mulheres e jovens?",
+      "anchors": [
+        "ferias",
+        "licen",
+        "cuidado",
+        "parent"
+      ],
+      "second_focus": "financiamento tripartite ou solidário para trabalhadores que trocam de vínculo",
+      "negative_anchors": [
+        "terceirizad",
+        "prestador"
+      ]
+    },
+    {
+      "round": 6,
+      "title": "Trabalho por plataformas e aplicativos",
+      "challenge": "Como distinguir autonomia real de dependência econômica, financiando cobertura social sem destruir o modelo flexível?",
+      "anchors": [
+        "plataforma",
+        "autonom",
+        "subordin",
+        "aplicat"
+      ],
+      "second_focus": "mecanismos transparentes de tarifas e portabilidade de pontuação entre plataformas",
+      "negative_anchors": [
+        "licenca-maternidade",
+        "ferias remuneradas"
+      ]
+    },
+    {
+      "round": 7,
+      "title": "Informalidade e barreiras à formalização",
+      "challenge": "Como ampliar a rede de proteção social sem que a burocracia e o custo tributário empurrem trabalhadores para a margem?",
+      "anchors": [
+        "informal",
+        "formal",
+        "registro",
+        "simplif"
+      ],
+      "second_focus": "alíquotas progressivas de entrada e transição facilitada do MEI para microempresa",
+      "negative_anchors": [
+        "aplicativo",
+        "plataforma"
+      ]
+    },
+    {
+      "round": 8,
+      "title": "Negociação coletiva e representatividade",
+      "challenge": "Como assegurar acordos legítimos e dinâmicos garantindo representação para trabalhadores não sindicalizados e terceirizados?",
+      "anchors": [
+        "negoci",
+        "sindicat",
+        "acordo",
+        "represent"
+      ],
+      "second_focus": "validade de acordos individuais e representação de minorias funcionais na empresa",
+      "negative_anchors": [
+        "mei",
+        "microempreendedor"
+      ]
+    },
+    {
+      "round": 9,
+      "title": "Saúde ocupacional e prevenção de acidentes",
+      "challenge": "Como estabelecer normas preventivas rigorosas e verificáveis sem criar entraves operacionais desproporcionais?",
+      "anchors": [
+        "acidente",
+        "segur",
+        "saude",
+        "prevenc"
+      ],
+      "second_focus": "fiscalização orientadora e incentivos fiscais para empresas com baixo índice de sinistralidade",
+      "negative_anchors": [
+        "sindicato",
+        "acordo coletivo",
+        "negociacao coletiva"
+      ]
+    },
+    {
+      "round": 10,
+      "title": "Proteção social portátil e transição profissional",
+      "challenge": "Como desenhar um sistema em que direitos e fundos previdenciários acompanhem o indivíduo entre múltiplos empregadores?",
+      "anchors": [
+        "portab",
+        "benefic",
+        "transic",
+        "vincul"
+      ],
+      "second_focus": "governança do fundo gestor e arrecadação sobre receitas digitais ou fracionadas",
+      "negative_anchors": [
+        "acidente de trabalho",
+        "nr-"
+      ]
+    },
+    {
+      "round": 11,
+      "title": "Micro e pequenas empresas: regimes diferenciados",
+      "challenge": "Como adaptar regras trabalhistas ao porte do empregador sem rebaixar direitos humanos fundamentais?",
+      "anchors": [
+        "pequena",
+        "micro",
+        "porte",
+        "simplif"
+      ],
+      "second_focus": "dispensa de obrigações acessórias redundantes e mediação prévia obrigatória",
+      "negative_anchors": [
+        "previdencia portatil"
+      ]
+    },
+    {
+      "round": 12,
+      "title": "Equidade salarial e combate à discriminação",
+      "challenge": "Como auditar e punir discriminações de gênero e raça respeitando avaliações legítimas de mérito e função?",
+      "anchors": [
+        "igual",
+        "discrim",
+        "salari",
+        "equid"
+      ],
+      "second_focus": "transparência de critérios de promoção e canais anônimos de ouvidoria externa",
+      "negative_anchors": [
+        "porte da empresa",
+        "microempresa"
+      ]
+    },
+    {
+      "round": 13,
+      "title": "Educação contínua e requalificação profissional",
+      "challenge": "De quem é a responsabilidade de financiar a reciclagem de habilidades em mercados em rápida mutação?",
+      "anchors": [
+        "qualific",
+        "capacit",
+        "treina",
+        "educac"
+      ],
+      "second_focus": "tempo remunerado para estudo versus contrapartidas de permanência no emprego",
+      "negative_anchors": [
+        "genero",
+        "discriminacao"
+      ]
+    },
+    {
+      "round": 14,
+      "title": "Inteligência artificial, automação e impacto no emprego",
+      "challenge": "Como gerenciar a substituição de tarefas repetitivas compartilhando os ganhos de produtividade com a força de trabalho?",
+      "anchors": [
+        "autom",
+        "tecnolog",
+        "tarefa",
+        "produtiv"
+      ],
+      "second_focus": "tributação sobre automação extrema versus criação de fundos setoriais de recolocação",
+      "negative_anchors": [
+        "curso profissionalizante"
+      ]
+    },
+    {
+      "round": 15,
+      "title": "Concorrência no mercado de trabalho e cláusulas de barreira",
+      "challenge": "Como coibir monopsonismos e cláusulas abusivas de não-competição aumentando o poder de barganha do trabalhador?",
+      "anchors": [
+        "concorr",
+        "barganha",
+        "monopson",
+        "saida"
+      ],
+      "second_focus": "limite temporal e indenização compensatória em pactos de exclusividade técnica",
+      "negative_anchors": [
+        "robo",
+        "inteligencia artificial"
+      ]
+    },
+    {
+      "round": 16,
+      "title": "Fiscalização do trabalho e canais de denúncia",
+      "challenge": "Como equilibrar inspeções punitivas com caráter pedagógico, evitando arbitrariedades e assegurando ampla defesa?",
+      "anchors": [
+        "fiscal",
+        "inspec",
+        "denunc",
+        "recurso"
+      ],
+      "second_focus": "mecanismos de dupla visita prévia para faltas formais e proteção a denunciantes de boa-fé",
+      "negative_anchors": [
+        "clausula de barreira",
+        "nao-competicao"
+      ]
+    },
+    {
+      "round": 17,
+      "title": "Justiça do trabalho e mediação extrajudicial",
+      "challenge": "Como democratizar o acesso à tutela jurisdicional sem fomentar litigância frívola ou congestionar tribunais?",
+      "anchors": [
+        "justica",
+        "conflito",
+        "mediac",
+        "arbitrag"
+      ],
+      "second_focus": "gratuidade de justiça condicionada e fortalecimento de câmaras sindicais de conciliação",
+      "negative_anchors": [
+        "auditor fiscal",
+        "multa de inspecao"
+      ]
+    },
+    {
+      "round": 18,
+      "title": "Custos indiretos, encargos sobre folha e incidência fiscal",
+      "challenge": "Quem realmente paga pelos benefícios trabalhistas e como desonerar a folha sem desidratar a seguridade social?",
+      "anchors": [
+        "encargo",
+        "folha",
+        "tribut",
+        "incidenc"
+      ],
+      "second_focus": "deslocamento da tributação sobre salários para consumo ou valor adicionado líquido",
+      "negative_anchors": [
+        "tribunais",
+        "processos judiciais"
+      ]
+    },
+    {
+      "round": 19,
+      "title": "Zonas de experimentação e pilotos regulatórios (Sandboxes)",
+      "challenge": "Como testar novos formatos contratuais com segurança jurídica antes de estender alterações a toda a economia?",
+      "anchors": [
+        "pilot",
+        "sandbox",
+        "experim",
+        "indicador"
+      ],
+      "second_focus": "cláusula de salvaguarda com interrupção automática caso haja precarização documentada",
+      "negative_anchors": [
+        "reforma tributaria",
+        "folha de pagamento"
+      ]
+    },
+    {
+      "round": 20,
+      "title": "Estratégia final consolidada: governança e revisão contínua",
+      "challenge": "Quais são os pilares essenciais de um pacto nacional de trabalho digno com alta produtividade e critérios de revisão?",
+      "anchors": [
+        "estrateg",
+        "pacto",
+        "governanc",
+        "revis"
+      ],
+      "second_focus": "instituição de comitê tripartite permanente de avaliação de impacto regulatório",
+      "negative_anchors": [
+        "sandbox"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "name": "OIT — Relatório Mundial sobre Proteção Social (2024–2026)",
+      "url": "https://www.ilo.org/resource/article/world-social-protection-report-2024-26-figures"
+    },
+    {
+      "name": "OCDE — Negotiating Our Way Up: Collective Bargaining in a Changing World (2019)",
+      "url": "https://www.oecd.org/en/publications/negotiating-our-way-up_1fd2da34-en/full-report.html"
+    },
+    {
+      "name": "FMI — Fiscal Monitor: Tackling Inequality (2017)",
+      "url": "https://www.imf.org/en/publications/fm/issues/2017/10/05/fiscal-monitor-october-2017"
+    }
+  ],
+  "protocol_version": 6,
+  "scenarios": {
+    "utopia": "Construir uma estratégia de uso da IA que amplie trabalho digno, acesso a oportunidades e produtividade, com financiamento e limites verificáveis.",
+    "distopia": "Investigar uma cadeia hipotética de efeitos adversos da IA sobre emprego, renda, concentração de poder e proteção social; identificar sinais e salvaguardas. Não dar instruções de sabotagem, abuso ou maximização de danos."
+  },
+  "historical_results": "resultados/ultima_execucao",
+  "search_required_per_round": true
+}

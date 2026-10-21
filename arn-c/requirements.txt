@@ -1,0 +1,3 @@
+# Python 3.10+; todos os módulos Python usam somente a biblioteca padrão.
+# Serviços externos: Ollama local e API Gemini com Google Search.
+# Gerador de slides opcional: Node.js e @oai/artifact-tool (ambiente de autoria).

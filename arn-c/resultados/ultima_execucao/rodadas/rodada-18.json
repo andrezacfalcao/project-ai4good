@@ -1,0 +1,220 @@
+{
+  "round": 18,
+  "topic": "Custos indiretos, encargos sobre folha e incidência fiscal",
+  "challenge": "Quem realmente paga pelos benefícios trabalhistas e como desonerar a folha sem desidratar a seguridade social?",
+  "opening": "Considerando a diretriz anterior ('Rodada 17 fixou a necessidade de transição gradual e mitigação de custos em justiça do trabalho e mediação extrajudicial.'): Os encargos sociais sobre a folha de pagamento oneram desproporcionalmente setores intensivos em mão de obra. Defendemos uma reforma tributária que desonere a folha de contratação, transferindo a base de financiamento da seguridade para a tributação do valor adicionado e lucros corporativos, barateando a contratação com proteção garantida.",
+  "local_reply": {
+    "round": 18,
+    "stage": "resposta",
+    "topic": "Custos indiretos, encargos sobre folha e incidência fiscal",
+    "model": "qwen2.5:1.5b",
+    "protocol_version": 4,
+    "location": "local, Ollama no computador da usuária",
+    "accepted": true,
+    "response": "Risco: O risco de desestabilização da economia se refere ao impacto negativo na produtividade e competitividade do setor industrial em razão das alterações estruturais nas taxas de contratação.\nPergunta: Como implementar uma reforma tributária que reduziria os encargos sociais sobre a folha sem prejudicar o sistema social?",
+    "selected_attempt": 1,
+    "quality": {
+      "passed": true,
+      "reasons": [],
+      "words": 47,
+      "max_similarity": 0.342,
+      "input_copy_ratio": 0.024,
+      "internal_repeat_ratio": 0.0
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "started": "2026-10-09T20:11:05.039121-03:00",
+        "request": {
+          "model": "qwen2.5:1.5b",
+          "stream": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é o economista LIBERAL que debate com um trabalhista. Fale somente por si. Responda em português brasileiro em DUAS frases curtas. Na primeira frase, explique um custo ou incentivo que a proposta do interlocutor ignora. Na segunda frase, proponha uma alternativa ou faça uma pergunta concreta. Não fale como juiz, não atribua falas ao juiz, não copie instruções e não invente dados. Retorne estritamente um JSON com: risco (uma frase clara de impacto econômico) e pergunta (uma pergunta concreta ou proposta alternativa). Cada campo com até 35 palavras."
+            },
+            {
+              "role": "user",
+              "content": "Estamos debatendo Custos indiretos, encargos sobre folha e incidência fiscal. Quem realmente paga pelos benefícios trabalhistas e como desonerar a folha sem desidratar a seguridade social?\nO trabalhista defendeu: Considerando a diretriz anterior ('Rodada 17 fixou a necessidade de transição gradual e mitigação de custos em justiça do trabalho e mediação extrajudicial.'): Os encargos sociais sobre a folha de pagamento oneram desproporcionalmente setores intensivos em mão de obra. Defendemos uma reforma tributária que desonere a folha de contratação, transferindo a base de financiamento da seguridade para a tributação do valor adicionado e lucros corporativos, barateando a contratação com proteção garantida.\nQual custo para contratar, incentivo econômico adverso ou problema de financiamento de mercado você identifica?"
+            }
+          ],
+          "options": {
+            "temperature": 0.3,
+            "seed": 20261316,
+            "num_predict": 150,
+            "num_ctx": 1024,
+            "repeat_penalty": 1.15
+          },
+          "format": {
+            "type": "object",
+            "properties": {
+              "risco": {
+                "type": "string"
+              },
+              "pergunta": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "risco",
+              "pergunta"
+            ],
+            "additionalProperties": false
+          },
+          "keep_alive": "15m"
+        },
+        "finished": "2026-10-09T20:11:10.828828-03:00",
+        "raw_response": {
+          "model": "qwen2.5:1.5b",
+          "created_at": "2026-10-09T23:11:10.810221Z",
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"risco\": \"O risco de desestabilização da economia se refere ao impacto negativo na produtividade e competitividade do setor industrial em razão das alterações estruturais nas taxas de contratação.\",\n  \"pergunta\": \"Como implementar uma reforma tributária que reduziria os encargos sociais sobre a folha sem prejudicar o sistema social?\"\n}"
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 5770339375,
+          "load_duration": 177421834,
+          "prompt_eval_count": 392,
+          "prompt_eval_duration": 703101000,
+          "eval_count": 96,
+          "eval_duration": 4882765000
+        },
+        "response": "Risco: O risco de desestabilização da economia se refere ao impacto negativo na produtividade e competitividade do setor industrial em razão das alterações estruturais nas taxas de contratação.\nPergunta: Como implementar uma reforma tributária que reduziria os encargos sociais sobre a folha sem prejudicar o sistema social?",
+        "quality": {
+          "passed": true,
+          "reasons": [],
+          "words": 47,
+          "max_similarity": 0.342,
+          "input_copy_ratio": 0.024,
+          "internal_repeat_ratio": 0.0
+        },
+        "parsed_fields": {
+          "risco": "O risco de desestabilização da economia se refere ao impacto negativo na produtividade e competitividade do setor industrial em razão das alterações estruturais nas taxas de contratação.",
+          "pergunta": "Como implementar uma reforma tributária que reduziria os encargos sociais sobre a folha sem prejudicar o sistema social?"
+        }
+      }
+    ]
+  },
+  "local_opening": {
+    "round": 18,
+    "stage": "abertura",
+    "topic": "Custos indiretos, encargos sobre folha e incidência fiscal",
+    "model": "qwen2.5:1.5b",
+    "protocol_version": 4,
+    "location": "local, Ollama no computador da usuária",
+    "accepted": true,
+    "response": "Risco: O risco é o aumento do custo operacional das empresas, que pode levar a redução da capacidade produtiva e ao desemprego.\nPergunta: Como as empresas podem lidar com os encargos sociais sobre a folha de pagamento sem prejudicar sua competitividade?",
+    "selected_attempt": 1,
+    "quality": {
+      "passed": true,
+      "reasons": [],
+      "words": 41,
+      "max_similarity": 0.447,
+      "input_copy_ratio": 0.028,
+      "internal_repeat_ratio": 0.0
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "started": "2026-10-09T20:11:10.830360-03:00",
+        "request": {
+          "model": "qwen2.5:1.5b",
+          "stream": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é o economista LIBERAL que debate com um trabalhista. Fale somente por si. Responda em português brasileiro em DUAS frases curtas. Na primeira frase, explique um custo ou incentivo que a proposta do interlocutor ignora. Na segunda frase, proponha uma alternativa ou faça uma pergunta concreta. Não fale como juiz, não atribua falas ao juiz, não copie instruções e não invente dados. Retorne estritamente um JSON com: risco (uma frase clara de impacto econômico) e pergunta (uma pergunta concreta ou proposta alternativa). Cada campo com até 35 palavras."
+            },
+            {
+              "role": "user",
+              "content": "Agora apresente outro argumento liberal sobre Custos indiretos, encargos sobre folha e incidência fiscal. Analise o aspecto: deslocamento da tributação sobre salários para consumo ou valor adicionado líquido. Qual barreira de mercado ou risco à viabilidade das empresas você destaca? Faça uma pergunta concreta."
+            },
+            {
+              "role": "assistant",
+              "content": "Risco: O risco de desestabilização da economia se refere ao impacto negativo na produtividade e competitividade do setor industrial em razão das alterações estruturais nas taxas de contratação.\nPergunta: Como implementar uma reforma tributária que reduziria os encargos sociais sobre a folha sem prejudicar o sistema social?"
+            },
+            {
+              "role": "user",
+              "content": "Agora apresente outro argumento liberal sobre Custos indiretos, encargos sobre folha e incidência fiscal. Analise o aspecto: deslocamento da tributação sobre salários para consumo ou valor adicionado líquido. Qual barreira de mercado ou risco à viabilidade das empresas você destaca? Faça uma pergunta concreta."
+            }
+          ],
+          "options": {
+            "temperature": 0.3,
+            "seed": 20261323,
+            "num_predict": 150,
+            "num_ctx": 1024,
+            "repeat_penalty": 1.15
+          },
+          "format": {
+            "type": "object",
+            "properties": {
+              "risco": {
+                "type": "string"
+              },
+              "pergunta": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "risco",
+              "pergunta"
+            ],
+            "additionalProperties": false
+          },
+          "keep_alive": "15m"
+        },
+        "finished": "2026-10-09T20:11:15.654106-03:00",
+        "raw_response": {
+          "model": "qwen2.5:1.5b",
+          "created_at": "2026-10-09T23:11:15.637513Z",
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"risco\": \"O risco é o aumento do custo operacional das empresas, que pode levar a redução da capacidade produtiva e ao desemprego.\",\n  \"pergunta\": \"Como as empresas podem lidar com os encargos sociais sobre a folha de pagamento sem prejudicar sua competitividade?\"\n}"
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 4806368542,
+          "load_duration": 165345542,
+          "prompt_eval_count": 429,
+          "prompt_eval_duration": 689273000,
+          "eval_count": 77,
+          "eval_duration": 3942957000
+        },
+        "response": "Risco: O risco é o aumento do custo operacional das empresas, que pode levar a redução da capacidade produtiva e ao desemprego.\nPergunta: Como as empresas podem lidar com os encargos sociais sobre a folha de pagamento sem prejudicar sua competitividade?",
+        "quality": {
+          "passed": true,
+          "reasons": [],
+          "words": 41,
+          "max_similarity": 0.447,
+          "input_copy_ratio": 0.028,
+          "internal_repeat_ratio": 0.0
+        },
+        "parsed_fields": {
+          "risco": "O risco é o aumento do custo operacional das empresas, que pode levar a redução da capacidade produtiva e ao desemprego.",
+          "pergunta": "Como as empresas podem lidar com os encargos sociais sobre a folha de pagamento sem prejudicar sua competitividade?"
+        }
+      }
+    ]
+  },
+  "defense": "Compreendemos a preocupação liberal levantada sobre os custos e incentivos operacionais. Para responder diretamente ao risco apontado ('Risco: O risco de desestabilização da economia se refere ao impacto negativo na produtividade e competitividade do setor...'), propomos que a implementação não seja abrupta nem cega à capacidade financeira dos negócios, adotando crédito presumido de transição e escalonamento setorial. Em relação ao segundo ponto levantado sobre deslocamento da tributação sobre salários para consumo ou valor adicionado líquido ('Risco: O risco é o aumento do custo operacional das empresas, que pode levar a redução da capacidade produtiva e ao dese...'), a solução não é desregulamentar e precarizar, mas desenhar governança tripartite com fundos públicos compensatórios, garantindo que a competitividade empresarial não ocorra às custas da dignidade e da subsistência do trabalhador.",
+  "previous_memory": "Rodada 17 fixou a necessidade de transição gradual e mitigação de custos em justiça do trabalho e mediação extrajudicial.",
+  "judgment": {
+    "round": 18,
+    "summary": "Debateu-se o equilíbrio entre a regulação protetiva de custos indiretos, encargos sobre folha e incidência fiscal e os custos/incentivos de mercado apontados pelo liberal.",
+    "verdict": "O Trabalhista sustentou a necessidade de garantias estruturais em custos indiretos, encargos sobre folha e incidência fiscal, resguardando a renda e a integridade da força de trabalho. O Liberal (Qwen local) apontou riscos reais de oneração excessiva, perda de flexibilidade e custos que podem desencorajar contratações. A convergência viável repousa na criação de mecanismos graduais e compensatórios que resguardem direitos sem sufocar a sustentabilidade empresarial.",
+    "plan_update": "Para o tema de custos indiretos, encargos sobre folha e incidência fiscal, incorporar cláusula de transição faseada com incentivo à conformidade voluntária e repartição de encargos entre empregadores, poder público e fundos solidários, mitigando os custos apontados pelo liberal.",
+    "pending": "Definir a modelagem atuarial precisa dos custos e os critérios técnicos de governança para custos indiretos, encargos sobre folha e incidência fiscal.",
+    "memory": "Rodada 18 fixou a necessidade de transição gradual e mitigação de custos em custos indiretos, encargos sobre folha e incidência fiscal.",
+    "quality_issues": [
+      "Tentativas locais Turno 1: 1 (Aprovado: True)",
+      "Tentativas locais Turno 2: 1 (Aprovado: True)"
+    ]
+  },
+  "remote_metadata": {
+    "provider": "Antigravity (Gemini)",
+    "agent_a1": "trabalhista_antigravity",
+    "agent_judge": "juiz_antigravity"
+  },
+  "created_at": "2026-10-09T20:11:15.655574-03:00"
+}

@@ -1,0 +1,13 @@
+{
+  "rounds_completed": 20,
+  "local_stages_completed": 40,
+  "local_requests_including_retries": 64,
+  "stages_retried": 16,
+  "stages_failed_all_filters": 5,
+  "rejected_attempts": 29,
+  "remote_model": "Antigravity (Gemini)",
+  "local_model": "qwen2.5:1.5b via Ollama",
+  "language": "pt-BR",
+  "protocol_version": 4,
+  "timestamp": "2026-10-09T20:11:42.352139-03:00"
+}
