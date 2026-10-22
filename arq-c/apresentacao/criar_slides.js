@@ -208,7 +208,7 @@ pres.addSection({ title: "Fecho" });
   const r = (a, b) => [{ text: a, options: { bold: true, fontSize: 12, color: "1B2A41" } }, { text: b, options: { fontSize: 12, color: "1B2A41" } }];
   s.addTable([
     [{ text: "Item", options: h }, { text: "Evidência", options: h }],
-    r("Subrepositório e CONTEXT.md", "cp02_arquitetura/CONTEXT.md"),
+    r("Subrepositório e CONTEXT.md", "arq-c/CONTEXT.md"),
     r("Dataset do artigo", "data/ETT-small (ETTh2, base pública ETDataset)"),
     r("Inferência funcional", "pred.npy de cada semente + janelas reais na análise"),
     r("Baseline as-is", "rodar_baseline.sh e logs: MSE 0,2645 contra 0,263"),

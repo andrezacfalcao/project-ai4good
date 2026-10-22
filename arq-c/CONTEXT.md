@@ -1,4 +1,4 @@
-# CONTEXT · cp02_arquitetura
+# CONTEXT · arq-c
 
 Artefatos **[5] arquitetura git repo** (`arq·c`) e **tech report** (`arq·p`): reprodução
 de uma rede da literatura e modificação arquitetural, com re-treino e métricas comparadas.
@@ -78,7 +78,7 @@ paciência 20, sementes 2021 a 2025.
 ## arquivos
 
 ```
-cp02_arquitetura/
+arq-c/
 ├── CONTEXT.md
 ├── paper_moderntcn.pdf             # artigo base
 ├── moderntcn_oficial/              # código oficial (commit 56a9a2c), baseline as-is
@@ -96,7 +96,7 @@ cp02_arquitetura/
 
 ## como rodar
 
-Da pasta `cp02_arquitetura`, com o `.venv` da raiz (precisa de `torch`, `einops`, `matplotlib`):
+Da pasta `arq-c`, com o `.venv` da raiz (precisa de `torch`, `einops`, `matplotlib`):
 
 ```bash
 sh rodar_5_sementes.sh         # baseline, 5 sementes (~1 h na GPU do Mac)

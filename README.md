@@ -22,7 +22,7 @@ project-ai4good/
 │   └── model_card.json
 ├── docs/
 │   └── SLIDES_CHECKLIST.md               # checklist de prints/slides para a apresentação
-└── cp02_arquitetura/                     # artefato CP02: ModernTCN (ICLR 2024), reprodução e modificação (ver CONTEXT.md)
+└── arq-c/                     # artefato CP02: ModernTCN (ICLR 2024), reprodução e modificação (ver CONTEXT.md)
 ```
 
 ## Notebook
