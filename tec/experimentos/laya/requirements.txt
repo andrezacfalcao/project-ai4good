@@ -1,0 +1,4 @@
+# Codigo upstream fixado no commit inspecionado, sem alterar o ambiente de tec/.
+laya @ git+https://github.com/NandhaKishorM/laya.git@462c2644e654add83516e53c7a65909f8072d529
+torch==2.14.0
+transformers==5.21.0

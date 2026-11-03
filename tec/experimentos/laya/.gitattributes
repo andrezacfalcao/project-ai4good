@@ -1,0 +1,2 @@
+resultados/**/*.stderr.txt -whitespace
+resultados/*.stderr.txt -whitespace

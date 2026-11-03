@@ -1,0 +1,36 @@
+LAYA carregado em 6.77 s (inclui download se necessario)
+P(refund requested) = 0.9717  (confidence 0.9717)
+sinal_1: LAYA=aritmetica | esperado=troca_sinal | 206.0 ms
+  Qwen=troca_sinal
+sinal_2: LAYA=aritmetica | esperado=troca_sinal | 153.1 ms
+  Qwen=troca_sinal
+distributiva_1: LAYA=aritmetica | esperado=distributiva | 293.5 ms
+  Qwen=troca_sinal
+distributiva_2: LAYA=aritmetica | esperado=distributiva | 158.6 ms
+  Qwen=troca_sinal
+aritmetica_1: LAYA=aritmetica | esperado=aritmetica | 176.3 ms
+  Qwen=troca_sinal
+aritmetica_2: LAYA=aritmetica | esperado=aritmetica | 213.2 ms
+  Qwen=troca_sinal
+correto_1: LAYA=aritmetica | esperado=sem_erro | 166.1 ms
+  Qwen=sem_erro
+correto_2: LAYA=aritmetica | esperado=sem_erro | 190.6 ms
+  Qwen=sem_erro
+ilegivel_1: LAYA=leitura_invalida | esperado=leitura_invalida | 151.1 ms
+  Qwen=leitura_invalida
+ilegivel_2: LAYA=leitura_invalida | esperado=leitura_invalida | 150.8 ms
+  Qwen=leitura_invalida
+{
+  "laya": {
+    "acertos": 4,
+    "total": 10,
+    "mediana_ms": 171.1726039648056,
+    "categorias_validas": true
+  },
+  "qwen": {
+    "acertos": 6,
+    "total": 10,
+    "mediana_ms": 556.7884584888816,
+    "categorias_validas": true
+  }
+}

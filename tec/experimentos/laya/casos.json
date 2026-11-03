@@ -1,0 +1,12 @@
+[
+  {"id":"sinal_1","anterior":"2x + 4 = 10","seguinte":"2x = 10 + 4","esperado":"troca_sinal"},
+  {"id":"sinal_2","anterior":"3x - 6 = 9","seguinte":"3x = 9 - 6","esperado":"troca_sinal"},
+  {"id":"distributiva_1","anterior":"2(x + 3) = 14","seguinte":"2x + 3 = 14","esperado":"distributiva"},
+  {"id":"distributiva_2","anterior":"3(x - 2) = 12","seguinte":"3x - 2 = 12","esperado":"distributiva"},
+  {"id":"aritmetica_1","anterior":"x = 10 - 4","seguinte":"x = 7","esperado":"aritmetica"},
+  {"id":"aritmetica_2","anterior":"x = 18 / 3","seguinte":"x = 5","esperado":"aritmetica"},
+  {"id":"correto_1","anterior":"2x + 4 = 10","seguinte":"2x = 10 - 4","esperado":"sem_erro"},
+  {"id":"correto_2","anterior":"3x - 6 = 9","seguinte":"3x = 9 + 6","esperado":"sem_erro"},
+  {"id":"ilegivel_1","anterior":"4X+8-20","seguinte":"* * *","esperado":"leitura_invalida"},
+  {"id":"ilegivel_2","anterior":"???","seguinte":"[ilegivel]","esperado":"leitura_invalida"}
+]

@@ -1,0 +1,55 @@
+{
+  "executado_em": "2026-11-03T17:46:52.482118-03:00",
+  "python": "3.14.6",
+  "plataforma": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "laya_versao": "0.4.22",
+  "laya_fonte_commit": "462c2644e654add83516e53c7a65909f8072d529",
+  "laya_modelo": "convaiinnovations/laya-multilingual",
+  "laya_revisao": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+  "laya_device": "cpu",
+  "laya_carga_s": 75.90885991696268,
+  "pacotes": {
+    "torch": "2.14.0",
+    "transformers": "5.21.0",
+    "huggingface-hub": "2.4.0",
+    "numpy": "2.5.4"
+  },
+  "nota": "Dez casos sinteticos, uma chamada medida por caso, sem tuning. LAYA em CPU; Qwen via Ollama com runtime proprio. Tempos nao estabelecem superioridade entre modelos.",
+  "resumo": {
+    "laya": {
+      "acertos": 3,
+      "total": 10,
+      "mediana_ms": 166.99187504127622,
+      "categorias_validas": true
+    },
+    "qwen": {
+      "acertos": 1,
+      "total": 10,
+      "mediana_ms": 514.4745626021177,
+      "categorias_validas": true
+    }
+  },
+  "ollama_ps": {
+    "models": [
+      {
+        "name": "qwen2.5:1.5b",
+        "model": "qwen2.5:1.5b",
+        "size": 1111259872,
+        "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "1.5B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-11-03T17:51:52.478768-03:00",
+        "size_vram": 1111259872,
+        "context_length": 4096
+      }
+    ]
+  }
+}

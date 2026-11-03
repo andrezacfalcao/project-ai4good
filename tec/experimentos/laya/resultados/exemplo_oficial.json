@@ -1,0 +1,22 @@
+{
+  "model": "laya-rl-agent",
+  "answers": {
+    "refund_requested": {
+      "type": "noul",
+      "noul": 0.9717,
+      "confidence": 0.9717,
+      "answer_confidence": 0.9717,
+      "action": {
+        "act_probability": 1.0
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 54,
+    "output_tokens": 0,
+    "state_tokens": 20,
+    "state_tokens_dropped": 0,
+    "truncated": false,
+    "truncated_questions": []
+  }
+}

@@ -4,6 +4,11 @@ Artefato do **Atlas do Erro**, separado das outras atividades da disciplina.
 
 **Folha da entrega:** [tec.md](tec.md). **Mudanças no código:** [ALTERACOES.md](ALTERACOES.md).
 
+**Pesquisa adicional:** [LAYA e alternativas](alternativas.md), com
+[experimento local separado](experimentos/laya/README.md). Em dez transições
+sintéticas com diagnóstico do SymPy, LAYA acertou 4 categorias e Qwen, 6.
+Esses ensaios exploratórios ainda não sustentam adoção autônoma do classificador.
+
 ## Rodar agora nesta máquina
 
 Na raiz do repositório:
