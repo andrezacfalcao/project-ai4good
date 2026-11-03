@@ -1,0 +1,15 @@
+W1103 17:34:56.655000 81388 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/360 [00:00<?, ?it/s]Loading weights: 100%|██████████| 360/360 [00:00<00:00, 11095.06it/s]
+[transformers] [1mVisionEncoderDecoderModel LOAD REPORT[0m from: microsoft/trocr-small-printed
+Key                         | Status  | 
+----------------------------+---------+-
+encoder.pooler.dense.bias   | MISSING | 
+encoder.pooler.dense.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+/Users/andrezafalcao/Documents/project-ia-av/project-ai4good/.venv/lib/python3.14/site-packages/transformers/generation/utils.py:1969: UserWarning: Using the model-agnostic default `max_length` (=21) to control the generation length. We recommend setting `max_new_tokens` to control the maximum length of the generation.
+  warnings.warn(
+real 8.21
+user 5.65
+sys 1.30
