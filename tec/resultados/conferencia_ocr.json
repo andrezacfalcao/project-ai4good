@@ -1,0 +1,59 @@
+{
+  "nota": "Conferencia de tres entradas sinteticas, nao validacao em alunos ou fotos reais.",
+  "casos": [
+    {
+      "imagem": "caderno-1.png",
+      "esperado": [
+        "2x + 4 = 10",
+        "2x = 10 + 4",
+        "x = 7"
+      ],
+      "lido": [
+        "2X + 4 =10",
+        "2X = 10 + 4",
+        "X=7"
+      ],
+      "linhas_exatas_ignorando_espacos_e_caixa": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "imagem": "caderno-2.png",
+      "esperado": [
+        "3x - 6 = 9",
+        "3x = 9 - 6",
+        "x = 1"
+      ],
+      "lido": [
+        "3X-6=9",
+        "3X= 9 - 6",
+        "X=1"
+      ],
+      "linhas_exatas_ignorando_espacos_e_caixa": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "imagem": "caderno-3.png",
+      "esperado": [
+        "4x + 8 = 20",
+        "4x = 20 + 8",
+        "x = 7"
+      ],
+      "lido": [
+        "4X+8-20",
+        "4X=20+8",
+        "* * *"
+      ],
+      "linhas_exatas_ignorando_espacos_e_caixa": [
+        false,
+        true,
+        false
+      ]
+    }
+  ]
+}

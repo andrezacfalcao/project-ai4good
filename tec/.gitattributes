@@ -1,0 +1,3 @@
+# Preserve saidas brutas e linhas de contexto do patch sem normalizar espacos.
+resultados/*.stderr.txt -whitespace
+resultados/*.diff -whitespace

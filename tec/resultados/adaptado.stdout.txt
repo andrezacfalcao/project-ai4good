@@ -1,0 +1,21 @@
+[cadernos/caderno-1.png]
+  trocr : ['2X + 4 =10', '2X = 10 + 4', 'X=7']
+  sympy : quebra na linha 2: '2X + 4 =10' -> '2X = 10 + 4'
+  qwen  : {
+    "categoria_erro": "Equação do primeiro grau",
+    "dica_aluno": "Revisar a passagem de equações para resolver o problema. A linha correta seria: '2X + 4 = 10' -> '2X = 10 - 4'."
+}
+[cadernos/caderno-2.png]
+  trocr : ['3X-6=9', '3X= 9 - 6', 'X=1']
+  sympy : quebra na linha 2: '3X-6=9' -> '3X= 9 - 6'
+  qwen  : {
+    "categoria_erro": "Operação Inválida",
+    "dica_aluno": "Revisar a operação de subtração para garantir que o sinal seja invertido corretamente."
+}
+[cadernos/caderno-3.png]
+  trocr : ['4X+8-20', '4X=20+8', '* * *']
+  sympy : falha de OCR na linha 1 ('4X+8-20' sem '=')
+  qwen  : {
+    "categoria_erro": "OCR falha",
+    "dica_aluno": "Revisar a passagem para corrigir o termo '4X' que foi omitido. A linha deve ser lida como '4x + 8 - 20 = 0'."
+}

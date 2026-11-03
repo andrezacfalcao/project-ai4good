@@ -1,0 +1,74 @@
+{
+  "verificado_em": "2026-11-03T17:37:17.519900-03:00",
+  "plataforma": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "arquitetura": "arm64",
+  "python": "3.14.6",
+  "cpu": "Apple M3",
+  "ram_bytes": 17179869184,
+  "pacotes": {
+    "torch": "2.14.0",
+    "transformers": "5.21.0",
+    "Pillow": "12.3.0",
+    "sympy": "1.14.0",
+    "huggingface-hub": "2.3.0",
+    "tokenizers": "0.23.3"
+  },
+  "ambiente_usado": "../.venv/bin/python (ambiente existente na raiz; instrucoes de ambiente proprio em tec/README.md)",
+  "modelo_ocr": "microsoft/trocr-small-printed",
+  "revisao_ocr_cache": "04e994ab854b0089d4929f48c2b4dbe2ce78a340",
+  "execucao_ocr": "CPU",
+  "dados": "tres imagens sinteticas reaproveitadas do commit 26f14db; nenhuma foto real de aluno",
+  "ollama_version": {
+    "version": "0.32.1"
+  },
+  "ollama_tags": {
+    "models": [
+      {
+        "name": "qwen2.5:1.5b",
+        "model": "qwen2.5:1.5b",
+        "modified_at": "2026-10-09T19:34:23.28179885-03:00",
+        "size": 986061892,
+        "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "1.5B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 32768,
+          "embedding_length": 1536
+        },
+        "capabilities": [
+          "completion",
+          "tools"
+        ]
+      }
+    ]
+  },
+  "ollama_ps": {
+    "models": [
+      {
+        "name": "qwen2.5:1.5b",
+        "model": "qwen2.5:1.5b",
+        "size": 1111259872,
+        "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "1.5B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-11-03T17:41:17.976199-03:00",
+        "size_vram": 1111259872,
+        "context_length": 4096
+      }
+    ]
+  }
+}
