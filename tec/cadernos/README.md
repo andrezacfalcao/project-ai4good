@@ -1,7 +1,8 @@
 # Entradas de teste
 
-Estas três imagens foram reaproveitadas de `va2/tec/cadernos/` (commit
-`26f14db`). São **dados sintéticos de teste**, simulando resoluções em três
+Estas três imagens foram reaproveitadas da
+[primeira demonstração, no commit `26f14db`](https://github.com/andrezacfalcao/project-ai4good/tree/26f14db/va2/tec/cadernos).
+A pasta atual das entradas é `tec/cadernos/`. São **dados sintéticos de teste**, simulando resoluções em três
 linhas; não são fotografias coletadas de estudantes nem uma avaliação escolar.
 Não foi identificado um gerador dessas imagens no repositório.
 

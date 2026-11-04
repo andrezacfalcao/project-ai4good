@@ -8,6 +8,11 @@ aresta. Inclui feedforward, backpropagation, treino/inferência na base
 de hiperparâmetros por validação cruzada e um app Streamlit para inspecionar
 tudo interativamente.
 
+## Artefatos da disciplina
+
+- [tec · tecnologia base demonstrável](tec/README.md) — código, folha da atividade,
+  entradas, resultados e experimentos do Atlas do Erro, reunidos em `tec/`.
+
 ## Estrutura do projeto
 
 ```

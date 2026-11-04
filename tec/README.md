@@ -2,6 +2,10 @@
 
 Artefato do **Atlas do Erro**, separado das outras atividades da disciplina.
 
+Esta é a única pasta ativa do artefato `tec`. A folha anterior foi preservada
+no [histórico do Git](https://github.com/andrezacfalcao/project-ai4good/blob/928e765/va2/tec.md);
+para executar, editar ou entregar, use os arquivos desta pasta.
+
 **Folha da entrega:** [tec.md](tec.md). **Mudanças no código:** [ALTERACOES.md](ALTERACOES.md).
 
 **Pesquisa adicional:** [LAYA e alternativas](alternativas.md), com
