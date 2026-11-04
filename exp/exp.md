@@ -61,7 +61,11 @@ cadernos", "o modelo acerta mais que as regras; se não, sai o modelo" e "nenhum
 com a resposta". Com 120 resoluções, o intervalo de 95% de uma taxa de 80% fica em cerca de ±7
 pontos; com 30, em ±14, e não separa 80% de 70%.
 
-**escrito antes de rodar:** [link do commit do pré-registro]
+**escrito antes de rodar:** pré-registro no commit [1a03642](https://github.com/andrezacfalcao/project-ai4good/commit/1a036425cd95fe51691a398a2537da22d3b5761d), antes de qualquer dado do piloto.
+**emenda 1, 04/11/2026, antes de rodar:** o pré-registro dizia que o prompt, a lista de categorias e as regras
+ficavam fixados nele, mas o código do piloto ainda não existia. Eles ficaram fixados no commit seguinte, com o
+código e os dados do piloto, antes da primeira execução: [`piloto_e1.py`](piloto/piloto_e1.py) e
+[`gerar_dados.py`](piloto/gerar_dados.py). Os limiares e as métricas não mudaram.
 
 ### 2.2 · métricas e ablação
 

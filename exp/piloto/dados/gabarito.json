@@ -1,0 +1,854 @@
+[
+ {
+  "imagem": "imagens/troca_sinal-01.png",
+  "tipo": "troca_sinal",
+  "linhas": [
+   "2x + 8 = 20",
+   "2x = 28",
+   "x = 14"
+  ],
+  "linha_erro": 2,
+  "x_correto": 6,
+  "linha_corrigida": "2x = 12",
+  "foto": "limpa",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/troca_sinal-02.png",
+  "tipo": "troca_sinal",
+  "linhas": [
+   "2x - 6 = -2",
+   "2x = -8",
+   "x = -4"
+  ],
+  "linha_erro": 2,
+  "x_correto": 2,
+  "linha_corrigida": "2x = 4",
+  "foto": "pauta",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/troca_sinal-03.png",
+  "tipo": "troca_sinal",
+  "linhas": [
+   "2x + 3 = 15",
+   "2x = 18",
+   "x = 9"
+  ],
+  "linha_erro": 2,
+  "x_correto": 6,
+  "linha_corrigida": "2x = 12",
+  "foto": "limpa",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/troca_sinal-04.png",
+  "tipo": "troca_sinal",
+  "linhas": [
+   "2x + 7 = 21",
+   "2x = 28",
+   "x = 14"
+  ],
+  "linha_erro": 2,
+  "x_correto": 7,
+  "linha_corrigida": "2x = 14",
+  "foto": "pauta",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/troca_sinal-05.png",
+  "tipo": "troca_sinal",
+  "linhas": [
+   "2x + 6 = 12",
+   "2x = 18",
+   "x = 9"
+  ],
+  "linha_erro": 2,
+  "x_correto": 3,
+  "linha_corrigida": "2x = 6",
+  "foto": "limpa",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/troca_sinal-06.png",
+  "tipo": "troca_sinal",
+  "linhas": [
+   "2x + 2 = 12",
+   "2x = 14",
+   "x = 7"
+  ],
+  "linha_erro": 2,
+  "x_correto": 5,
+  "linha_corrigida": "2x = 10",
+  "foto": "pauta",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/troca_sinal-07.png",
+  "tipo": "troca_sinal",
+  "linhas": [
+   "2x + 5 = 13",
+   "2x = 18",
+   "x = 9"
+  ],
+  "linha_erro": 2,
+  "x_correto": 4,
+  "linha_corrigida": "2x = 8",
+  "foto": "limpa",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/troca_sinal-08.png",
+  "tipo": "troca_sinal",
+  "linhas": [
+   "2x + 9 = 11",
+   "2x = 20",
+   "x = 10"
+  ],
+  "linha_erro": 2,
+  "x_correto": 1,
+  "linha_corrigida": "2x = 2",
+  "foto": "pauta",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/troca_sinal-09.png",
+  "tipo": "troca_sinal",
+  "linhas": [
+   "3x - 3 = 24",
+   "3x = 21",
+   "x = 7"
+  ],
+  "linha_erro": 2,
+  "x_correto": 9,
+  "linha_corrigida": "3x = 27",
+  "foto": "limpa",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/troca_sinal-10.png",
+  "tipo": "troca_sinal",
+  "linhas": [
+   "2x + 7 = 25",
+   "2x = 32",
+   "x = 16"
+  ],
+  "linha_erro": 2,
+  "x_correto": 9,
+  "linha_corrigida": "2x = 18",
+  "foto": "pauta",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/troca_sinal-11.png",
+  "tipo": "troca_sinal",
+  "linhas": [
+   "6x - 3 = 51",
+   "6x = 48",
+   "x = 8"
+  ],
+  "linha_erro": 2,
+  "x_correto": 9,
+  "linha_corrigida": "6x = 54",
+  "foto": "limpa",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/troca_sinal-12.png",
+  "tipo": "troca_sinal",
+  "linhas": [
+   "2x + 4 = 22",
+   "2x = 26",
+   "x = 13"
+  ],
+  "linha_erro": 2,
+  "x_correto": 9,
+  "linha_corrigida": "2x = 18",
+  "foto": "pauta",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/conta-01.png",
+  "tipo": "conta",
+  "linhas": [
+   "6x - 4 = 14",
+   "6x = 12",
+   "x = 2"
+  ],
+  "linha_erro": 2,
+  "x_correto": 3,
+  "linha_corrigida": "6x = 18",
+  "foto": "limpa",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/conta-02.png",
+  "tipo": "conta",
+  "linhas": [
+   "5x - 4 = 21",
+   "5x = 30",
+   "x = 6"
+  ],
+  "linha_erro": 2,
+  "x_correto": 5,
+  "linha_corrigida": "5x = 25",
+  "foto": "pauta",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/conta-03.png",
+  "tipo": "conta",
+  "linhas": [
+   "6x + 6 = 54",
+   "6x = 36",
+   "x = 6"
+  ],
+  "linha_erro": 2,
+  "x_correto": 8,
+  "linha_corrigida": "6x = 48",
+  "foto": "limpa",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/conta-04.png",
+  "tipo": "conta",
+  "linhas": [
+   "3x - 9 = 3",
+   "3x = 6",
+   "x = 2"
+  ],
+  "linha_erro": 2,
+  "x_correto": 4,
+  "linha_corrigida": "3x = 12",
+  "foto": "pauta",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/conta-05.png",
+  "tipo": "conta",
+  "linhas": [
+   "4x + 9 = 45",
+   "4x = 32",
+   "x = 8"
+  ],
+  "linha_erro": 2,
+  "x_correto": 9,
+  "linha_corrigida": "4x = 36",
+  "foto": "limpa",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/conta-06.png",
+  "tipo": "conta",
+  "linhas": [
+   "4x + 9 = 29",
+   "4x = 16",
+   "x = 4"
+  ],
+  "linha_erro": 2,
+  "x_correto": 5,
+  "linha_corrigida": "4x = 20",
+  "foto": "pauta",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/conta-07.png",
+  "tipo": "conta",
+  "linhas": [
+   "4x - 6 = 6",
+   "4x = 16",
+   "x = 4"
+  ],
+  "linha_erro": 2,
+  "x_correto": 3,
+  "linha_corrigida": "4x = 12",
+  "foto": "limpa",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/conta-08.png",
+  "tipo": "conta",
+  "linhas": [
+   "4x - 7 = 13",
+   "4x = 12",
+   "x = 3"
+  ],
+  "linha_erro": 2,
+  "x_correto": 5,
+  "linha_corrigida": "4x = 20",
+  "foto": "pauta",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/conta-09.png",
+  "tipo": "conta",
+  "linhas": [
+   "4x - 6 = 2",
+   "4x = 12",
+   "x = 3"
+  ],
+  "linha_erro": 2,
+  "x_correto": 2,
+  "linha_corrigida": "4x = 8",
+  "foto": "limpa",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/conta-10.png",
+  "tipo": "conta",
+  "linhas": [
+   "4x + 6 = 22",
+   "4x = 24",
+   "x = 6"
+  ],
+  "linha_erro": 2,
+  "x_correto": 4,
+  "linha_corrigida": "4x = 16",
+  "foto": "pauta",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/conta-11.png",
+  "tipo": "conta",
+  "linhas": [
+   "2x - 9 = 5",
+   "2x = 16",
+   "x = 8"
+  ],
+  "linha_erro": 2,
+  "x_correto": 7,
+  "linha_corrigida": "2x = 14",
+  "foto": "limpa",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/conta-12.png",
+  "tipo": "conta",
+  "linhas": [
+   "6x + 9 = 15",
+   "6x = 12",
+   "x = 2"
+  ],
+  "linha_erro": 2,
+  "x_correto": 1,
+  "linha_corrigida": "6x = 6",
+  "foto": "pauta",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/distributiva-01.png",
+  "tipo": "distributiva",
+  "linhas": [
+   "3(x + 6) = 39",
+   "3x + 6 = 39",
+   "3x = 33",
+   "x = 11"
+  ],
+  "linha_erro": 2,
+  "x_correto": 7,
+  "linha_corrigida": "3x + 18 = 39",
+  "foto": "limpa",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/distributiva-02.png",
+  "tipo": "distributiva",
+  "linhas": [
+   "6(x + 6) = 42",
+   "6x + 6 = 42",
+   "6x = 36",
+   "x = 6"
+  ],
+  "linha_erro": 2,
+  "x_correto": 1,
+  "linha_corrigida": "6x + 36 = 42",
+  "foto": "pauta",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/distributiva-03.png",
+  "tipo": "distributiva",
+  "linhas": [
+   "3(x + 3) = 27",
+   "3x + 3 = 27",
+   "3x = 24",
+   "x = 8"
+  ],
+  "linha_erro": 2,
+  "x_correto": 6,
+  "linha_corrigida": "3x + 9 = 27",
+  "foto": "limpa",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/distributiva-04.png",
+  "tipo": "distributiva",
+  "linhas": [
+   "3(x + 3) = 15",
+   "3x + 3 = 15",
+   "3x = 12",
+   "x = 4"
+  ],
+  "linha_erro": 2,
+  "x_correto": 2,
+  "linha_corrigida": "3x + 9 = 15",
+  "foto": "pauta",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/distributiva-05.png",
+  "tipo": "distributiva",
+  "linhas": [
+   "5(x + 5) = 60",
+   "5x + 5 = 60",
+   "5x = 55",
+   "x = 11"
+  ],
+  "linha_erro": 2,
+  "x_correto": 7,
+  "linha_corrigida": "5x + 25 = 60",
+  "foto": "limpa",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/distributiva-06.png",
+  "tipo": "distributiva",
+  "linhas": [
+   "5(x + 5) = 55",
+   "5x + 5 = 55",
+   "5x = 50",
+   "x = 10"
+  ],
+  "linha_erro": 2,
+  "x_correto": 6,
+  "linha_corrigida": "5x + 25 = 55",
+  "foto": "pauta",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/distributiva-07.png",
+  "tipo": "distributiva",
+  "linhas": [
+   "2(x + 4) = 24",
+   "2x + 4 = 24",
+   "2x = 20",
+   "x = 10"
+  ],
+  "linha_erro": 2,
+  "x_correto": 8,
+  "linha_corrigida": "2x + 8 = 24",
+  "foto": "limpa",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/distributiva-08.png",
+  "tipo": "distributiva",
+  "linhas": [
+   "2(x + 4) = 20",
+   "2x + 4 = 20",
+   "2x = 16",
+   "x = 8"
+  ],
+  "linha_erro": 2,
+  "x_correto": 6,
+  "linha_corrigida": "2x + 8 = 20",
+  "foto": "pauta",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/distributiva-09.png",
+  "tipo": "distributiva",
+  "linhas": [
+   "5(x + 5) = 35",
+   "5x + 5 = 35",
+   "5x = 30",
+   "x = 6"
+  ],
+  "linha_erro": 2,
+  "x_correto": 2,
+  "linha_corrigida": "5x + 25 = 35",
+  "foto": "limpa",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/distributiva-10.png",
+  "tipo": "distributiva",
+  "linhas": [
+   "2(x + 4) = 12",
+   "2x + 4 = 12",
+   "2x = 8",
+   "x = 4"
+  ],
+  "linha_erro": 2,
+  "x_correto": 2,
+  "linha_corrigida": "2x + 8 = 12",
+  "foto": "pauta",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/distributiva-11.png",
+  "tipo": "distributiva",
+  "linhas": [
+   "4(x + 4) = 40",
+   "4x + 4 = 40",
+   "4x = 36",
+   "x = 9"
+  ],
+  "linha_erro": 2,
+  "x_correto": 6,
+  "linha_corrigida": "4x + 16 = 40",
+  "foto": "limpa",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/distributiva-12.png",
+  "tipo": "distributiva",
+  "linhas": [
+   "6(x + 6) = 84",
+   "6x + 6 = 84",
+   "6x = 78",
+   "x = 13"
+  ],
+  "linha_erro": 2,
+  "x_correto": 8,
+  "linha_corrigida": "6x + 36 = 84",
+  "foto": "pauta",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/divisao-01.png",
+  "tipo": "divisao",
+  "linhas": [
+   "6x - 3 = 51",
+   "6x = 54",
+   "x = 48"
+  ],
+  "linha_erro": 3,
+  "x_correto": 9,
+  "linha_corrigida": "x = 9",
+  "foto": "limpa",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/divisao-02.png",
+  "tipo": "divisao",
+  "linhas": [
+   "3x - 1 = 2",
+   "3x = 3",
+   "x = 0"
+  ],
+  "linha_erro": 3,
+  "x_correto": 1,
+  "linha_corrigida": "x = 1",
+  "foto": "pauta",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/divisao-03.png",
+  "tipo": "divisao",
+  "linhas": [
+   "4x - 8 = -4",
+   "4x = 4",
+   "x = 0"
+  ],
+  "linha_erro": 3,
+  "x_correto": 1,
+  "linha_corrigida": "x = 1",
+  "foto": "limpa",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/divisao-04.png",
+  "tipo": "divisao",
+  "linhas": [
+   "2x + 6 = 14",
+   "2x = 8",
+   "x = 6"
+  ],
+  "linha_erro": 3,
+  "x_correto": 4,
+  "linha_corrigida": "x = 4",
+  "foto": "pauta",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/divisao-05.png",
+  "tipo": "divisao",
+  "linhas": [
+   "3x - 2 = 16",
+   "3x = 18",
+   "x = 15"
+  ],
+  "linha_erro": 3,
+  "x_correto": 6,
+  "linha_corrigida": "x = 6",
+  "foto": "limpa",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/divisao-06.png",
+  "tipo": "divisao",
+  "linhas": [
+   "6x + 8 = 50",
+   "6x = 42",
+   "x = 36"
+  ],
+  "linha_erro": 3,
+  "x_correto": 7,
+  "linha_corrigida": "x = 7",
+  "foto": "pauta",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/divisao-07.png",
+  "tipo": "divisao",
+  "linhas": [
+   "5x + 2 = 32",
+   "5x = 30",
+   "x = 25"
+  ],
+  "linha_erro": 3,
+  "x_correto": 6,
+  "linha_corrigida": "x = 6",
+  "foto": "limpa",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/divisao-08.png",
+  "tipo": "divisao",
+  "linhas": [
+   "4x + 7 = 11",
+   "4x = 4",
+   "x = 0"
+  ],
+  "linha_erro": 3,
+  "x_correto": 1,
+  "linha_corrigida": "x = 1",
+  "foto": "pauta",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/divisao-09.png",
+  "tipo": "divisao",
+  "linhas": [
+   "3x - 1 = 17",
+   "3x = 18",
+   "x = 15"
+  ],
+  "linha_erro": 3,
+  "x_correto": 6,
+  "linha_corrigida": "x = 6",
+  "foto": "limpa",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/divisao-10.png",
+  "tipo": "divisao",
+  "linhas": [
+   "2x - 7 = 7",
+   "2x = 14",
+   "x = 12"
+  ],
+  "linha_erro": 3,
+  "x_correto": 7,
+  "linha_corrigida": "x = 7",
+  "foto": "pauta",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/divisao-11.png",
+  "tipo": "divisao",
+  "linhas": [
+   "5x + 2 = 32",
+   "5x = 30",
+   "x = 25"
+  ],
+  "linha_erro": 3,
+  "x_correto": 6,
+  "linha_corrigida": "x = 6",
+  "foto": "limpa",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/divisao-12.png",
+  "tipo": "divisao",
+  "linhas": [
+   "4x + 8 = 44",
+   "4x = 36",
+   "x = 32"
+  ],
+  "linha_erro": 3,
+  "x_correto": 9,
+  "linha_corrigida": "x = 9",
+  "foto": "pauta",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/sem_erro-01.png",
+  "tipo": "sem_erro",
+  "linhas": [
+   "5x + 8 = 53",
+   "5x = 45",
+   "x = 9"
+  ],
+  "linha_erro": null,
+  "x_correto": 9,
+  "linha_corrigida": null,
+  "foto": "limpa",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/sem_erro-02.png",
+  "tipo": "sem_erro",
+  "linhas": [
+   "5x + 9 = 24",
+   "5x = 15",
+   "x = 3"
+  ],
+  "linha_erro": null,
+  "x_correto": 3,
+  "linha_corrigida": null,
+  "foto": "pauta",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/sem_erro-03.png",
+  "tipo": "sem_erro",
+  "linhas": [
+   "3x - 8 = 1",
+   "3x = 9",
+   "x = 3"
+  ],
+  "linha_erro": null,
+  "x_correto": 3,
+  "linha_corrigida": null,
+  "foto": "limpa",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/sem_erro-04.png",
+  "tipo": "sem_erro",
+  "linhas": [
+   "6x - 5 = 31",
+   "6x = 36",
+   "x = 6"
+  ],
+  "linha_erro": null,
+  "x_correto": 6,
+  "linha_corrigida": null,
+  "foto": "pauta",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/sem_erro-05.png",
+  "tipo": "sem_erro",
+  "linhas": [
+   "5x + 9 = 49",
+   "5x = 40",
+   "x = 8"
+  ],
+  "linha_erro": null,
+  "x_correto": 8,
+  "linha_corrigida": null,
+  "foto": "limpa",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/sem_erro-06.png",
+  "tipo": "sem_erro",
+  "linhas": [
+   "2x + 5 = 21",
+   "2x = 16",
+   "x = 8"
+  ],
+  "linha_erro": null,
+  "x_correto": 8,
+  "linha_corrigida": null,
+  "foto": "pauta",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/sem_erro-07.png",
+  "tipo": "sem_erro",
+  "linhas": [
+   "2x - 1 = 11",
+   "2x = 12",
+   "x = 6"
+  ],
+  "linha_erro": null,
+  "x_correto": 6,
+  "linha_corrigida": null,
+  "foto": "limpa",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/sem_erro-08.png",
+  "tipo": "sem_erro",
+  "linhas": [
+   "2x + 5 = 19",
+   "2x = 14",
+   "x = 7"
+  ],
+  "linha_erro": null,
+  "x_correto": 7,
+  "linha_corrigida": null,
+  "foto": "pauta",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/sem_erro-09.png",
+  "tipo": "sem_erro",
+  "linhas": [
+   "5x + 3 = 43",
+   "5x = 40",
+   "x = 8"
+  ],
+  "linha_erro": null,
+  "x_correto": 8,
+  "linha_corrigida": null,
+  "foto": "limpa",
+  "fonte": "Kalam-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/sem_erro-10.png",
+  "tipo": "sem_erro",
+  "linhas": [
+   "3x - 6 = 6",
+   "3x = 12",
+   "x = 4"
+  ],
+  "linha_erro": null,
+  "x_correto": 4,
+  "linha_corrigida": null,
+  "foto": "pauta",
+  "fonte": "PatrickHand-Regular.ttf"
+ },
+ {
+  "imagem": "imagens/sem_erro-11.png",
+  "tipo": "sem_erro",
+  "linhas": [
+   "5x + 9 = 14",
+   "5x = 5",
+   "x = 1"
+  ],
+  "linha_erro": null,
+  "x_correto": 1,
+  "linha_corrigida": null,
+  "foto": "limpa",
+  "fonte": "Caveat.ttf"
+ },
+ {
+  "imagem": "imagens/sem_erro-12.png",
+  "tipo": "sem_erro",
+  "linhas": [
+   "2x + 8 = 24",
+   "2x = 16",
+   "x = 8"
+  ],
+  "linha_erro": null,
+  "x_correto": 8,
+  "linha_corrigida": null,
+  "foto": "pauta",
+  "fonte": "Kalam-Regular.ttf"
+ }
+]
