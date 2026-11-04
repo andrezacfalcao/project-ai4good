@@ -242,7 +242,6 @@ Item 2 · vídeo. Concordo: quando a auditoria foi feita, o vídeo ainda não ex
 
 Item 3 · alteração mínima e auditoria. O § 6 estava vazio porque a auditoria ainda não tinha sido feita; agora a tabela está colada e esta é a minha resposta. Sobre o histórico dos commits, acrescentei no § 2 uma nota explicando que a primeira versão, de 28/10, foi refeita em 03/11 na pasta tec/, e que ae9a9b4 e abf1638 são os commits desta entrega. Sobre as imagens, concordo em parte: elas são sintéticas, digitadas numa fonte que imita letra à mão e montadas com três linhas igualmente espaçadas, que é a condição que o corte fixo pressupõe. Isso favorece o OCR e não representa uma foto real de caderno. Mesmo assim, o terceiro caderno, com pauta e escrita inclinada, já mostrou a leitura falhando, e a folha registra essa limitação. Não troquei as imagens nesta entrega; a validação com fotos reais de escrita à mão fica para o piloto com 30 cadernos previsto no brw.
 
-<!-- A própria aluna escreve aqui. A IA não deve redigir ou reformular esta resposta. -->
 
 ## Situação da entrega
 
@@ -251,7 +250,7 @@ Item 3 · alteração mínima e auditoria. O § 6 estava vazio porque a auditori
 - [x] Adaptação executada e registrada em um segundo commit separado.
 - [x] Saídas reais e limitações visíveis, sem ocultar a falha do terceiro caderno.
 - [x] Links abertos, licenças conferidas e justificativa escrita.
-- [ ] Vídeo de 1–3 minutos publicado e acessível sem login.
+- [x] Vídeo de 1–3 minutos publicado e acessível sem login.
 - [x] Reflexão do § 5.
 - [ ] Auditoria cega e resposta da aluna no § 6.
 - [x] Conferência dos exemplos excelente/raso e alinhamento final com brw/cmp.
