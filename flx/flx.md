@@ -24,8 +24,9 @@ O modelo TrOCR leu certo 7 das 9 linhas das três resoluções sintéticas, e o 
 **o diagrama:** [arquitetura.md](https://github.com/andrezacfalcao/project-ai4good/blob/main/flx/arquitetura.md), commit [1cc95a5](https://github.com/andrezacfalcao/project-ai4good/commit/1cc95a5c82319676e35a7f0a0a14d4e789dd7cc8)
 
 Decisões tomadas a partir do brw: no protótipo, há um celular por turma, usado pelo professor
-(brw, § 6c), e as pistas vêm de uma lista escrita pelo professor, como o piloto do brw prevê
-quando o modelo dá pista errada ou com a resposta (brw, § 6b), o que o tec observou.
+(brw, § 6c), e o modelo de linguagem pequeno no aparelho diz o tipo do erro e escreve a pista
+(brw, § 6b), como no código do tec. O Qwen é a peça central dessa etapa, mesmo errando: no tec,
+ele entregou o passo corrigido e chegou a dar um valor de x, e isso fica visível no passo 9.
 
 | nº | passo | IA, regra ou pessoa | por que IA, e não uma regra (sem IA) |
 |:--|:--|:--|:--|
@@ -35,18 +36,21 @@ quando o modelo dá pista errada ou com a resposta (brw, § 6b), o que o tec obs
 | 4 | transcrever cada linha (TrOCR) | IA | Cada aluno/pessoa pode escrever de uma forma, a IA entra justamente para fazer essa transcrição independente do formato/escrita do aluno.  |
 | 5 | aluno confere a transcrição na tela e corrige o que foi mal lido | pessoa | |
 | 6 | achar a primeira linha que não é equivalente à anterior (SymPy) | regra | |
-| 7 | tipo do erro: testar no SymPy as correções típicas da linha errada (devolver o sinal do termo que mudou de lado, refazer a distributiva, refazer a conta); a que devolve a equivalência dá a categoria; nenhuma vira "outro" | regra | |
-| 8 | pista: a primeira da lista do professor para a categoria | regra | |
-| 9 | aluno vê a linha da quebra e a pista, sem a resposta, e tenta de novo | pessoa | |
-| 10 | se ele pedir, a próxima pista da lista; depois de 3 pistas, ou na categoria "outro", a tela chama o professor | regra | |
-| 11 | só a categoria, o exercício e a data entram no atlas, sem nome e sem foto | regra | |
-| 12 | contar os erros mais comuns da turma, por exercício | regra | |
-| 13 | professor vê o atlas e escolhe a aula de reforço | pessoa | |
+| 7 | o Qwen recebe as linhas e a quebra apontada pelo SymPy e devolve, em JSON, o tipo do erro, de uma lista fixa de categorias, e uma pista sem a resposta | IA | O SymPy diz em que linha a conta quebrou, mas não diz por quê: o aluno pode ter trocado o sinal ao passar o termo, errado a distributiva ou a conta, e cada um erra de um jeito. Sem o tipo do erro não há pista nem atlas, e a pista precisa ser escrita para aquela linha, sem entregar a resposta. |
+| 8 | aluno vê a linha da quebra e a pista, sem a resposta, e tenta de novo | pessoa | |
+| 9 | se ele pedir, o passo 7 roda de novo, pedindo uma pista mais clara; depois de 3 pistas, a tela chama o professor | regra | |
+| 10 | só a categoria, o exercício e a data entram no atlas, sem nome e sem foto | regra | |
+| 11 | contar os erros mais comuns da turma, por exercício | regra | |
+| 12 | professor vê o atlas e escolhe a aula de reforço | pessoa | |
 
-**onde cada regra quebraria, e o que fica com uma pessoa:** o passo 3 quebra com pauta forte
-e escrita inclinada; nesse caso, o aluno vê as linhas erradas no passo 5. O passo 7 só cobre os
-erros da lista; o resto cai em "outro", que vai para o professor no passo 10. Problemas escritos
-em palavras, em que o erro está em montar a equação, ficam fora do recorte do brw.
+**onde cada regra quebraria, e o que fica com uma pessoa:** o passo 3 quebra com pauta forte e
+escrita inclinada; nesse caso, o aluno vê as linhas erradas no passo 5. No passo 7, o Qwen pode
+errar a categoria ou entregar a resposta, como no tec; o aluno vê isso no passo 8, e o professor,
+no passo 9. A regra que tentaria o passo 7 seria testar no SymPy as correções típicas da linha
+errada (devolver o sinal do termo que mudou de lado, refazer a distributiva, refazer a conta) e
+tirar a pista de uma lista escrita pelo professor; ela quebra nos erros que não estão na lista e
+não escreve uma pista para a linha de cada aluno. Problemas escritos em palavras, em que o erro
+está em montar a equação, ficam fora do recorte do brw.
 
 ## 2 · as peças: o que entra, o que sai, onde roda e quanto custa
 
