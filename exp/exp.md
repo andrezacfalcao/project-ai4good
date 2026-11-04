@@ -420,9 +420,7 @@ scripts e o histórico do repositório, e não alterou nada.
 
 **Resposta da aluna à segunda rodada, item por item:**
 
-> rascunho com apoio de IA, a revisar pela aluna.
-
 1. Concordo em parte. Os limiares originais e o número de casos estão no commit `1a03642`, antes do piloto, e a hipótese do E1 caiu. Manter o Qwen é um desvio do pré-registro, decidido por mim depois do resultado, e a folha registra isso. Reconheço que a regra "sempre troca de sinal" era uma linha de base fraca, que empata caso a caso com o Qwen; a regra das correções típicas fica para o experimento real. Nomeei o competidor, o Qwen2.5-VL 7B, mas ele não rodou: travou a máquina por falta de memória, e isso está na emenda 5. A emenda 5 e o código da terceira versão do E2 foram commitados antes de rodar (`1681595`), e o E2 agora só roda com alunos depois que o Atlas passar no E1 real.
 2. Concordo. Pela definição literal do pré-registro, são 3 pistas com a resposta em 40, e esse número, o 63% de risco seletivo e as 6 de 40 pistas que mudam entre rodadas agora saem de `estatisticas_e1.py`. O defeito do "x = 2." foi corrigido no código da terceira versão do E2, mas ela não será rodada por ora, por falta de memória de vídeo (VRAM) nesta máquina, então a frase "o protocolo fecha" segue sem comprovação. A pista errada, as ablações da nota, do atlas, da conferência do passo 5, do TrOCR para letra à mão e do local contra a nuvem, e o agrupamento por aluno no intervalo ficam como limites do desenho, para o experimento real.
-3. Concordo em parte. O TCLE agora diz que o aplicativo erra e como o professor confere, e a instrução "uma conta por linha" virou uma pergunta para medir com alunos. Sobre o rótulo "sem IA" e o tamanho do § 4: [a aluna decide].
+3. Concordo em parte. O TCLE agora diz que o aplicativo erra e como o professor confere, e a instrução "uma conta por linha" virou uma pergunta para medir com alunos.
 
