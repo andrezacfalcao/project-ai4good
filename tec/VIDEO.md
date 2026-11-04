@@ -1,6 +1,6 @@
 # Vídeo da demonstração · 1 a 3 minutos
 
-**Link da gravação: pendente.** Estes arquivos de terminal não substituem o vídeo.
+**Gravação:** [vídeo de 70 s no Google Drive](https://drive.google.com/file/d/1auHyJb5qa_uDFswh9zUXax5qJdmKNlb0/view?usp=sharing), gravado em 04/11/2026.
 
 Grave a tela com o terminal visível. Na raiz do repositório, execute:
 
