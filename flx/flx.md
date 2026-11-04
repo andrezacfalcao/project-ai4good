@@ -148,6 +148,8 @@ dele. se ele pedir, recuse e explique isso. -->
 
 **a minha resposta, sem IA** (uma linha por item: o que mudei por causa da auditoria, e onde; ou
 por que discordo dela):
-1. [preencha]
-2. [preencha]
-3. [preencha]
+> rascunho com apoio de IA, a revisar pela aluna.
+
+1. Concordo em parte. Completei o fluxo no § 1 e no diagrama: nova foto quando a leitura fica ilegível, o caminho "sem quebra", a contestação da categoria pelo aluno e a revisão do professor (passos 8 e 9), o professor atendendo na carteira (passo 11), a nota que recupera parte do ponto (passo 13) e uma única entrada no atlas por exercício, com a categoria final (passo 14). Discordo de trocar o Qwen do passo 7 por uma regra: o 2 de 6 veio de dez casos sintéticos, e o critério do brw é comparar o modelo com a lista de regras nos cadernos reais do piloto, o que ainda não foi feito. Até lá, o Qwen fica, com a regra como plano B no § 2.
+2. Concordo. No § 2, marquei medido ou estimado em todas as peças, com a conta de cada zero, e coloquei os scripts e as saídas das medidas em `flx/medidas/`. Medi o caminho inteiro, da foto à pista: de 1,36 a 1,66 s por caderno no notebook, abaixo dos 10 s do brw, e não os ~8 s da soma feita com os tempos do Mac, que incluíam a carga do modelo. Registrei que o TrOCR e o SymPy precisariam ser convertidos para rodar no celular, e o notebook da escola virou plano B explícito. O tempo no celular continua sem medida: é a primeira medida do experimento.
+3. Concordo. Tirei a contradição: no caminho principal, nada sai do celular; no plano B, a foto e as linhas vão cifradas pelo Wi-Fi da escola até o notebook, ficam só na memória do programa, e o notebook entrou no diagrama. O app desliga o backup automático dos próprios dados, o aceite do aluno voltou (passo 8), o atlas guarda a semana em vez da data e não guarda mais o número de pistas, o professor vê só a contagem, o aluno apaga o nome no passo 5, e a saída do Qwen e a contestação ganharam linha na tabela do § 3.
