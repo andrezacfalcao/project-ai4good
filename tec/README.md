@@ -8,6 +8,8 @@ para executar, editar ou entregar, use os arquivos desta pasta.
 
 **Folha da entrega:** [tec.md](tec.md). **Mudanças no código:** [ALTERACOES.md](ALTERACOES.md).
 
+**Site para testar:** [site/](site/README.md), com o Atlas rodando sobre as imagens de teste, passo a passo.
+
 **Pesquisa adicional:** [LAYA e alternativas](alternativas.md), com
 [experimento local separado](experimentos/laya/README.md). Em dez transições
 sintéticas com diagnóstico do SymPy, LAYA acertou 4 categorias e Qwen, 6.

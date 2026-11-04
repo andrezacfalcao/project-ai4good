@@ -287,6 +287,18 @@ e só leu arquivos.
 - **Anotação 3 (§ 3, a entrada), em risco, sem cair por completo.** A entrada é um dado do problema, e não o exemplo IAM. Mas são equações digitadas em fonte manuscrita, de origem não identificada, montadas exatamente no formato que o corte fixo exige. Isso se aproxima do "garantir que funciona". O caderno 3 falhar e a folha admitir que não são fotos reais atenuam o problema.
 - **Anotações 2 (Space), 4 (saída como `print`) e 5 ("funcionou perfeitamente"): a folha não cai.** A execução é local e foi gravada com os dois commits. A saída mostra a quebra e a pista. Os erros estão colados e comentados: o OCR do caderno 3, a pista que entrega o passo e o x=1 errado.
 
+**Resposta da aluna à segunda e à terceira rodadas, item por item:**
+
+Segunda rodada:
+1. Concordo. A peça que escreve a pista não tinha alternativa que fizesse o mesmo trabalho. Acrescentei ao § 1 o SmolLM2 1.7B e o Gemma 3 1B para a pista, o llama.cpp para o runtime e o SymEngine para a verificação, com links e licenças conferidos, além do link do `qwen2.5:1.5b` que roda de fato no Ollama (commit `f5e5448`).
+2. Nada a mudar: o item passou.
+3. Concordo com as ressalvas: as imagens são sintéticas, montadas no formato que o corte fixo pressupõe, e o histórico dos commits foi refeito em 03/11. As duas coisas já estão declaradas na folha; a comparação com fotos reais fica para o experimento.
+
+Terceira rodada:
+1. Concordo em parte. As alternativas e as licenças agora conferem, como o próprio auditor diz. Sobre o rótulo "sem IA": [a aluna decide: ajustar o rótulo para declarar o apoio de IA, ou dizer por que o mantém]. As escolhas que o auditor chama de inércia (o printed porque já rodava, o Ollama porque o script já o chamava) ficam registradas como limite; a comparação medida, com o TrOCR handwritten e com um modelo que lê a foto direto, foi para o desenho dos experimentos.
+2. Nada a mudar: o item passou.
+3. Concordo. Faltava a resposta à segunda rodada, que agora está acima. E a frase "acrescentei alternativas para as peças de apoio", na minha primeira resposta, só ficou verdadeira depois do commit `f5e5448`, quando a pista e o runtime ganharam alternativas.
+
 ## Situação da entrega
 
 - [x] Código-fonte em pasta própria, com dependências e instruções.

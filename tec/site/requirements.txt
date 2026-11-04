@@ -1,0 +1,3 @@
+# Dependências do site, além das de tec/requirements.txt (versão instalada em 04/11/2026).
+-r ../requirements.txt
+streamlit==1.66.1
