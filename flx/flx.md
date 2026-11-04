@@ -93,8 +93,9 @@ sem foto, até o fim do bimestre.
 
 ## 4 · o que mudou na ideia, sem IA
 
-[preencha: em até 4 linhas, que passo virou regra, que peça mudou de lugar, que dado você deixou
-de guardar, e o que isso muda na ideia]
+A checagem das linhas virou regra fixa com o SymPy, e a classificação do erro, que segue com o Qwen, passou a usar uma lista fechada de categorias.
+Nisso, o Qwen 1.5B saiu do notebook de testes e foi direto para o celular da turma para rodar offline.
+Também deixei de guardar o nome do aluno e a foto do caderno, salvando só a categoria, o exercício e a data após a conferência, transformando um protótipo solto em uma ferramenta viável para escolas sem internet, que protege os menores e permite somar os erros no atlas.
 
 ## 5 · auditoria cega
 
