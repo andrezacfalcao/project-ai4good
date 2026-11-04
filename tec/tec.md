@@ -39,7 +39,7 @@ já constava do código no commit `26f14db`. A reprodução confirma que essa ba
 executa; não prova que ela é superior às alternativas. O TrOCR escolhido foi
 ajustado para texto impresso e não é um OCR matemático especializado.
 
-**Justificativa da escolha, escrita pela aluna sem IA:** pendente.
+**Justificativa da escolha, escrita pela aluna sem IA:** Decidi partir do TrOCR como modelo inicial porque eu precisava de algo leve, que rodasse em CPU, com licença (MIT) e que me deixasse ver rápido onde a leitura do manuscrito quebra na prática. Até olhei o pix2tex e o Nougat, mas o pix2tex é muito focado em fórmula isolada, e o Nougat, além de ter licença mais fechada, foi feito para ler PDF acadêmico, não foto de folha de caderno. Para não depender só de LLM tentando adivinhar matemática, coloquei o SymPy no meio para checar de forma determinística se uma linha equivale à outra. Com o SymPy a performance do Qwen 1.5B saiu de 1 de 10 para 6 de 10 na classificação (batendo os 4/10 do LAYA). O Qwen 1.5B também se encaixou muito bem na restrição de rodar offline na máquina local ocupando ~1 GB, o que garante que a foto do caderno do aluno não precise sair da escola. O único problema pedagógico é que ele acaba entregando a resposta, dá o passo corrigido e até calcula a equação (mesmo que errado).
 
 **Conferência das fontes da disciplina:** em 03/11/2026, as tentativas de abrir
 [tec-excelente](https://lucassf.pages.dev/ai4good/tec-excelente) e
