@@ -337,10 +337,11 @@ construção, sem usar a lista embaralhada; e o texto das pistas não era gravad
 [`piloto_e2_v3.py`](piloto/piloto_e2_v3.py), corrige a leitura nas duas condições e no diagnóstico, usa o
 sorteio de verdade, grava cada pista, conta as pistas dadas a resoluções que já chegavam ao x certo, e faz a
 persona responder ao pré-teste e à prova, para testar a correção automática das listas. A métrica
-"indicação errada aceita" continua fora: a persona não contesta. **Resultado: não concluído.** A primeira
-tentativa parou na primeira chamada, porque o Ollama não respondeu em 180 s; a segunda chegou a 59 das 60
-sessões e caiu quando o Ubuntu (WSL2) travou por falta de memória, e como o script só grava a tabela no fim,
-o resultado se perdeu; a terceira foi cancelada. Os registros de progresso das três estão em
+"indicação errada aceita" continua fora: a persona não contesta. **Resultado: a terceira versão não será
+rodada por ora, por falta de memória de vídeo (VRAM) nesta máquina.** A placa tem 6 GB, e o piloto carrega o
+Qwen 3B da persona e o Qwen 1.5B do Atlas ao mesmo tempo; nas tentativas, o Ollama deixou de responder e o
+Ubuntu (WSL2) travou. A primeira tentativa parou na primeira chamada, a segunda caiu no travamento antes de
+gravar a tabela, e a terceira foi cancelada. Os registros de progresso das três estão em
 [`resultados/`](piloto/resultados/) (`e2_v3_tentativa*`). Sem a tabela da terceira versão, a frase "agora o
 protocolo fecha" da emenda 4 continua sem comprovação, e os defeitos que a segunda auditoria achou na versão
 2 continuam valendo para os números dela.
@@ -422,6 +423,6 @@ scripts e o histórico do repositório, e não alterou nada.
 > rascunho com apoio de IA, a revisar pela aluna.
 
 1. Concordo em parte. Os limiares originais e o número de casos estão no commit `1a03642`, antes do piloto, e a hipótese do E1 caiu. Manter o Qwen é um desvio do pré-registro, decidido por mim depois do resultado, e a folha registra isso. Reconheço que a regra "sempre troca de sinal" era uma linha de base fraca, que empata caso a caso com o Qwen; a regra das correções típicas fica para o experimento real. Nomeei o competidor, o Qwen2.5-VL 7B, mas ele não rodou: travou a máquina por falta de memória, e isso está na emenda 5. A emenda 5 e o código da terceira versão do E2 foram commitados antes de rodar (`1681595`), e o E2 agora só roda com alunos depois que o Atlas passar no E1 real.
-2. Concordo. Pela definição literal do pré-registro, são 3 pistas com a resposta em 40, e esse número, o 63% de risco seletivo e as 6 de 40 pistas que mudam entre rodadas agora saem de `estatisticas_e1.py`. O defeito do "x = 2." foi corrigido na terceira versão do E2, mas ela não chegou ao fim, então a frase "o protocolo fecha" segue sem comprovação. A pista errada, as ablações da nota, do atlas, da conferência do passo 5, do TrOCR para letra à mão e do local contra a nuvem, e o agrupamento por aluno no intervalo ficam como limites do desenho, para o experimento real.
+2. Concordo. Pela definição literal do pré-registro, são 3 pistas com a resposta em 40, e esse número, o 63% de risco seletivo e as 6 de 40 pistas que mudam entre rodadas agora saem de `estatisticas_e1.py`. O defeito do "x = 2." foi corrigido no código da terceira versão do E2, mas ela não será rodada por ora, por falta de memória de vídeo (VRAM) nesta máquina, então a frase "o protocolo fecha" segue sem comprovação. A pista errada, as ablações da nota, do atlas, da conferência do passo 5, do TrOCR para letra à mão e do local contra a nuvem, e o agrupamento por aluno no intervalo ficam como limites do desenho, para o experimento real.
 3. Concordo em parte. O TCLE agora diz que o aplicativo erra e como o professor confere, e a instrução "uma conta por linha" virou uma pergunta para medir com alunos. Sobre o rótulo "sem IA" e o tamanho do § 4: [a aluna decide].
 
