@@ -12,6 +12,8 @@ tudo interativamente.
 
 - [tec · tecnologia base demonstrável](tec/README.md) — código, folha da atividade,
   entradas, resultados e experimentos do Atlas do Erro, reunidos em `tec/`.
+- [flx · fluxograma e arquitetura](flx/README.md) — o caminho completo do Atlas do
+  Erro, peça por peça, com custos e dados pessoais, em `flx/`.
 
 ## Estrutura do projeto
 
