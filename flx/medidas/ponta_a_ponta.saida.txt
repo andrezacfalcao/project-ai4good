@@ -1,0 +1,4 @@
+carga do TrOCR: 0.43 s
+tec/cadernos/caderno-1.png: OCR 0.66 s | SymPy 0.032 s | Qwen 0.97 s | total 1.66 s
+tec/cadernos/caderno-2.png: OCR 0.45 s | SymPy 0.012 s | Qwen 0.92 s | total 1.38 s
+tec/cadernos/caderno-3.png: OCR 0.54 s | SymPy 0.003 s | Qwen 0.82 s | total 1.36 s

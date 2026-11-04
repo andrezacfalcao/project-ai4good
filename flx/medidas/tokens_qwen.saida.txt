@@ -1,0 +1,1 @@
+tokens de entrada: [178, 172, 165] saida: [61, 80, 73] ms por chamada: [3028, 875, 810]

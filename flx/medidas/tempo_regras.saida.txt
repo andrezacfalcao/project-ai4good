@@ -1,0 +1,2 @@
+SymPy por caderno (3 linhas): mediana 4.5 ms, max 6.7 ms, n=60
+contagem do atlas (120 entradas): mediana 7 us, n=100
