@@ -62,8 +62,10 @@ acrescentados. Com eles, `./rodar.sh oficial` reproduziu a mesma saída do Mac.
 No modo adaptado, com o mesmo digest do `qwen2.5:1.5b` e o Ollama 0.32.1, o
 TrOCR e o SymPy repetiram as linhas e diagnósticos do Mac, mas as categorias e
 dicas do Qwen mudaram e variaram entre duas execuções seguidas na mesma máquina,
-apesar de `temperature: 0`. A saída do Qwen registrada é uma amostra, não um
-resultado reproduzível.
+apesar de `temperature: 0`. A variação acompanha o estado do modelo no Ollama,
+recém-carregado ou já usado; fixar `seed` não a eliminou. A saída do Qwen
+registrada é uma amostra, não um resultado reproduzível. Evidências em
+[resultados/linux-2026-11-04/](resultados/linux-2026-11-04/README.md).
 
 ## Exemplo oficial
 

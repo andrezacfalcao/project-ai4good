@@ -28,12 +28,28 @@ HF_HUB_OFFLINE=1 /usr/bin/time -p ./tec/rodar.sh adaptado   # executado duas vez
 - **TrOCR e SymPy:** as nove linhas lidas e os três diagnósticos são iguais aos
   do Mac nas duas execuções, inclusive a falha de leitura no caderno 3.
 - **Qwen:** as categorias e as dicas diferem das do Mac e também variaram entre
-  as duas execuções nesta máquina, apesar de `temperature: 0`. O código desse
-  commit não fixa `seed`.
+  as duas execuções nesta máquina, apesar de `temperature: 0`. Veja o teste de
+  variação abaixo.
 - Na primeira execução, o caderno 1 voltou a receber o passo corrigido
   (`'2X = 10 - 4'`). Na segunda, a dica do caderno 2 termina com
   "Isso resulta em $x=1$": dá um valor de x, que o prompt proíbe, e o valor está errado.
 - No caderno 3, o Qwen atribuiu uma categoria algébrica a uma falha de leitura.
+
+## Teste de variação do Qwen
+
+Duas saídas se alternaram, cada uma idêntica a uma das execuções acima:
+**A**, de `adaptado-1`, e **B**, de `adaptado-2`. Os cadernos 1 e 2 mudam; o 3 não.
+
+| Ensaio, sem mudar o código versionado | Resultado |
+| --- | --- |
+| Descarregar o modelo do Ollama e rodar duas vezes, repetido em dois ciclos | A na primeira execução e B na segunda, nos dois ciclos |
+| Cópia temporária com `"seed": 42` nas opções: três execuções com o modelo carregado e uma depois de descarregá-lo | B nas três primeiras; A depois de descarregar. O `seed` não alterou o padrão, como esperado com `temperature: 0` |
+| Cópia temporária com `"keep_alive": 0` em cada chamada, três execuções | A primeira e a segunda já diferiram entre si |
+
+A saída depende do estado do modelo no Ollama, carregado agora ou já usado,
+e não de sorteio. Nenhuma das duas opções testadas tornou a dica reproduzível,
+e nenhuma foi incorporada ao código. Não foi isolado qual mecanismo interno
+do runtime produz a diferença.
 
 Em uma instalação só com o `requirements.txt` daquele commit, o tokenizador do
 TrOCR não carregou por falta de `sentencepiece` e `protobuf`. As duas
