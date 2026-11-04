@@ -1,0 +1,26 @@
+| Atlas completo, modelo recém-carregado | pauta | 30 | 64% | 50% [33%–67%] | 21% [4%–38%] | 0.12 | 37% [20%–53%] | 0 de 16 | 0 | 0.85 |
+| Atlas completo, modelo já usado | todas | 60 | 77% | 72% [60%–82%] | 23% [12%–35%] | 0.11 | 48% [35%–60%] | 1 de 40 | 0 | 0.95 |
+| teto: transcrição certa | todas | 60 | 100% | 100% [100%–100%] | 25% [15%–38%] | 0.10 | 60% [47%–72%] | 4 de 48 | 0 | — |
+| sem o SymPy | todas | 60 | 77% | 38% [27%–52%] | 48% [33%–62%] | 0.42 | 85% [75%–93%] | 4 de 60 | 0 | — |
+| regra mais simples no lugar do Qwen | todas | 60 | 77% | 72% [60%–82%] | 23% [12%–35%] | 0.11 | 48% [35%–60%] | 0 de 40 | 0 | — |
+| Qwen 0.5B | todas | 60 | 77% | 72% [60%–82%] | 29% [17%–42%] | 0.21 | 43% [30%–57%] | 0 de 40 | 0 | 0.96 |
+| Qwen 3B | todas | 60 | 77% | 72% [60%–82%] | 31% [19%–46%] | 0.26 | 42% [30%–53%] | 1 de 40 | 0 | 1.26 |
+| sem a lista fixa de categorias | todas | 60 | 77% | 72% [60%–82%] | 0% [0%–0%] | 0.00 | 67% [55%–78%] | 4 de 40 | 40 | — |
+
+# Piloto do E1 · tabela
+
+Gerada por `piloto_e1.py`; intervalos de 95% por bootstrap sobre as resoluções (2000 reamostras, semente 2026).
+
+| condição | foto | resoluções | linhas lidas exatas | localização exata | acerto do tipo (só as com erro) | F1 macro do tipo | errado sem aviso | pistas com a resposta | categorias fora da lista | tempo da foto à pista (s) |
+|:--|:--|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+| Atlas completo, modelo recém-carregado | todas | 60 | 77% | 72% [60%–82%] | 23% [12%–35%] | 0.11 | 48% [35%–60%] | 1 de 40 | 0 | 0.99 |
+| Atlas completo, modelo recém-carregado | limpa | 30 | 90% | 93% [83%–100%] | 25% [8%–42%] | 0.10 | 60% [43%–77%] | 1 de 24 | 0 | 1.12 |
+| Atlas completo, modelo recém-carregado | pauta | 30 | 64% | 50% [33%–67%] | 21% [4%–38%] | 0.12 | 37% [20%–53%] | 0 de 16 | 0 | 0.85 |
+| Atlas completo, modelo já usado | todas | 60 | 77% | 72% [60%–82%] | 23% [12%–35%] | 0.11 | 48% [35%–60%] | 1 de 40 | 0 | 0.95 |
+| teto: transcrição certa | todas | 60 | 100% | 100% [100%–100%] | 25% [15%–38%] | 0.10 | 60% [47%–72%] | 4 de 48 | 0 | — |
+| sem o SymPy | todas | 60 | 77% | 38% [27%–52%] | 48% [33%–62%] | 0.42 | 85% [75%–93%] | 4 de 60 | 0 | — |
+| regra mais simples no lugar do Qwen | todas | 60 | 77% | 72% [60%–82%] | 23% [12%–35%] | 0.11 | 48% [35%–60%] | 0 de 40 | 0 | — |
+| Qwen 0.5B | todas | 60 | 77% | 72% [60%–82%] | 29% [17%–42%] | 0.21 | 43% [30%–57%] | 0 de 40 | 0 | 0.96 |
+| Qwen 3B | todas | 60 | 77% | 72% [60%–82%] | 31% [19%–46%] | 0.26 | 42% [30%–53%] | 1 de 40 | 0 | 1.26 |
+| sem a lista fixa de categorias | todas | 60 | 77% | 72% [60%–82%] | 0% [0%–0%] | 0.00 | 67% [55%–78%] | 4 de 40 | 40 | — |
+

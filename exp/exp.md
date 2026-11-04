@@ -105,15 +105,68 @@ já usado, e as duas rodadas são reportadas.
 
 ### 2.4 · o piloto: o que rodei, o que deu, o que mudou no desenho
 
-**o script e o commit:** [link]
+**o script e o commit:** [`piloto_e1.py`](piloto/piloto_e1.py) e [`gerar_dados.py`](piloto/gerar_dados.py),
+fixados no commit [af6094b](https://github.com/andrezacfalcao/project-ai4good/commit/af6094b) antes da
+primeira execução; saídas em [`resultados/`](piloto/resultados/), com o registro de cada caso em
+`e1_casos.jsonl`. 60 resoluções sintéticas, 12 por tipo, metade com pauta; 272 s no notebook Linux.
 
-**a tabela, colada como saiu:**
+**a tabela, colada como saiu** ([`e1.md`](piloto/resultados/e1.md)):
 
-[cole]
+| condição | foto | resoluções | linhas lidas exatas | localização exata | acerto do tipo (só as com erro) | F1 macro do tipo | errado sem aviso | pistas com a resposta | categorias fora da lista | tempo da foto à pista (s) |
+|:--|:--|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+| Atlas completo, modelo recém-carregado | todas | 60 | 77% | 72% [60%–82%] | 23% [12%–35%] | 0.11 | 48% [35%–60%] | 1 de 40 | 0 | 0.99 |
+| Atlas completo, modelo recém-carregado | limpa | 30 | 90% | 93% [83%–100%] | 25% [8%–42%] | 0.10 | 60% [43%–77%] | 1 de 24 | 0 | 1.12 |
+| Atlas completo, modelo recém-carregado | pauta | 30 | 64% | 50% [33%–67%] | 21% [4%–38%] | 0.12 | 37% [20%–53%] | 0 de 16 | 0 | 0.85 |
+| Atlas completo, modelo já usado | todas | 60 | 77% | 72% [60%–82%] | 23% [12%–35%] | 0.11 | 48% [35%–60%] | 1 de 40 | 0 | 0.95 |
+| teto: transcrição certa | todas | 60 | 100% | 100% [100%–100%] | 25% [15%–38%] | 0.10 | 60% [47%–72%] | 4 de 48 | 0 | — |
+| sem o SymPy | todas | 60 | 77% | 38% [27%–52%] | 48% [33%–62%] | 0.42 | 85% [75%–93%] | 4 de 60 | 0 | — |
+| regra mais simples no lugar do Qwen | todas | 60 | 77% | 72% [60%–82%] | 23% [12%–35%] | 0.11 | 48% [35%–60%] | 0 de 40 | 0 | — |
+| Qwen 0.5B | todas | 60 | 77% | 72% [60%–82%] | 29% [17%–42%] | 0.21 | 43% [30%–57%] | 0 de 40 | 0 | 0.96 |
+| Qwen 3B | todas | 60 | 77% | 72% [60%–82%] | 31% [19%–46%] | 0.26 | 42% [30%–53%] | 1 de 40 | 0 | 1.26 |
+| sem a lista fixa de categorias | todas | 60 | 77% | 72% [60%–82%] | 0% [0%–0%] | 0.00 | 67% [55%–78%] | 4 de 40 | 40 | — |
 
-**o que o piloto prova, e o que ele não prova:** [preencha]
+**emenda 2, 04/11/2026, depois de rodar:** lendo os registros, os dois vazamentos marcados no Atlas
+completo eram falsos: a pista só repetia o valor de x que o OCR tinha lido ("a passagem de 2x = 18 para
+x = 4", com `X=4` lido no lugar de `x = 9`), e o detector comparava a pista só com o caderno real. A
+recontagem, com as linhas lidas também valendo como "já escrito", está em
+[`recontar_pistas.py`](piloto/recontar_pistas.py); a tabela acima não foi alterada.
 
-**o que mudou no desenho por causa dele:** [preencha]
+| condição | pistas com a resposta, detector original (e1.md) | detector corrigido |
+|:--|--:|--:|
+| Atlas completo, modelo recém-carregado | 1 de 40 | 0 de 40 |
+| Atlas completo, modelo já usado | 1 de 40 | 0 de 40 |
+| teto: transcrição certa | 4 de 48 | 4 de 48 |
+| sem o SymPy | 4 de 60 | 4 de 60 |
+| regra mais simples no lugar do Qwen | 0 de 40 | 0 de 40 |
+| Qwen 0.5B | 0 de 40 | 0 de 40 |
+| Qwen 3B | 1 de 40 | 1 de 40 |
+| sem a lista fixa de categorias | 4 de 40 | 4 de 40 |
+
+**o que o piloto prova, e o que ele não prova:** a hipótese não se sustentou. A localização exata da
+quebra deu 72% [60%–82%], abaixo do limiar de 80%; e o Qwen 1.5B acertou o tipo do erro em 23%,
+exatamente o mesmo da regra mais simples, porque chamou de "troca de sinal" todos os 37 erros que
+classificou (11 de 12 troca de sinal certos; 0 de 12 em conta, distributiva e divisão). Pelo critério
+pré-registrado, vindo do brw, nesse empate o modelo sai. O terceiro critério passou só depois da emenda
+2: 0 de 40 pistas com a resposta, contra 4 de 48 no teto e 4 de 40 sem a lista fixa. A tabela mostra de
+onde vem cada erro: com a transcrição certa, a localização vai a 100%, então o SymPy acerta sempre e a
+falha de localização é toda da leitura, que cai de 90% das linhas na foto limpa para 64% com pauta (a
+localização, de 93% para 50%). O tipo do erro é falha do Qwen, que continua em 25% mesmo lendo certo.
+Sem o SymPy, a localização cai para 38% e o erro sem aviso sobe para 85%: o SymPy vale o seu lugar. Mas
+sem o SymPy o Qwen classifica melhor (48%, com 12 de 12 distributivas): o texto do diagnóstico no prompt
+parece puxar a resposta para "troca de sinal", o que é uma hipótese para testar, não um resultado. O 3B
+(31%) e o 0.5B (29%) não mudam o quadro: o 3B troca o viés e erra todas as troca de sinal. Sem a lista
+fixa, as 40 categorias saem fora da lista, e o atlas não teria o que somar. As duas rodadas do Atlas, com
+o modelo recém-carregado e já usado, deram o mesmo resultado aqui, o que não prova que a saída seja
+estável em geral. O caminho da foto à pista levou cerca de 1 s no notebook. O piloto não prova nada
+sobre escrita real, cadernos de verdade, celular ou alunos: são 60 imagens digitadas em três fontes, com
+erros injetados por um gerador de quatro tipos.
+
+**o que mudou no desenho por causa dele:** (1) a foto com pauta é onde a leitura quebra: o experimento
+real reporta tudo separado por tipo de foto e mede quantas linhas o aluno corrige na conferência do
+passo 5. (2) o detector de pista com a resposta passa a considerar o que o sistema leu (emenda 2). (3) o
+Qwen, do jeito pré-registrado, não ganhou da regra: o experimento real compara o Qwen com a regra das
+correções típicas (o plano B do flx, ainda a implementar) e com o prompt sem o texto do SymPy, num
+conjunto novo de resoluções, e não neste, que já foi visto. Os limiares não mudam.
 
 ## 3 · E2 · o aluno aprende mais com a pista do que com o gabarito
 
@@ -172,20 +225,46 @@ bootstrap sobre os alunos, sem caça a valor-p ([Dragicevic, 2016](https://doi.o
 
 ### 3.4 · o piloto: o que rodei, o que deu, o que mudou no desenho
 
-**o script e o commit:** [link]
+**o script e o commit:** [`piloto_e2.py`](piloto/piloto_e2.py), fixado no commit
+[656a160](https://github.com/andrezacfalcao/project-ai4good/commit/656a160) antes de rodar; registros
+em `resultados/e2_sessoes.jsonl`. A persona é o Qwen 3B fazendo o papel de um aluno que às vezes erra,
+em 6 sessões de 5 exercícios por condição. Ela testa o protocolo e os scripts, nunca a ideia.
 
-**a tabela, colada como saiu:**
+**a tabela, colada como saiu** ([`e2.md`](piloto/resultados/e2.md)):
 
-[cole]
+- sorteio de 30 participantes: 15 em A e 15 em B
+- pré-teste e prova: 10 equações cada, sorteadas da mesma forma; listas diferentes entre si: True; mesmo perfil de coeficientes e sinais: False
 
-**o que o piloto prova, e o que ele não prova:** [preencha]
+| condição | exercícios | resolvidos de primeira | resolvidos depois do retorno (gabarito ou pista) | chamadas ao professor | pistas por exercício | JSON inválido da persona | linhas que o SymPy não lê | pistas com a resposta | sessões sem fim | tempo por exercício (s) |
+|:--|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+| A · gabarito do livro | 30 | 12 | 0 | 0 | 0.00 | 4 | 0 | 0 de 0 | 1 | 21.9 |
+| B · Atlas | 30 | 9 | 9 | 0 | 0.63 | 0 | 44 | 0 de 19 | 12 | 3.0 |
 
-**o que mudou no desenho por causa dele:** [preencha]
+**o que o piloto prova, e o que ele não prova:** o protocolo roda de ponta a ponta e o sorteio fica
+balanceado (15 e 15), mas o piloto achou quatro defeitos de instrumento. (1) O pré-teste e a prova,
+sorteados separadamente, não têm o mesmo perfil de coeficientes e sinais: a diferença entre as duas
+mediria também a diferença das listas. (2) A persona escreve frases e símbolos que o SymPy não lê
+("Subtraia 8 de ambos os lados: 2x = 12", "÷"): foram 44 linhas ilegíveis na condição B. (3) Sem regra
+para leitura ilegível repetida, 12 das 30 sessões da condição B terminaram sem fim, e a chamada ao
+professor depois de 3 pistas nunca foi acionada. (4) A coluna "resolvidos depois do retorno" junta quem
+resolveu depois de uma pista com quem só reescreveu uma linha ilegível. Nenhuma das 19 pistas deu a
+resposta. Os acertos, os tempos e a diferença entre A e B não dizem nada sobre alunos: a persona é um
+modelo de linguagem, sem pressa, sem caderno e sem professor ao lado ([Agnew et al., CHI 2024](https://doi.org/10.1145/3613904.3642703)).
+
+**o que mudou no desenho por causa dele:** (1) o pré-teste e a prova passam a ser listas pareadas,
+item a item, com o mesmo coeficiente e o mesmo sinal e números diferentes. (2) duas leituras ilegíveis
+seguidas também chamam o professor, como 3 pistas. (3) antes do experimento real, a instrução ao aluno
+fica "uma conta por linha, sem frases", e o experimento mede quantas linhas ainda assim ficam ilegíveis.
+(4) a tabela separa "resolveu depois da pista" de "resolveu depois de reescrever".
 
 ## 4 · o que mudou na ideia, sem IA
 
-[preencha: em até 4 linhas, que competidor entrou, que peça mudou, que passo do fluxograma o
-experimento pediu, e o que isso muda na ideia]
+> rascunho com apoio de IA, a revisar pela aluna.
+
+O piloto derrubou a minha hipótese: a quebra foi achada em 72% das resoluções, e o Qwen 1.5B chamou todo erro de troca de sinal, empatando com uma regra que sempre diz isso. Essa regra entrou como competidor de verdade, e pelo meu próprio critério o Qwen só fica no passo 7 se ganhar dela no experimento real.
+O SymPy ganhou o lugar dele (sem ele, a localização cai para 38%), e a lista fixa também (sem ela, nenhuma categoria serve ao atlas).
+A pauta é onde a ideia quebra: a leitura cai de 90% para 64% das linhas, então a conferência do aluno no passo 5 deixa de ser detalhe e vira medida do experimento.
+O piloto com persona pediu dois passos novos no fluxograma: duas leituras ilegíveis seguidas chamam o professor, e o aluno escreve uma conta por linha, sem frases.
 
 ## 5 · auditoria cega
 

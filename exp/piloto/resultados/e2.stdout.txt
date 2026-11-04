@@ -1,0 +1,73 @@
+A conferiu o gabarito 0
+A resolveu de primeira 0
+A conferiu o gabarito 0
+A conferiu o gabarito 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A conferiu o gabarito 0
+A conferiu o gabarito 0
+A conferiu o gabarito 0
+A resolveu de primeira 0
+A conferiu o gabarito 0
+A conferiu o gabarito 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A sem fim 0
+A conferiu o gabarito 0
+A conferiu o gabarito 0
+A conferiu o gabarito 0
+A resolveu de primeira 0
+A conferiu o gabarito 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A conferiu o gabarito 0
+A conferiu o gabarito 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A conferiu o gabarito 0
+A conferiu o gabarito 0
+A conferiu o gabarito 0
+B sem fim 1
+B sem fim 1
+B resolveu depois da pista 0
+B sem fim 2
+B sem fim 1
+B resolveu depois da pista 0
+B resolveu depois da pista 1
+B resolveu de primeira 0
+B resolveu depois da pista 0
+B resolveu de primeira 0
+B resolveu depois da pista 2
+B resolveu de primeira 0
+B sem fim 2
+B sem fim 2
+B resolveu depois da pista 1
+B sem fim 1
+B resolveu depois da pista 0
+B resolveu de primeira 0
+B resolveu de primeira 0
+B resolveu de primeira 0
+B sem fim 1
+B sem fim 1
+B resolveu de primeira 0
+B resolveu depois da pista 0
+B sem fim 1
+B sem fim 1
+B resolveu de primeira 0
+B resolveu de primeira 0
+B resolveu depois da pista 0
+B sem fim 1
+
+# Piloto do E2 · protocolo com persona de IA
+
+Gerada por `piloto_e2.py`. A persona é um modelo de linguagem: os números abaixo testam o protocolo, não dizem nada sobre alunos.
+
+- sorteio de 30 participantes: 15 em A e 15 em B
+- pré-teste e prova: 10 equações cada, sorteadas da mesma forma; listas diferentes entre si: True; mesmo perfil de coeficientes e sinais: False
+
+| condição | exercícios | resolvidos de primeira | resolvidos depois do retorno (gabarito ou pista) | chamadas ao professor | pistas por exercício | JSON inválido da persona | linhas que o SymPy não lê | pistas com a resposta | sessões sem fim | tempo por exercício (s) |
+|:--|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+| A · gabarito do livro | 30 | 12 | 0 | 0 | 0.00 | 4 | 0 | 0 de 0 | 1 | 21.9 |
+| B · Atlas | 30 | 9 | 9 | 0 | 0.63 | 0 | 44 | 0 de 19 | 12 | 3.0 |
+

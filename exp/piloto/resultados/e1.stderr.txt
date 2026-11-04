@@ -1,0 +1,14 @@
+Loading weights:   0%|          | 0/360 [00:00<?, ?it/s]Loading weights:  41%|████      | 146/360 [00:00<00:00, 1457.61it/s]Loading weights: 100%|██████████| 360/360 [00:00<00:00, 2088.20it/s]
+[transformers] [1mVisionEncoderDecoderModel LOAD REPORT[0m from: microsoft/trocr-small-printed
+Key                         | Status  | 
+----------------------------+---------+-
+encoder.pooler.dense.weight | MISSING | 
+encoder.pooler.dense.bias   | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+/Documentos/ai4good/project-ai4good/tec/.venv/lib/python3.14/site-packages/transformers/generation/utils.py:1969: UserWarning: Using the model-agnostic default `max_length` (=21) to control the generation length. We recommend setting `max_new_tokens` to control the maximum length of the generation.
+  warnings.warn(
+real 272.58
+user 216.85
+sys 4.70
