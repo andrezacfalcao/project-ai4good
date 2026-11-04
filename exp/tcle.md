@@ -27,8 +27,11 @@ pesquisa; eles assinam um termo de sigilo. Até o fim do semestre, a foto é apa
 quantas dicas o aluno pediu e quanto tempo levou. Nada disso vai para a internet. Os resultados da
 pesquisa são publicados só em números da turma, sem identificar ninguém.
 
-**Riscos.** O risco é pequeno: o aluno pode se sentir desconfortável ao errar. Se isso acontecer,
-pode parar a qualquer momento. A pesquisa não muda a nota de ninguém.
+**Riscos.** O aluno pode se sentir desconfortável ao errar; se isso acontecer, pode parar a qualquer
+momento. O aplicativo também erra: num teste com contas de mentira, ele apontou a linha errada ou o tipo de
+erro errado em cerca de metade das vezes, e algumas dicas davam a resposta ou falavam de um erro que não
+existia. Por isso o professor fica na sala o tempo todo, o aluno pode dizer que o aplicativo errou, e o
+professor confere. A pesquisa não muda a nota de ninguém.
 
 **Benefícios.** O aluno pratica as contas do currículo e pode descobrir que tipo de erro costuma
 cometer. A pesquisa ajuda a saber se esse tipo de aplicativo ensina ou atrapalha.
@@ -55,6 +58,7 @@ sem dar a resposta. Queremos saber se isso ajuda você a aprender.
 
 - Você resolve as contas no caderno, como sempre, e o professor tira uma foto.
 - Às vezes o aplicativo vai mostrar uma dica. Você pode pedir outra, ou chamar o professor.
+- O aplicativo **pode errar**: apontar a linha errada ou dar uma dica que não ajuda. Se parecer estranho, chame o professor.
 - Se achar que o aplicativo errou, você pode dizer isso, e o professor confere.
 - No começo, e uma semana depois das duas aulas, você faz uma provinha de 10 contas, sem ajuda.
 - Quem vê a foto é a pesquisadora e dois professores que conferem as contas.

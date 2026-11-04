@@ -1,0 +1,59 @@
+P13 A resolveu de primeira 0
+P13 A resolveu de primeira 0
+P13 A resolveu depois de reescrever 0
+P13 A resolveu de primeira 0
+P13 A resolveu de primeira 0
+P09 A resolveu de primeira 0
+P09 A resolveu de primeira 0
+P09 A resolveu de primeira 0
+P09 A não resolveu depois do gabarito 0
+P09 A resolveu de primeira 0
+P07 A resolveu de primeira 0
+P07 A resolveu de primeira 0
+P07 A resolveu depois de reescrever 0
+P07 A resolveu de primeira 0
+P07 A resolveu depois de reescrever 0
+P03 A resolveu depois de reescrever 0
+P03 A resolveu de primeira 0
+P03 A resolveu depois de reescrever 0
+P03 A resolveu de primeira 0
+P03 A resolveu depois de reescrever 0
+P27 A resolveu de primeira 0
+P27 A resolveu de primeira 0
+P27 A chamou o professor (ilegível) 0
+P27 A resolveu depois de reescrever 0
+P27 A resolveu de primeira 0
+P06 A resolveu de primeira 0
+P06 A resolveu depois de reescrever 0
+P06 A não resolveu depois do gabarito 0
+P06 A resolveu depois do gabarito 0
+P06 A resolveu depois do gabarito 0
+P15 B resolveu de primeira 0
+P15 B resolveu de primeira 0
+P15 B resolveu depois da pista 1
+P15 B resolveu de primeira 0
+P15 B resolveu depois de reescrever 0
+P16 B resolveu de primeira 0
+P16 B resolveu de primeira 0
+P16 B resolveu depois de reescrever 2
+P16 B chamou o professor (3 pistas) 3
+P16 B resolveu de primeira 0
+P26 B resolveu de primeira 0
+P26 B resolveu de primeira 0
+P26 B resolveu de primeira 0
+P26 B chamou o professor (3 pistas) 3
+P26 B resolveu de primeira 0
+P19 B resolveu de primeira 0
+P19 B resolveu depois de reescrever 2
+P19 B resolveu de primeira 0
+P19 B resolveu de primeira 0
+P19 B chamou o professor (3 pistas) 3
+P14 B resolveu de primeira 0
+P14 B resolveu de primeira 0
+P14 B resolveu de primeira 0
+P14 B resolveu de primeira 0
+P14 B resolveu de primeira 0
+P18 B chamou o professor (3 pistas) 3
+P18 B resolveu de primeira 0
+P18 B resolveu de primeira 0
+P18 B resolveu de primeira 0
