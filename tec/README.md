@@ -31,12 +31,12 @@ As três imagens incluídas são **sintéticas**, não fotos de estudantes.
 
 ## Instalar em outro ambiente
 
-Instale o Python e o [Ollama](https://ollama.com/download). Na raiz do repositório:
+Instale o [uv](https://docs.astral.sh/uv/) e o [Ollama](https://ollama.com/download). Na raiz do repositório:
 
 ```bash
 cd tec
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
+uv venv --python 3.14.6 .venv
+uv pip install --python .venv/bin/python -r requirements.txt
 ```
 
 Em outro terminal, se o aplicativo Ollama ainda não estiver em execução:
@@ -53,10 +53,17 @@ ollama pull qwen2.5:1.5b
 ./rodar.sh adaptado
 ```
 
-A primeira execução do OCR baixa os pesos. A instalação em um ambiente limpo
-ainda não foi testada; as versões do `requirements.txt` são as do ambiente
-que executou esta demonstração. O registro completo está em
-[resultados/ambiente.json](resultados/ambiente.json).
+A primeira execução do OCR baixa os pesos. As versões do `requirements.txt` são
+as do ambiente que executou esta demonstração, registrado em
+[resultados/ambiente.json](resultados/ambiente.json). Em 04/11/2026, uma
+instalação limpa com uv no Linux (WSL2, Python 3.14.6) mostrou que faltavam
+`sentencepiece` e `protobuf` para carregar o tokenizador; ambos foram
+acrescentados. Com eles, `./rodar.sh oficial` reproduziu a mesma saída do Mac.
+No modo adaptado, com o mesmo digest do `qwen2.5:1.5b` e o Ollama 0.32.1, o
+TrOCR e o SymPy repetiram as linhas e diagnósticos do Mac, mas as categorias e
+dicas do Qwen mudaram e variaram entre duas execuções seguidas na mesma máquina,
+apesar de `temperature: 0`. A saída do Qwen registrada é uma amostra, não um
+resultado reproduzível.
 
 ## Exemplo oficial
 

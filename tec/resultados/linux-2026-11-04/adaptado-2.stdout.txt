@@ -1,0 +1,21 @@
+[cadernos/caderno-1.png]
+  trocr : ['2X + 4 =10', '2X = 10 + 4', 'X=7']
+  sympy : quebra na linha 2: '2X + 4 =10' -> '2X = 10 + 4'
+  qwen  : {
+    "categoria_erro": "Revisão de passos",
+    "dica_aluno": "Revise o processo de resolução da equação. A partir do ponto onde a equação foi desestruturada, verifique se todos os passos foram seguidos corretamente."
+}
+[cadernos/caderno-2.png]
+  trocr : ['3X-6=9', '3X= 9 - 6', 'X=1']
+  sympy : quebra na linha 2: '3X-6=9' -> '3X= 9 - 6'
+  qwen  : {
+    "categoria_erro": "Revisão de passos",
+    "dica_aluno": "Revise a regra de sinais e o processo de resolução da equação. A equação original é $3x-6=9$, mas você resolveu corrigindo para $3x=9-6$. Isso resulta em $x=1$."
+}
+[cadernos/caderno-3.png]
+  trocr : ['4X+8-20', '4X=20+8', '* * *']
+  sympy : falha de OCR na linha 1 ('4X+8-20' sem '=')
+  qwen  : {
+    "categoria_erro": "Falta de Inversão do Sinal",
+    "dica_aluno": "Revisar a passagem para garantir que todos os termos com x estejam na mesma parte da equação. A linha correta seria: 4X - 20 + 8 = 0."
+}

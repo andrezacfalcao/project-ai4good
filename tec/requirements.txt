@@ -3,3 +3,9 @@ torch==2.14.0
 transformers==5.21.0
 Pillow==12.3.0
 sympy==1.14.0
+huggingface-hub==2.3.0
+# Acrescentadas em 04/11/2026: a instalacao limpa no Linux falhou ao carregar
+# o tokenizador do TrOCR (sentencepiece.bpe.model) sem estes dois pacotes.
+# Versoes as instaladas nessa verificacao; as do Mac nao foram registradas.
+sentencepiece==0.2.2
+protobuf==7.36.2
