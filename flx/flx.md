@@ -21,7 +21,7 @@ O modelo TrOCR leu certo 7 das 9 linhas das três resoluções sintéticas, e o 
 
 ## 1 · o fluxograma
 
-**o diagrama:** [arquitetura.md](https://github.com/andrezacfalcao/project-ai4good/blob/main/flx/arquitetura.md), commit [1cc95a5](https://github.com/andrezacfalcao/project-ai4good/commit/1cc95a5c82319676e35a7f0a0a14d4e789dd7cc8)
+**o diagrama:** [arquitetura.md](https://github.com/andrezacfalcao/project-ai4good/blob/main/flx/arquitetura.md), commit [0ce9cd4](https://github.com/andrezacfalcao/project-ai4good/commit/0ce9cd496abc8f34e7be97b21cf4bbf440bcaf8f)
 
 Decisões tomadas a partir do brw: no protótipo, há um celular por turma, usado pelo professor
 (brw, § 6c), e o modelo de linguagem pequeno no aparelho diz o tipo do erro e escreve a pista
@@ -73,7 +73,7 @@ lista por semana e uma página por aluno: 120 fotos por mês, de umas 3 a 10 lin
 
 ## 3 · a arquitetura: onde roda cada peça e para onde vão os dados
 
-**o diagrama, com as caixas de onde cada peça roda:** [arquitetura.md](https://github.com/andrezacfalcao/project-ai4good/blob/main/flx/arquitetura.md), commit [c8bfa30](https://github.com/andrezacfalcao/project-ai4good/commit/c8bfa3017230f8f2e76a18138dbfde045a08fdbf)
+**o diagrama, com as caixas de onde cada peça roda:** [arquitetura.md](https://github.com/andrezacfalcao/project-ai4good/blob/main/flx/arquitetura.md), commit [30f67c3](https://github.com/andrezacfalcao/project-ai4good/commit/30f67c35594d26b0adb69ecae5308fe9816e3b97)
 
 | dado pessoal | de quem é | onde fica | quem vê | por quanto tempo | quando é apagado |
 |:--|:--|:--|:--|:--|:--|
