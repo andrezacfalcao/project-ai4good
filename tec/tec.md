@@ -205,7 +205,17 @@ digest do `qwen2.5:1.5b` no Ollama 0.32.1, com o Qwen na GPU RTX 4050:
 
 ## 4 · vídeo da demonstração
 
-**Link do vídeo:** [Video](https://drive.google.com/file/d/1auHyJb5qa_uDFswh9zUXax5qJdmKNlb0/view?usp=sharing).
+**Vídeo principal:** [Video 1 · o site](https://drive.google.com/file/d/1-ct-GKpXaxznFNp-nCpFA1pOvC23qaS5/view?usp=sharing).
+
+Gravação de 79 s, feita em 04/11/2026 no Linux (WSL2), com o [site local](site/README.md) rodando a partir
+do código-fonte. Mostra os três cadernos do tec, um de cada vez: o recorte e a leitura de cada linha (passos
+3 e 4), a transcrição para conferir (passo 5), a quebra apontada pelo SymPy (passo 6), a categoria e a pista
+do Qwen (passo 7) e a conferência com o gabarito. Depois roda os três cadernos de uma vez (linhas lidas,
+quebra e tipo do erro certos nos três, cerca de 1,2 s por imagem) e mostra a aba "Sobre". O site usa o
+recorte pelos vãos do flx, e por isso o caderno 3, com pauta, é lido certo, ao contrário do § 3. O link abre
+sem login.
+
+**Vídeo secundário:** [Video 2 · o terminal](https://drive.google.com/file/d/1auHyJb5qa_uDFswh9zUXax5qJdmKNlb0/view?usp=sharing).
 
 Gravação de 70 s, feita em 04/11/2026 no Linux (WSL2) a partir do código-fonte,
 seguindo o [roteiro](VIDEO.md). Mostra, nesta ordem: `git log --oneline -n 2 -- tec/ler_caderno.py`
