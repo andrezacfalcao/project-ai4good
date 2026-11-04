@@ -67,7 +67,7 @@ lista por semana e uma página por aluno: 120 fotos por mês, de umas 3 a 10 lin
 
 ## 3 · a arquitetura: onde roda cada peça e para onde vão os dados
 
-**o diagrama, com as caixas de onde cada peça roda:** [link do commit que as acrescentou]
+**o diagrama, com as caixas de onde cada peça roda:** [arquitetura.md](https://github.com/andrezacfalcao/project-ai4good/blob/main/flx/arquitetura.md), commit [c8bfa30](https://github.com/andrezacfalcao/project-ai4good/commit/c8bfa3017230f8f2e76a18138dbfde045a08fdbf)
 
 | dado pessoal | de quem é | onde fica | quem vê | por quanto tempo | quando é apagado |
 |:--|:--|:--|:--|:--|:--|
