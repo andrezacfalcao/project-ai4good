@@ -21,7 +21,7 @@ flowchart TD
         G{{"7 · tipo do erro, de uma lista fixa, e pista sem a resposta (Qwen)"}}
         H(["8 · aluno vê a quebra, a categoria e a pista; pode contestar e escolhe se entra no atlas"])
         I(["9 · professor confirma ou troca a categoria contestada"])
-        J["10 · outra pista: o passo 7 roda de novo, mais claro; depois de 3, chama o professor"]
+        J["10 · outra pista: o passo 7 roda de novo, mais claro; depois de 3, ou de 2 leituras ilegíveis, chama o professor"]
         L(["12 · aluno corrige no caderno; nova foto"])
         N["13 · nota: corrigir recupera parte do ponto, nunca mais que acertar de primeira"]
         O["14 · ao fechar o exercício, uma entrada no atlas: categoria final, exercício e semana, só de quem aceitou"]
@@ -42,6 +42,7 @@ flowchart TD
     B -- "foto, só na memória do app" --> C
     C --> D --> E
     E -- "foto ilegível" --> B
+    E -- "2 leituras ilegíveis seguidas" --> K
     E --> F
     F -- "sem quebra" --> N
     F -- "quebra" --> G --> H
