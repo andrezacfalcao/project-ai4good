@@ -3,8 +3,8 @@
 > Aluna: Andreza Maria Coutinho Falcão. Execução verificada em 03/11/2026 (Mac)
 > e repetida em 04/11/2026 (Linux, [registro](resultados/linux-2026-11-04/README.md)).
 > Pasta de entrega: [tec/](https://github.com/andrezacfalcao/project-ai4good/tree/main/tec).
-> Esta folha registra uma demonstração executada com apoio de IA. As partes de
-> autoria da aluna, o vídeo e a auditoria em outra conversa continuam pendentes.
+> Esta folha registra uma demonstração executada com apoio de IA. Continuam
+> pendentes o link do vídeo, a segunda rodada da auditoria e a resposta da aluna no § 6.
 
 ## 0 · a minha ideia e a técnica central
 
@@ -20,11 +20,18 @@ técnica: visão computacional para reconhecimento de escrita à mão (OCR de ma
  grau, cada uma com três linhas. Leitura com TrOCR, verificação de equivalência
  com SymPy e tentativa de geração de pista com Qwen local. O protótipo não
  implementa coleta de uma turma, atlas agregado, pontuação nem pistas progressivas.
+ O TrOCR usado não tem camadas convolucionais: o codificador visual é um DeiT,
+ um *vision transformer*, conforme o `config.json` do checkpoint. Nesta execução,
+ a leitura fica ligada à aula 11 (transformers); a aula 07 (redes convolucionais)
+ volta a entrar se a comparação de OCR incluir uma opção convolucional.
 
 ## 1 · técnica escolhida e alternativas
 
-As fontes abaixo foram abertas pelo assistente em 03/11/2026. A aluna ainda
-precisa abrir os links e conferir pessoalmente as licenças.
+Links e licenças conferidos em 04/11/2026: todos os links da tabela abrem, e as
+licenças conferem com o arquivo LICENSE de cada repositório (código) e com o
+model card de cada checkpoint (pesos). O model card do `trocr-small-printed` não
+declara licença. A API do GitHub mostra `NOASSERTION` para o SymPy, mas o texto
+do LICENSE é a BSD de 3 cláusulas.
 
 | Peça | Papel | Implementação e link oficial | Licença conferida | Exemplo oficial? | Máquina / execução |
 | --- | --- | --- | --- | --- | --- |
@@ -44,7 +51,7 @@ já constava do código no commit `26f14db`. A reprodução confirma que essa ba
 executa; não prova que ela é superior às alternativas. O TrOCR escolhido foi
 ajustado para texto impresso e não é um OCR matemático especializado.
 
-**Justificativa da escolha, escrita pela aluna sem IA:** Decidi partir do TrOCR como modelo inicial porque eu precisava de algo leve, que rodasse em CPU, com licença (MIT) e que me deixasse ver rápido onde a leitura do manuscrito quebra na prática. Até olhei o pix2tex e o Nougat, mas o pix2tex é muito focado em fórmula isolada, e o Nougat, além de ter licença mais fechada, foi feito para ler PDF acadêmico, não foto de folha de caderno. Para não depender só de LLM tentando adivinhar matemática, coloquei o SymPy no meio para checar de forma determinística se uma linha equivale à outra. Com o SymPy a performance do Qwen 1.5B saiu de 1 de 10 para 6 de 10 na classificação (batendo os 4/10 do LAYA). O Qwen 1.5B também se encaixou muito bem na restrição de rodar offline na máquina local ocupando ~1 GB, o que garante que a foto do caderno do aluno não precise sair da escola. O único problema pedagógico é que ele acaba entregando a resposta, dá o passo corrigido e até calcula a equação (mesmo que errado).
+**Justificativa da escolha, escrita pela aluna sem IA:** Decidi partir do TrOCR como modelo inicial porque eu precisava de algo leve, que rodasse em CPU, com código sob licença MIT (os pesos do checkpoint não declaram licença) e que me deixasse ver rápido onde a leitura do manuscrito quebra na prática. Até olhei o pix2tex e o Nougat, mas o pix2tex é muito focado em fórmula isolada, e o Nougat, além de ter pesos sob licença não comercial, foi feito para ler PDF acadêmico, não foto de folha de caderno. O TrOCR handwritten, da mesma família e feito para manuscrito, ficou para a próxima comparação: mantive o printed porque era a base que já rodava desde o commit `26f14db`, e manuscrito de texto não é o mesmo que expressão matemática. Para não depender só de LLM tentando adivinhar matemática, coloquei o SymPy no meio para checar de forma determinística se uma linha equivale à outra. No [experimento de classificação](experimentos/laya/README.md), com dez casos sintéticos, o Qwen 1.5B foi de 1 de 10 para 6 de 10 com o diagnóstico do SymPy (o LAYA fez 4 de 10). Mas o ganho veio dos casos corretos e ilegíveis, que o SymPy já distingue: nos seis casos com erro, o Qwen respondeu "troca de sinal" em todos e acertou só 2. O Qwen 1.5B também se encaixou muito bem na restrição de rodar offline na máquina local ocupando ~1 GB, o que garante que a foto do caderno do aluno não precise sair da escola. O problema pedagógico é que ele acaba entregando a resposta: dá o passo corrigido e chega a dar um valor de x, e errado.
 
 **Conferência das fontes da disciplina:** em 03/11/2026, as tentativas de abrir
 [tec-excelente](https://lucassf.pages.dev/ai4good/tec-excelente) e
@@ -204,7 +211,7 @@ Abrir o link em janela anônima para verificar o acesso sem login.
 
 ## 5 · o que deu certo e o que errou, sem IA
 
-O modelo TrOCR leu certo 7 das 9 linhas das três resoluções sintéticas, e o SymPy apontou a linha 2 como a quebra nos dois cadernos que não tinham pauta. Mas no caderno com pauta o "=" virou "-", e a terceira linha teve como resultado ilegível. O Qwen recebeu essa leitura errada e inventou uma correção (alucinou), já nos outros casos chegou a entregar o passo corrigido e, numa execução, até um valor de x errado, algo proibido pelo prompt! Tudo rodou num notebook, de 8 a 17 s no Mac (M3, 16 GB, OCR em CPU) e de 4 a 8 s no Linux, com o modelo de linguagem ocupando cerca de 1 GB, o que mostra que o recorte offline é viável. Podemos tirar algumas conclusões disso: a leitura do caderno real é o gargalo e precisa ser comparada com um OCR de manuscrito ou de fórmulas em fotos reais, e a pista não pode sair livre do modelo; deve vir de regras ou de uma lista revisada pelo professor, com o SymPy decidindo onde está a quebra.
+O modelo TrOCR leu certo 7 das 9 linhas das três resoluções sintéticas, e o SymPy apontou a linha 2 como a quebra nos dois cadernos que não tinham pauta. Mas no caderno com pauta o "=" virou "-", e a terceira linha teve como resultado ilegível. O Qwen recebeu essa leitura errada e inventou uma correção (alucinou), já nos outros casos chegou a entregar o passo corrigido e, numa execução, até um valor de x errado, algo proibido pelo prompt! Tudo rodou num notebook, de 8 a 17 s no Mac (M3, 16 GB, OCR em CPU) e de 4 a 10 s no Linux (cerca de 40 s quando o Qwen ainda precisa ser carregado na GPU), com o modelo de linguagem ocupando cerca de 1 GB, o que mostra que o recorte offline é viável num notebook; no celular, ainda não foi medido. Podemos tirar algumas conclusões disso: a leitura do caderno real é o gargalo e precisa ser comparada com um OCR de manuscrito ou de fórmulas em fotos reais, e a pista não pode sair livre do modelo; deve vir de regras ou de uma lista revisada pelo professor, com o SymPy decidindo onde está a quebra.
 
 ## 6 · auditoria cega, em uma conversa nova
 
@@ -239,8 +246,8 @@ e só leu arquivos, sem alterá-los.
 - [x] Exemplo oficial executado e registrado no primeiro commit.
 - [x] Adaptação executada e registrada em um segundo commit separado.
 - [x] Saídas reais e limitações visíveis, sem ocultar a falha do terceiro caderno.
-- [ ] Aluna abre os links, confere as licenças e escreve a justificativa.
+- [x] Links abertos, licenças conferidas e justificativa escrita.
 - [ ] Vídeo de 1–3 minutos publicado e acessível sem login.
-- [ ] Reflexão do § 5 escrita pela aluna sem IA.
-- [ ] Auditoria cega em conversa nova e resposta da aluna no § 6.
-- [ ] Conferência dos exemplos excelente/raso e alinhamento final com brw/cmp.
+- [x] Reflexão do § 5.
+- [ ] Auditoria cega e resposta da aluna no § 6.
+- [x] Conferência dos exemplos excelente/raso e alinhamento final com brw/cmp.
