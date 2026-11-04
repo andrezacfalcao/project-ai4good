@@ -21,7 +21,7 @@ O modelo TrOCR leu certo 7 das 9 linhas das três resoluções sintéticas, e o 
 
 ## 1 · o fluxograma
 
-**o diagrama:** [arquitetura.md](https://github.com/andrezacfalcao/project-ai4good/blob/main/flx/arquitetura.md)
+**o diagrama:** [arquitetura.md](https://github.com/andrezacfalcao/project-ai4good/blob/main/flx/arquitetura.md), commit [1cc95a5](https://github.com/andrezacfalcao/project-ai4good/commit/1cc95a5c82319676e35a7f0a0a14d4e789dd7cc8)
 
 Decisões tomadas a partir do brw: no protótipo, há um celular por turma, usado pelo professor
 (brw, § 6c), e as pistas vêm de uma lista escrita pelo professor, como o piloto do brw prevê
@@ -32,7 +32,7 @@ quando o modelo dá pista errada ou com a resposta (brw, § 6b), o que o tec obs
 | 1 | aluno resolve a lista à mão, no caderno | pessoa | |
 | 2 | professor fotografa a página no celular da turma | pessoa | |
 | 3 | separar a foto em linhas, pelos vãos entre as linhas escritas | regra | |
-| 4 | transcrever cada linha (TrOCR) | IA | [preencha] |
+| 4 | transcrever cada linha (TrOCR) | IA | Cada aluno/pessoa pode escrever de uma forma, a IA entra justamente para fazer essa transcrição independente do formato/escrita do aluno.  |
 | 5 | aluno confere a transcrição na tela e corrige o que foi mal lido | pessoa | |
 | 6 | achar a primeira linha que não é equivalente à anterior (SymPy) | regra | |
 | 7 | tipo do erro: testar no SymPy as correções típicas da linha errada (devolver o sinal do termo que mudou de lado, refazer a distributiva, refazer a conta); a que devolve a equivalência dá a categoria; nenhuma vira "outro" | regra | |
@@ -50,11 +50,20 @@ em palavras, em que o erro está em montar a equação, ficam fora do recorte do
 
 ## 2 · as peças: o que entra, o que sai, onde roda e quanto custa
 
-**a escala do custo por mês:** [preencha]
+**a escala do custo por mês:** uma turma de 30 alunos, os 30 cadernos do piloto do brw, com uma
+lista por semana e uma página por aluno: 120 fotos por mês, de umas 3 a 10 linhas cada. [confirme a escala]
 
 | peça | entra | sai | onde roda, e por quê | tempo e máquina por uso | R$ por mês na escala | medido ou estimado · fonte e data |
 |:--|:--|:--|:--|:--|:--|:--|
-| [preencha] | | | | | | |
+| celular da turma (câmera e tela) | a página do caderno | a foto; na tela, a transcrição, a linha da quebra e a pista | celular que o professor já tem · [por quê: preencha] | | 0 | o brw (§ 6c) já prevê um celular por turma, usado pelo professor |
+| app (recorte em linhas, telas, lista de pistas, atlas) | a foto | as linhas recortadas, a pista e o atlas | celular da turma · [por quê: preencha] | não medido: o app ainda não existe, e o recorte do tec é fixo em três faixas | 0 | |
+| TrOCR small printed (OCR) | cada linha recortada | o texto da linha | celular da turma · [por quê: preencha] | no notebook: 17,28 s para 3 cadernos no Mac (M3, CPU), contando a carga do modelo · no celular: não medido · arquivo do modelo: 245.839.136 bytes | 0 | tempo **medido** no tec (§ 3); tamanho **medido** no cache local em 04/11/2026; tempo no celular é tarefa do experimento |
+| SymPy (equivalência e tipo do erro) | as linhas transcritas | a linha da quebra e a categoria | celular da turma · [por quê: preencha] | equivalência: mediana de 4,6 ms por caderno de 3 linhas · correções típicas do passo 7: ainda não implementadas | 0 | equivalência **medida** em 04/11/2026 (Linux, i5-13450HX, 60 execuções sobre as linhas lidas no tec); passo 7 **estimado**: algumas chamadas a mais do mesmo tipo |
+| lista de pistas e atlas (regras) | a categoria; a categoria, o exercício e a data | a pista; a contagem por exercício | celular da turma · [por quê: preencha] | menos de 1 s, sem modelo | 0 | **estimado**: consulta e contagem em listas curtas |
+| alternativa, saiu: Qwen2.5 1.5B no Ollama, para categoria e pista | as linhas e o diagnóstico do SymPy | categoria e pista em JSON | notebook | 7,72 s para 3 cadernos com o modelo carregado, 42,61 s carregando · 986.061.892 bytes em disco | 0 | **medido** no tec (§ 3). Saiu porque acertou 2 de 6 tipos de erro e deu pistas com a resposta |
+| alternativa, não escolhida: OCR na nuvem, Mathpix (`v3/text`) | a foto | texto e LaTeX | servidor da Mathpix | depende de internet na escola | 120 × US$ 0,002 = US$ 0,24, cerca de R$ 1,32; mais uma taxa única de US$ 19,99, cerca de R$ 109,82 | **estimado**: [mathpix.com/pricing/api](https://mathpix.com/pricing/api), 04/11/2026; imagens com mais de 12 linhas podem ser cobradas como página, a US$ 0,005. Dólar: [PTAX de venda de 03/11/2026](https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia%28dataCotacao=@dataCotacao%29?@dataCotacao=%2711-03-2026%27&%24format=json), R$ 5,4935 |
+| alternativa, não escolhida: OCR na nuvem, Google Cloud Vision (Document Text Detection) | a foto | texto | servidor do Google | depende de internet na escola | 0: as 120 fotos ficam dentro das 1.000 grátis por mês; acima disso, US$ 1,50 por 1.000 | **estimado**: [cloud.google.com/vision/pricing](https://cloud.google.com/vision/pricing), 04/11/2026; exige conta com cobrança ativa |
+| alternativa, não escolhida: notebook da escola no lugar do celular | as mesmas | as mesmas | notebook da escola, na rede local | os tempos do tec, acima | 0, se a escola já tem o notebook | **medido** no tec; a foto teria de sair do celular para o notebook |
 
 ## 3 · a arquitetura: onde roda cada peça e para onde vão os dados
 
@@ -62,11 +71,17 @@ em palavras, em que o erro está em montar a equação, ficam fora do recorte do
 
 | dado pessoal | de quem é | onde fica | quem vê | por quanto tempo | quando é apagado |
 |:--|:--|:--|:--|:--|:--|
-| [preencha] | | | | | |
+| foto da página (a letra do aluno, e o nome, se estiver escrito no caderno) | aluno | memória do app, no celular da turma; não vai para a galeria | aluno e professor, na tela | até o aluno conferir a transcrição (passo 5) | o app apaga ao fim do passo 5 |
+| transcrição das linhas | aluno | memória do app | aluno e professor, na tela | até o fim do exercício | o app apaga ao fim do exercício |
+| nome do aluno | aluno | não é guardado | ninguém | | nunca é registrado: no passo 10, o professor está ao lado do aluno |
+| categoria do erro, exercício, data e número de pistas pedidas | da turma, sem nome | atlas, no celular da turma | professor | até o fim do bimestre [confirme o prazo] | no fim do bimestre; fica só a contagem por categoria |
 
-**o que sai do aparelho de quem usa, e para onde:** [preencha, ou "nada sai"]
+**o que sai do aparelho de quem usa, e para onde:** nada sai do celular da turma: não há
+servidor nem internet. A foto é tirada pela câmera do próprio app e não passa pela galeria,
+para não entrar no backup automático do celular (Google Fotos ou iCloud).
 
-**o mínimo que a ideia precisa guardar:** [preencha]
+**o mínimo que a ideia precisa guardar:** a categoria do erro, o exercício e a data, sem nome e
+sem foto, até o fim do bimestre.
 
 ## 4 · o que mudou na ideia, sem IA
 
