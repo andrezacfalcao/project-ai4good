@@ -3,8 +3,8 @@
 > Aluna: Andreza Maria Coutinho Falcão. Execução verificada em 03/11/2026 (Mac)
 > e repetida em 04/11/2026 (Linux, [registro](resultados/linux-2026-11-04/README.md)).
 > Pasta de entrega: [tec/](https://github.com/andrezacfalcao/project-ai4good/tree/main/tec).
-> Esta folha registra uma demonstração executada com apoio de IA. Continuam
-> pendentes o link do vídeo, a segunda rodada da auditoria e a resposta da aluna no § 6.
+> Esta folha registra uma demonstração executada com apoio de IA. Vídeo no § 4;
+> auditoria cega e resposta da aluna no § 6.
 
 ## 0 · a minha ideia e a técnica central
 
@@ -252,5 +252,5 @@ Item 3 · alteração mínima e auditoria. O § 6 estava vazio porque a auditori
 - [x] Links abertos, licenças conferidas e justificativa escrita.
 - [x] Vídeo de 1–3 minutos publicado e acessível sem login.
 - [x] Reflexão do § 5.
-- [ ] Auditoria cega e resposta da aluna no § 6.
+- [x] Auditoria cega e resposta da aluna no § 6.
 - [x] Conferência dos exemplos excelente/raso e alinhamento final com brw/cmp.
