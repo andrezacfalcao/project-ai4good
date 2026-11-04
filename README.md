@@ -16,6 +16,8 @@ tudo interativamente.
   Erro, peça por peça, com custos e dados pessoais, em `flx/`.
 - [exp · desenho dos experimentos](exp/README.md) — como provar que o Atlas do Erro
   funciona: hipóteses, linhas de base, métricas, piloto e ética, em `exp/`.
+- [sem1 · seminário preliminar](sem1/README.md) — os slides e o roteiro de 3 a 5 minutos,
+  com a fala nas notas do apresentador, em `sem1/`.
 
 ## Estrutura do projeto
 
