@@ -1,0 +1,73 @@
+A resolveu de primeira 0
+A não resolveu depois do gabarito 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A não resolveu depois do gabarito 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A não resolveu depois do gabarito 0
+A resolveu depois de reescrever 0
+A não resolveu depois do gabarito 0
+A resolveu de primeira 0
+A não resolveu depois do gabarito 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A resolveu depois de reescrever 0
+A resolveu de primeira 0
+A resolveu de primeira 0
+A chamou o professor (ilegível) 0
+A não resolveu depois do gabarito 0
+B resolveu de primeira 0
+B resolveu de primeira 0
+B resolveu de primeira 0
+B resolveu de primeira 0
+B resolveu de primeira 0
+B resolveu de primeira 0
+B resolveu de primeira 0
+B resolveu de primeira 0
+B resolveu de primeira 0
+B resolveu depois de reescrever 0
+B resolveu de primeira 0
+B resolveu depois da pista 2
+B resolveu depois de reescrever 0
+B resolveu depois de reescrever 0
+B resolveu de primeira 0
+B resolveu depois da pista 2
+B chamou o professor (3 pistas) 3
+B resolveu de primeira 0
+B chamou o professor (ilegível) 3
+B resolveu depois da pista 2
+B chamou o professor (3 pistas) 3
+B resolveu de primeira 0
+B resolveu de primeira 0
+B resolveu depois de reescrever 0
+B resolveu depois de reescrever 0
+B resolveu depois de reescrever 0
+B resolveu de primeira 0
+B resolveu de primeira 0
+B resolveu depois da pista 2
+B resolveu de primeira 0
+
+# Piloto do E2 · segunda versão do protocolo, com persona de IA
+
+Gerada por `piloto_e2_v2.py`. A persona é um modelo de linguagem: os números abaixo testam o protocolo, não dizem nada sobre alunos.
+
+- sorteio de 30 participantes: 15 em A e 15 em B
+- pré-teste e prova pareados: mesmo perfil de coeficientes e sinais: True; nenhuma equação repetida: True
+
+| condição | exercícios | resolvidos de primeira | depois da pista | depois do gabarito | depois de reescrever | professor: 3 pistas | professor: 2 leituras ilegíveis | pistas por exercício | JSON inválido da persona | linhas que o SymPy não lê | pistas com a resposta | terminou sem resolver |
+|:--|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+| A · gabarito do livro | 30 | 21 | 0 | 0 | 2 | 0 | 1 | 0.00 | 0 | 6 | 0 de 0 | 6 |
+| B · Atlas | 30 | 17 | 4 | 0 | 6 | 2 | 1 | 0.57 | 0 | 11 | 1 de 17 | 0 |
+
