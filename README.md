@@ -14,6 +14,8 @@ tudo interativamente.
   entradas, resultados e experimentos do Atlas do Erro, reunidos em `tec/`.
 - [flx · fluxograma e arquitetura](flx/README.md) — o caminho completo do Atlas do
   Erro, peça por peça, com custos e dados pessoais, em `flx/`.
+- [exp · desenho dos experimentos](exp/README.md) — como provar que o Atlas do Erro
+  funciona: hipóteses, linhas de base, métricas, piloto e ética, em `exp/`.
 
 ## Estrutura do projeto
 
