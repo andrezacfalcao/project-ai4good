@@ -21,7 +21,7 @@ O modelo TrOCR leu certo 7 das 9 linhas das três resoluções sintéticas, e o 
 
 ## 1 · o fluxograma
 
-**o diagrama:** [arquitetura.md](https://github.com/andrezacfalcao/project-ai4good/blob/main/flx/arquitetura.md), commit [0ce9cd4](https://github.com/andrezacfalcao/project-ai4good/commit/0ce9cd496abc8f34e7be97b21cf4bbf440bcaf8f)
+**o diagrama:** [arquitetura.md](https://github.com/andrezacfalcao/project-ai4good/blob/main/flx/arquitetura.md), commit [b71cf91](https://github.com/andrezacfalcao/project-ai4good/commit/b71cf9108ee10db89fadda52c71382c831754bf9)
 
 Decisões tomadas a partir do brw: no protótipo, há um celular por turma, usado pelo professor
 (brw, § 6c); o modelo de linguagem pequeno no aparelho diz o tipo do erro e escreve a pista
@@ -87,7 +87,7 @@ medido em celular nem num notebook escolar.
 
 ## 3 · a arquitetura: onde roda cada peça e para onde vão os dados
 
-**o diagrama, com as caixas de onde cada peça roda:** [link do commit que as acrescentou]
+**o diagrama, com as caixas de onde cada peça roda:** [arquitetura.md](https://github.com/andrezacfalcao/project-ai4good/blob/main/flx/arquitetura.md), commit [7f8ea6e](https://github.com/andrezacfalcao/project-ai4good/commit/7f8ea6e08c38e605b5a7a43e226f9d25e48ffe60)
 
 | dado pessoal | de quem é | onde fica | quem vê | por quanto tempo | quando é apagado |
 |:--|:--|:--|:--|:--|:--|
