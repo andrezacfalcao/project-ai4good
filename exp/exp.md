@@ -189,6 +189,17 @@ para o experimento real, contra a regra das correções típicas (emenda 3): se 
 de verdade, a pista passa para a lista do professor. Isso não é resultado do piloto; é uma escolha
 registrada como desvio.
 
+**emenda 5, 04/11/2026, escrita e commitada antes de rodar:** (1) os números da folha que não saíam de um
+script passam a sair de [`estatisticas_e1.py`](piloto/estatisticas_e1.py), que lê os registros sem rodar
+modelo nenhum: [`e1_estatisticas.md`](piloto/resultados/e1_estatisticas.md). Pela definição literal do
+pré-registro, qualquer valor de x na pista, são **3 pistas com a resposta em 40**, em cada rodada, e não 1:
+o detector de `piloto_e1.py` já excluía os valores que o aluno escreveu. O Qwen e a regra mais simples não
+discordam em nenhum dos 48 casos com erro: a diferença pareada é de 0 ponto, com intervalo de 95% de 0 a 0.
+(2) O competidor mais forte roda nas mesmas 60 resoluções: o Qwen2.5-VL 7B, um dos modelos abertos que o
+Song et al. avaliam, lendo a foto direto, sem TrOCR nem SymPy, pelo Ollama, em
+[`competidor_e1.py`](piloto/competidor_e1.py), com as mesmas métricas e o mesmo bootstrap. Não há limiar
+novo: a pergunta é se ele passaria nos limiares pré-registrados. Resultado: [a preencher depois de rodar].
+
 ## 3 · E2 · o aluno aprende mais com a pista do que com o gabarito
 
 ### 3.1 · hipótese, linhas de base e o número que derruba
@@ -308,6 +319,15 @@ lê caem de 44 para 11 na condição B. Uma das 17 pistas foi marcada como conte
 não grava o texto das pistas, só a contagem, e por isso esse caso não pode ser conferido: (5) o registro
 passa a guardar o texto de cada pista. Os acertos e as diferenças entre A e B continuam sem dizer nada
 sobre alunos.
+
+**emenda 5, 04/11/2026, escrita e commitada antes de rodar:** a segunda auditoria achou que a frase "agora o
+protocolo fecha" estava errada. Na segunda versão, uma linha como "x = 2." era lida como 2,0, e {2,0} é
+diferente de {2}: resoluções certas contavam como erradas e recebiam pista. O sorteio saía 15 e 15 por
+construção, sem usar a lista embaralhada; e o texto das pistas não era gravado. A terceira versão,
+[`piloto_e2_v3.py`](piloto/piloto_e2_v3.py), corrige a leitura nas duas condições e no diagnóstico, usa o
+sorteio de verdade, grava cada pista, conta as pistas dadas a resoluções que já chegavam ao x certo, e faz a
+persona responder ao pré-teste e à prova, para testar a correção automática das listas. A métrica
+"indicação errada aceita" continua fora: a persona não contesta. Resultado: [a preencher depois de rodar].
 
 ## 4 · o que mudou na ideia, sem IA
 
