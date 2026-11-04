@@ -201,7 +201,7 @@ digest do `qwen2.5:1.5b` no Ollama 0.32.1, com o Qwen na GPU RTX 4050:
 
 ## 4 · vídeo da demonstração
 
-**Link do vídeo:** pendente.
+**Link do vídeo:** [Video](https://drive.google.com/file/d/1auHyJb5qa_uDFswh9zUXax5qJdmKNlb0/view?usp=sharing).
 
 Gravar de **1 a 3 minutos**, mostrando os dois commits do código, os comandos
  e as saídas aparecendo. O [roteiro](VIDEO.md) está separado nesta mesma pasta.
@@ -236,7 +236,11 @@ e só leu arquivos, sem alterá-los.
 - **Anotação 3 (§ 3, a entrada), parcialmente evitada, com risco.** A entrada é um dado do problema e não o exemplo do projeto. Mas são imagens sintéticas tipografadas, de origem não identificada, montadas no formato que o corte fixo exige. Isso se aproxima do "garantir que funciona" que a anotação critica. A folha registra, porém, a falha do caderno 3 e as diferenças em relação a uma foto real.
 - **Anotações 4 e 5 (saída como `print` e "funcionou perfeitamente").** A folha não cai nelas: a saída mostra a linha da quebra e uma pista, e os erros (OCR do caderno 3, pista que entrega o passo, valor de x errado) estão colados e comentados.
 
-**Resposta da aluna, sem IA, item por item:**
+**Resposta da aluna, sem IA, item por item:** Item 1 · técnica com link, licença e justificativa. Concordo com a auditoria e corrigi a folha. Na justificativa, separei a licença do código do TrOCR, que é MIT, da licença dos pesos do trocr-small-printed, que não é declarada. Acrescentei alternativas para as peças de apoio, com os números medidos no experimento: o Qwen julgando sem o SymPy acertou 1 de 10, e o LAYA, 4 de 10. Também incluí o TrOCR handwritten como terceira alternativa de OCR e expliquei por que mantive o printed. Detalhei o resultado do Qwen: o 6 de 10 com o SymPy vem principalmente dos casos corretos e ilegíveis, e nos seis casos com erro ele acertou só 2. Troquei o link do Qwen2.5, que redirecionava para o Qwen3, pelo model card no Hugging Face, e registrei a conferência dos links e das licenças.
+
+Item 2 · vídeo. Concordo: quando a auditoria foi feita, o vídeo ainda não existia. Gravei a demonstração na minha máquina, com o git log mostrando os dois commits, os comandos do exemplo oficial e da adaptação e a saída dos três cadernos, incluindo a falha do terceiro. O link está no § 4.
+
+Item 3 · alteração mínima e auditoria. O § 6 estava vazio porque a auditoria ainda não tinha sido feita; agora a tabela está colada e esta é a minha resposta. Sobre o histórico dos commits, acrescentei no § 2 uma nota explicando que a primeira versão, de 28/10, foi refeita em 03/11 na pasta tec/, e que ae9a9b4 e abf1638 são os commits desta entrega. Sobre as imagens, concordo em parte: elas são sintéticas, digitadas numa fonte que imita letra à mão e montadas com três linhas igualmente espaçadas, que é a condição que o corte fixo pressupõe. Isso favorece o OCR e não representa uma foto real de caderno. Mesmo assim, o terceiro caderno, com pauta e escrita inclinada, já mostrou a leitura falhando, e a folha registra essa limitação. Não troquei as imagens nesta entrega; a validação com fotos reais de escrita à mão fica para o piloto com 30 cadernos previsto no brw.
 
 <!-- A própria aluna escreve aqui. A IA não deve redigir ou reformular esta resposta. -->
 
