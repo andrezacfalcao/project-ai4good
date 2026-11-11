@@ -8,6 +8,8 @@ para executar, editar ou entregar, use os arquivos desta pasta.
 
 **Folha da entrega:** [tec.md](tec.md). **Mudanças no código:** [ALTERACOES.md](ALTERACOES.md).
 
+**Vídeo da demonstração:** [vídeo de 70 s no Google Drive (terminal)](https://drive.google.com/file/d/1auHyJb5qa_uDFswh9zUXax5qJdmKNlb0/view?usp=sharing) · [vídeo de 79 s no Google Drive (site local)](https://drive.google.com/file/d/1-ct-GKpXaxznFNp-nCpFA1pOvC23qaS5/view?usp=sharing) · detalhes em [VIDEO.md](VIDEO.md).
+
 **Site para testar:** [site/](site/README.md), com o Atlas rodando sobre as imagens de teste, passo a passo.
 
 **Pesquisa adicional:** [LAYA e alternativas](alternativas.md), com
@@ -110,10 +112,5 @@ entrega o passo corrigido: veja [as limitações](ALTERACOES.md).
 
 ## Entrega
 
-Link da pasta, depois da publicação dos commits:
-[project-ai4good/tec](https://github.com/andrezacfalcao/project-ai4good/tree/main/tec).
-
-Ainda precisam ser concluídos o vídeo real de 1–3 minutos, a justificativa
-e a reflexão de autoria da aluna, a conferência pessoal dos links e a auditoria
-cega em uma conversa nova. O protótipo executado não equivale à atividade inteira
-concluída nem a uma validação em cadernos reais.
+- **Pasta do artefato:** [project-ai4good/tec](https://github.com/andrezacfalcao/project-ai4good/tree/main/tec)
+- **Vídeo da demonstração (70 s no Google Drive):** [assistir gravação no Google Drive](https://drive.google.com/file/d/1auHyJb5qa_uDFswh9zUXax5qJdmKNlb0/view?usp=sharing) (roteiro em [VIDEO.md](VIDEO.md))
