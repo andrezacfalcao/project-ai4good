@@ -13,3 +13,6 @@ arq-c/moderntcn_*/results/
 arq-c/moderntcn_*/test_results/
 arq-c/moderntcn_*/result.txt
 arq-c/paper_moderntcn.pdf
+
+# exp/scratchmath: imagens públicas baixáveis via baixar_dataset.py
+exp/scratchmath/dados/imagens/

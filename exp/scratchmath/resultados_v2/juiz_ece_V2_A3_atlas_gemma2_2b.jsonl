@@ -1,0 +1,57 @@
+{"idx": 0, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 1, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 2, "explicacao_correta": false, "justificativa": "Erros diferentes e candidata inventou causa."}
+{"idx": 3, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 4, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 5, "explicacao_correta": false, "justificativa": "Erro diferente: porcentagem vs inteiro."}
+{"idx": 6, "explicacao_correta": false, "justificativa": "Erros diferentes do referência."}
+{"idx": 7, "explicacao_correta": false, "justificativa": "Erros diferentes dos referenciados."}
+{"idx": 9, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 10, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 12, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 17, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica o erro principal descrito na referência."}
+{"idx": 23, "explicacao_correta": false, "justificativa": "Não identificou o erro de simplificação mencionado na explicação referência."}
+{"idx": 27, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 28, "explicacao_correta": false, "justificativa": "Erro diferente; candidata falou sobre transcrição, referência sobre expansão incorreta."}
+{"idx": 31, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 32, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 33, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 34, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 37, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica o erro específico descrito na referência."}
+{"idx": 38, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 70, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 96, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 97, "explicacao_correta": false, "justificativa": "Erro diferente do descrito na referência."}
+{"idx": 98, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 100, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 101, "explicacao_correta": true, "justificativa": "Ambas identificam erro de transcrição como principal causa."}
+{"idx": 103, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 104, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 106, "explicacao_correta": false, "justificativa": "A justificativa errada identifica problemas diferentes dos mencionados na explicação referência."}
+{"idx": 107, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 108, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 109, "explicacao_correta": false, "justificativa": "Erro diferente do descrito na explicação de referência."}
+{"idx": 110, "explicacao_correta": false, "justificativa": "Erros diferentes na explicação."}
+{"idx": 115, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 116, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 118, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 122, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 125, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 134, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 149, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 150, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 152, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 158, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 171, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 185, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 186, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 205, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 209, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 213, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 224, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 225, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 226, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 227, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 228, "explicacao_correta": false, "justificativa": "Erros diferentes e candidata inventou causa."}
+{"idx": 235, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 238, "explicacao_correta": true, "justificativa": "Ambas identificam o erro de transcrição da equação."}

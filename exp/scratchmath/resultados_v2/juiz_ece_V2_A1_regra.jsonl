@@ -1,0 +1,57 @@
+{"idx": 0, "explicacao_correta": false, "justificativa": "Erro diferente do referência."}
+{"idx": 1, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 2, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 3, "explicacao_correta": false, "justificativa": "Inverteu o sinal corretamente no resultado."}
+{"idx": 4, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 5, "explicacao_correta": false, "justificativa": "Incorretamente identificou a quebra de linha como erro principal."}
+{"idx": 6, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 7, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 9, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 10, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 12, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 17, "explicacao_correta": false, "justificativa": "Faltou usar 'ou' entre os resultados."}
+{"idx": 23, "explicacao_correta": false, "justificativa": "Erros diferentes foram identificados."}
+{"idx": 27, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 28, "explicacao_correta": false, "justificativa": "Erros diferentes nas etapas."}
+{"idx": 31, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 32, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 33, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 34, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 37, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 38, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 70, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 96, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 97, "explicacao_correta": false, "justificativa": "Errou a identificação do erro principal."}
+{"idx": 98, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos."}
+{"idx": 100, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 101, "explicacao_correta": false, "justificativa": "Erro diferente; candidata não identificou o erro de cópia."}
+{"idx": 103, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 104, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 106, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 107, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 108, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 109, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 110, "explicacao_correta": false, "justificativa": "Erros diferentes na combinação de termos semelhantes."}
+{"idx": 115, "explicacao_correta": false, "justificativa": "Erros diferentes nas operações."}
+{"idx": 116, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 118, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 122, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 125, "explicacao_correta": false, "justificativa": "Erros diferentes e inventou causa."}
+{"idx": 134, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 149, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 150, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 152, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 158, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 171, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 185, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 186, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 205, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 209, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 213, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 224, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos."}
+{"idx": 225, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 226, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 227, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 228, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 235, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}
+{"idx": 238, "explicacao_correta": false, "justificativa": "sem diagnóstico emitido"}

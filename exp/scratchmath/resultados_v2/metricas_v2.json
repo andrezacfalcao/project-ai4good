@@ -1,0 +1,484 @@
+{
+  "ocr": {
+    "TrOCR-printed (V1)": {
+      "n": 57,
+      "linhas_validas_media": 0.0,
+      "quebra_puro": 0,
+      "sem_quebra_puro": 0,
+      "quebra_ancorado": 0,
+      "regra_acertos_anc": 0,
+      "tempo_medio_s": 0.23607017543859654
+    },
+    "Pix2Text (CPU, dedicado)": {
+      "n": 57,
+      "linhas_validas_media": 1.2280701754385965,
+      "com_alguma_eq_valida": 26,
+      "quebra_puro": 17,
+      "sem_quebra_puro": 0,
+      "quebra_ancorado": 25,
+      "regra_emitidas_anc": 15,
+      "regra_acertos_anc": 8,
+      "tempo_medio_s": 1.715649122807017
+    },
+    "Qwen2.5-VL 3B (VLM-OCR)": {
+      "n": 57,
+      "linhas_validas_media": 1.543859649122807,
+      "com_alguma_eq_valida": 30,
+      "quebra_puro": 15,
+      "sem_quebra_puro": 8,
+      "quebra_ancorado": 28,
+      "regra_emitidas_anc": 21,
+      "regra_acertos_anc": 7,
+      "tempo_medio_s": 1.955982456140351
+    },
+    "Qwen2.5-VL 7B (VLM-OCR)": {
+      "n": 57,
+      "linhas_validas_media": 1.6666666666666667,
+      "com_alguma_eq_valida": 29,
+      "quebra_puro": 18,
+      "sem_quebra_puro": 6,
+      "quebra_ancorado": 27,
+      "regra_emitidas_anc": 17,
+      "regra_acertos_anc": 7,
+      "tempo_medio_s": 2.8908245614035084
+    }
+  },
+  "escopo": {
+    "n": 57,
+    "majority": {
+      "codigo": "erro_calculo",
+      "acc": 0.5614035087719298,
+      "ic95": [
+        0.43859649122807015,
+        0.6842105263157895
+      ],
+      "f1_macro": 0.10272873194221509
+    },
+    "condicoes": {
+      "V2_A1_regra": {
+        "rotulo": "A1 · Atlas V2 + Regra (OCR vencedor + SymPy)",
+        "n": 57,
+        "acertos": 7,
+        "acc": 0.12280701754385964,
+        "ic95": [
+          0.05263157894736842,
+          0.21052631578947367
+        ],
+        "n_respondidos": 21,
+        "cobertura": 0.3684210526315789,
+        "acc_cond": 0.3333333333333333,
+        "f1_macro": 0.044444444444444446,
+        "com_dica": 31,
+        "vazamentos": 0,
+        "tempo_medio_s": 1.955982456140351,
+        "dist_pred": {
+          "lacuna_conhecimento": 8,
+          "erro_calculo": 13,
+          "sem_resposta": 36
+        },
+        "ece": {
+          "acc": 0.0,
+          "ic95": [
+            0.0,
+            0.0
+          ],
+          "acertos": 0
+        }
+      },
+      "V2_A2_atlas_qwen25_1.5b": {
+        "rotulo": "A2 · Atlas V2 + Qwen2.5 1.5B (pós-SymPy, PT)",
+        "n": 57,
+        "acertos": 5,
+        "acc": 0.08771929824561403,
+        "ic95": [
+          0.017543859649122806,
+          0.17543859649122806
+        ],
+        "n_respondidos": 28,
+        "cobertura": 0.49122807017543857,
+        "acc_cond": 0.17857142857142858,
+        "f1_macro": 0.043650793650793655,
+        "com_dica": 28,
+        "vazamentos": 0,
+        "tempo_medio_s": 1.2675789473684207,
+        "dist_pred": {
+          "erro_transcricao": 24,
+          "sem_resposta": 29,
+          "erro_calculo": 4
+        },
+        "ece": {
+          "acc": 0.0,
+          "ic95": [
+            0.0,
+            0.0
+          ],
+          "acertos": 0
+        }
+      },
+      "V2_A3_atlas_gemma2_2b": {
+        "rotulo": "A3 · Atlas V2 + Gemma2 2B (pós-SymPy, PT)",
+        "n": 57,
+        "acertos": 1,
+        "acc": 0.017543859649122806,
+        "ic95": [
+          0.0,
+          0.05263157894736842
+        ],
+        "n_respondidos": 28,
+        "cobertura": 0.49122807017543857,
+        "acc_cond": 0.03571428571428571,
+        "f1_macro": 0.010582010582010581,
+        "com_dica": 28,
+        "vazamentos": 0,
+        "tempo_medio_s": 1.3569298245614034,
+        "dist_pred": {
+          "erro_transcricao": 19,
+          "erro_raciocinio": 3,
+          "sem_resposta": 29,
+          "erro_compreensao": 2,
+          "erro_estrategia": 4
+        },
+        "ece": {
+          "acc": 0.03508771929824561,
+          "ic95": [
+            0.0,
+            0.08771929824561403
+          ],
+          "acertos": 2
+        }
+      },
+      "V2_A4_atlas_qwen25_7b": {
+        "rotulo": "A4 · Atlas V2 + Qwen2.5 7B (pós-SymPy, PT)",
+        "n": 57,
+        "acertos": 13,
+        "acc": 0.22807017543859648,
+        "ic95": [
+          0.12280701754385964,
+          0.3508771929824561
+        ],
+        "n_respondidos": 28,
+        "cobertura": 0.49122807017543857,
+        "acc_cond": 0.4642857142857143,
+        "f1_macro": 0.06632653061224489,
+        "com_dica": 28,
+        "vazamentos": 0,
+        "tempo_medio_s": 1.6467543859649125,
+        "dist_pred": {
+          "erro_calculo": 24,
+          "sem_resposta": 29,
+          "lacuna_conhecimento": 3,
+          "erro_raciocinio": 1
+        },
+        "ece": {
+          "acc": 0.017543859649122806,
+          "ic95": [
+            0.0,
+            0.05263157894736842
+          ],
+          "acertos": 1
+        }
+      },
+      "V2_B1_ocr_pt_qwen25_1.5b": {
+        "rotulo": "B1 · Qwen2.5 1.5B (PT-BR + transcrição OCR)",
+        "n": 57,
+        "acertos": 14,
+        "acc": 0.24561403508771928,
+        "ic95": [
+          0.14035087719298245,
+          0.3684210526315789
+        ],
+        "n_respondidos": 57,
+        "cobertura": 1.0,
+        "acc_cond": 0.24561403508771928,
+        "f1_macro": 0.0823747680890538,
+        "com_dica": 57,
+        "vazamentos": 1,
+        "tempo_medio_s": 0.5706491228070174,
+        "dist_pred": {
+          "erro_transcricao": 47,
+          "erro_calculo": 10
+        },
+        "ece": {
+          "acc": 0.0,
+          "ic95": [
+            0.0,
+            0.0
+          ],
+          "acertos": 0
+        }
+      },
+      "V2_B2_ocr_pt_gemma2_2b": {
+        "rotulo": "B2 · Gemma2 2B (PT-BR + transcrição OCR)",
+        "n": 57,
+        "acertos": 4,
+        "acc": 0.07017543859649122,
+        "ic95": [
+          0.017543859649122806,
+          0.14035087719298245
+        ],
+        "n_respondidos": 57,
+        "cobertura": 1.0,
+        "acc_cond": 0.07017543859649122,
+        "f1_macro": 0.11524609843937575,
+        "com_dica": 57,
+        "vazamentos": 0,
+        "tempo_medio_s": 0.7635964912280703,
+        "dist_pred": {
+          "erro_raciocinio": 40,
+          "erro_compreensao": 3,
+          "erro_transcricao": 9,
+          "erro_estrategia": 4,
+          "erro_calculo": 1
+        },
+        "ece": {
+          "acc": 0.017543859649122806,
+          "ic95": [
+            0.0,
+            0.05263157894736842
+          ],
+          "acertos": 1
+        }
+      },
+      "V2_B3_ocr_pt_qwen25_7b": {
+        "rotulo": "B3 · Qwen2.5 7B (PT-BR + transcrição OCR)",
+        "n": 57,
+        "acertos": 26,
+        "acc": 0.45614035087719296,
+        "ic95": [
+          0.3333333333333333,
+          0.5789473684210527
+        ],
+        "n_respondidos": 57,
+        "cobertura": 1.0,
+        "acc_cond": 0.45614035087719296,
+        "f1_macro": 0.09403254972875226,
+        "com_dica": 57,
+        "vazamentos": 0,
+        "tempo_medio_s": 1.1267894736842106,
+        "dist_pred": {
+          "erro_calculo": 47,
+          "erro_atencao": 1,
+          "erro_transcricao": 8,
+          "erro_raciocinio": 1
+        },
+        "ece": {
+          "acc": 0.12280701754385964,
+          "ic95": [
+            0.05263157894736842,
+            0.21052631578947367
+          ],
+          "acertos": 7
+        }
+      },
+      "V2_FULL_C2_visao_pt_qwen25vl_7b": {
+        "rotulo": "C2 · Qwen2.5-VL 7B (foto direto + PT-BR)",
+        "n": 57,
+        "acertos": 25,
+        "acc": 0.43859649122807015,
+        "ic95": [
+          0.3157894736842105,
+          0.5614035087719298
+        ],
+        "n_respondidos": 57,
+        "cobertura": 1.0,
+        "acc_cond": 0.43859649122807015,
+        "f1_macro": 0.09041591320072331,
+        "com_dica": 57,
+        "vazamentos": 0,
+        "tempo_medio_s": 3.0544385964912277,
+        "dist_pred": {
+          "erro_calculo": 47,
+          "erro_transcricao": 10
+        },
+        "ece": {
+          "acc": 0.05263157894736842,
+          "ic95": [
+            0.0,
+            0.12280701754385964
+          ],
+          "acertos": 3
+        }
+      }
+    }
+  },
+  "full": {
+    "n": 241,
+    "majority": {
+      "codigo": "erro_calculo",
+      "acc": 0.46887966804979253,
+      "ic95": [
+        0.4066390041493776,
+        0.5311203319502075
+      ],
+      "f1_macro": 0.09120258272800645
+    },
+    "condicoes": {
+      "B1_texto_qwen25_1.5b": {
+        "rotulo": "V1 (CH) · Qwen2.5 1.5B",
+        "n": 241,
+        "acertos": 63,
+        "acc": 0.26141078838174275,
+        "ic95": [
+          0.2074688796680498,
+          0.31950207468879666
+        ],
+        "n_respondidos": 240,
+        "cobertura": 0.995850622406639,
+        "acc_cond": 0.2625,
+        "f1_macro": 0.09056603773584905,
+        "com_dica": 240,
+        "vazamentos": 7,
+        "tempo_medio_s": 0.5838921161825728,
+        "dist_pred": {
+          "erro_transcricao": 141,
+          "erro_calculo": 99,
+          "sem_resposta": 1
+        },
+        "ece": null
+      },
+      "V2_FULL_B1_pt_qwen25_1.5b": {
+        "rotulo": "V2 (PT) · Qwen2.5 1.5B",
+        "n": 241,
+        "acertos": 96,
+        "acc": 0.3983402489626556,
+        "ic95": [
+          0.3360995850622407,
+          0.4605809128630705
+        ],
+        "n_respondidos": 240,
+        "cobertura": 0.995850622406639,
+        "acc_cond": 0.4,
+        "f1_macro": 0.15327611188879883,
+        "com_dica": 240,
+        "vazamentos": 5,
+        "tempo_medio_s": 0.5754356846473029,
+        "dist_pred": {
+          "erro_transcricao": 55,
+          "erro_calculo": 164,
+          "erro_compreensao": 20,
+          "erro_atencao": 1,
+          "sem_resposta": 1
+        },
+        "ece": {
+          "acc": 0.024896265560165973,
+          "ic95": [
+            0.008298755186721992,
+            0.04564315352697095
+          ],
+          "acertos": 6
+        }
+      },
+      "B2_texto_gemma2_2b": {
+        "rotulo": "V1 (CH) · Gemma2 2B",
+        "n": 241,
+        "acertos": 22,
+        "acc": 0.0912863070539419,
+        "ic95": [
+          0.058091286307053944,
+          0.13278008298755187
+        ],
+        "n_respondidos": 241,
+        "cobertura": 1.0,
+        "acc_cond": 0.0912863070539419,
+        "f1_macro": 0.06336534235981961,
+        "com_dica": 241,
+        "vazamentos": 0,
+        "tempo_medio_s": 0.7470746887966806,
+        "dist_pred": {
+          "erro_compreensao": 158,
+          "erro_raciocinio": 29,
+          "erro_estrategia": 42,
+          "erro_transcricao": 8,
+          "erro_calculo": 4
+        },
+        "ece": null
+      },
+      "V2_FULL_B2_pt_gemma2_2b": {
+        "rotulo": "V2 (PT) · Gemma2 2B",
+        "n": 241,
+        "acertos": 22,
+        "acc": 0.0912863070539419,
+        "ic95": [
+          0.058091286307053944,
+          0.12863070539419086
+        ],
+        "n_respondidos": 241,
+        "cobertura": 1.0,
+        "acc_cond": 0.0912863070539419,
+        "f1_macro": 0.10694656873244049,
+        "com_dica": 241,
+        "vazamentos": 2,
+        "tempo_medio_s": 0.7061327800829879,
+        "dist_pred": {
+          "erro_raciocinio": 134,
+          "erro_compreensao": 49,
+          "erro_estrategia": 34,
+          "erro_transcricao": 21,
+          "erro_calculo": 3
+        },
+        "ece": {
+          "acc": 0.03734439834024896,
+          "ic95": [
+            0.016597510373443983,
+            0.06224066390041494
+          ],
+          "acertos": 9
+        }
+      },
+      "C1_visao_qwen25vl_3b": {
+        "rotulo": "V1 (CH) · Qwen2.5-VL 3B (foto)",
+        "n": 241,
+        "acertos": 112,
+        "acc": 0.46473029045643155,
+        "ic95": [
+          0.4024896265560166,
+          0.5269709543568465
+        ],
+        "n_respondidos": 240,
+        "cobertura": 0.995850622406639,
+        "acc_cond": 0.4666666666666667,
+        "f1_macro": 0.09221902017291066,
+        "com_dica": 240,
+        "vazamentos": 1,
+        "tempo_medio_s": 1.6737551867219918,
+        "dist_pred": {
+          "erro_calculo": 234,
+          "erro_transcricao": 6,
+          "sem_resposta": 1
+        },
+        "ece": null
+      },
+      "V2_FULL_C2_visao_pt_qwen25vl_7b": {
+        "rotulo": "V2 (PT) · Qwen2.5-VL 7B (foto)",
+        "n": 241,
+        "acertos": 93,
+        "acc": 0.38589211618257263,
+        "ic95": [
+          0.3278008298755187,
+          0.44813278008298757
+        ],
+        "n_respondidos": 240,
+        "cobertura": 0.995850622406639,
+        "acc_cond": 0.3875,
+        "f1_macro": 0.11367127496159754,
+        "com_dica": 240,
+        "vazamentos": 1,
+        "tempo_medio_s": 3.004004149377593,
+        "dist_pred": {
+          "erro_calculo": 166,
+          "erro_transcricao": 64,
+          "erro_atencao": 10,
+          "sem_resposta": 1
+        },
+        "ece": {
+          "acc": 0.06224066390041494,
+          "ic95": [
+            0.03319502074688797,
+            0.0954356846473029
+          ],
+          "acertos": 15
+        }
+      }
+    }
+  }
+}

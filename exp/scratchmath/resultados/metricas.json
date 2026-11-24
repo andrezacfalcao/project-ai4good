@@ -1,0 +1,669 @@
+{
+  "n": 241,
+  "majority_baseline": {
+    "codigo": "erro_calculo",
+    "acc": 0.46887966804979253,
+    "ic95": [
+      0.4066390041493776,
+      0.5311203319502075
+    ],
+    "f1_macro": 0.09120258272800645
+  },
+  "ocr_sympy_status": {
+    "ilegivel": 241
+  },
+  "regra_atlas_dist": {
+    "outro": 241
+  },
+  "condicoes": {
+    "A1_regra": {
+      "rotulo": "A1 · Atlas + Regra (TrOCR+SymPy+Checklist)",
+      "n": 241,
+      "acertos": 0,
+      "acc": 0.0,
+      "ic95": [
+        0.0,
+        0.0
+      ],
+      "cobertura": 0.0,
+      "n_respondidos": 0,
+      "acc_cond": 0.0,
+      "f1_macro": 0.0,
+      "por_classe": {
+        "erro_calculo": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 113,
+          "suporte": 113,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_compreensao": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 20,
+          "suporte": 20,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "lacuna_conhecimento": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 45,
+          "suporte": 45,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_estrategia": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 17,
+          "suporte": 17,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_transcricao": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 29,
+          "suporte": 29,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_raciocinio": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "suporte": 2,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_atencao": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 15,
+          "suporte": 15,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        }
+      },
+      "tempo_medio_s": 0.13557261410788377,
+      "com_dica": 241,
+      "vazamentos": 0,
+      "vazamentos_idxs": [],
+      "dist_pred": {
+        "sem_resposta": 241
+      }
+    },
+    "A2_atlas_qwen25_1.5b": {
+      "rotulo": "A2 · Atlas + Qwen2.5 1.5B (pós-TrOCR+SymPy)",
+      "n": 241,
+      "acertos": 0,
+      "acc": 0.0,
+      "ic95": [
+        0.0,
+        0.0
+      ],
+      "cobertura": 0.0,
+      "n_respondidos": 0,
+      "acc_cond": 0.0,
+      "f1_macro": 0.0,
+      "por_classe": {
+        "erro_calculo": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 113,
+          "suporte": 113,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_compreensao": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 20,
+          "suporte": 20,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "lacuna_conhecimento": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 45,
+          "suporte": 45,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_estrategia": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 17,
+          "suporte": 17,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_transcricao": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 29,
+          "suporte": 29,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_raciocinio": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "suporte": 2,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_atencao": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 15,
+          "suporte": 15,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        }
+      },
+      "tempo_medio_s": 0.13541078838174275,
+      "com_dica": 0,
+      "vazamentos": 0,
+      "vazamentos_idxs": [],
+      "dist_pred": {
+        "sem_resposta": 241
+      }
+    },
+    "A3_atlas_gemma2_2b": {
+      "rotulo": "A3 · Atlas + Gemma2 2B (pós-TrOCR+SymPy)",
+      "n": 241,
+      "acertos": 0,
+      "acc": 0.0,
+      "ic95": [
+        0.0,
+        0.0
+      ],
+      "cobertura": 0.0,
+      "n_respondidos": 0,
+      "acc_cond": 0.0,
+      "f1_macro": 0.0,
+      "por_classe": {
+        "erro_calculo": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 113,
+          "suporte": 113,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_compreensao": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 20,
+          "suporte": 20,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "lacuna_conhecimento": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 45,
+          "suporte": 45,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_estrategia": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 17,
+          "suporte": 17,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_transcricao": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 29,
+          "suporte": 29,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_raciocinio": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "suporte": 2,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_atencao": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 15,
+          "suporte": 15,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        }
+      },
+      "tempo_medio_s": 0.13541078838174275,
+      "com_dica": 0,
+      "vazamentos": 0,
+      "vazamentos_idxs": [],
+      "dist_pred": {
+        "sem_resposta": 241
+      }
+    },
+    "B1_texto_qwen25_1.5b": {
+      "rotulo": "B1 · Passo 3 isolado: Qwen2.5 1.5B (enunciado+solução)",
+      "n": 241,
+      "acertos": 63,
+      "acc": 0.26141078838174275,
+      "ic95": [
+        0.2074688796680498,
+        0.31950207468879666
+      ],
+      "cobertura": 0.995850622406639,
+      "n_respondidos": 240,
+      "acc_cond": 0.2625,
+      "f1_macro": 0.09056603773584905,
+      "por_classe": {
+        "erro_calculo": {
+          "tp": 46,
+          "fp": 53,
+          "fn": 67,
+          "suporte": 113,
+          "prec": 0.46464646464646464,
+          "rec": 0.40707964601769914,
+          "f1": 0.43396226415094336
+        },
+        "erro_compreensao": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 20,
+          "suporte": 20,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "lacuna_conhecimento": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 45,
+          "suporte": 45,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_estrategia": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 17,
+          "suporte": 17,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_transcricao": {
+          "tp": 17,
+          "fp": 124,
+          "fn": 12,
+          "suporte": 29,
+          "prec": 0.12056737588652482,
+          "rec": 0.5862068965517241,
+          "f1": 0.2
+        },
+        "erro_raciocinio": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "suporte": 2,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_atencao": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 15,
+          "suporte": 15,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        }
+      },
+      "tempo_medio_s": 0.5838921161825728,
+      "com_dica": 240,
+      "vazamentos": 7,
+      "vazamentos_idxs": [
+        20,
+        25,
+        100,
+        127,
+        133,
+        236,
+        239
+      ],
+      "dist_pred": {
+        "erro_transcricao": 141,
+        "erro_calculo": 99,
+        "sem_resposta": 1
+      }
+    },
+    "B2_texto_gemma2_2b": {
+      "rotulo": "B2 · Passo 3 isolado: Gemma2 2B (enunciado+solução)",
+      "n": 241,
+      "acertos": 22,
+      "acc": 0.0912863070539419,
+      "ic95": [
+        0.058091286307053944,
+        0.13278008298755187
+      ],
+      "cobertura": 1.0,
+      "n_respondidos": 241,
+      "acc_cond": 0.0912863070539419,
+      "f1_macro": 0.06336534235981961,
+      "por_classe": {
+        "erro_calculo": {
+          "tp": 3,
+          "fp": 1,
+          "fn": 110,
+          "suporte": 113,
+          "prec": 0.75,
+          "rec": 0.02654867256637168,
+          "f1": 0.05128205128205128
+        },
+        "erro_compreensao": {
+          "tp": 12,
+          "fp": 146,
+          "fn": 8,
+          "suporte": 20,
+          "prec": 0.0759493670886076,
+          "rec": 0.6,
+          "f1": 0.13483146067415733
+        },
+        "lacuna_conhecimento": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 45,
+          "suporte": 45,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_estrategia": {
+          "tp": 6,
+          "fp": 36,
+          "fn": 11,
+          "suporte": 17,
+          "prec": 0.14285714285714285,
+          "rec": 0.35294117647058826,
+          "f1": 0.20338983050847456
+        },
+        "erro_transcricao": {
+          "tp": 1,
+          "fp": 7,
+          "fn": 28,
+          "suporte": 29,
+          "prec": 0.125,
+          "rec": 0.034482758620689655,
+          "f1": 0.05405405405405405
+        },
+        "erro_raciocinio": {
+          "tp": 0,
+          "fp": 29,
+          "fn": 2,
+          "suporte": 2,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_atencao": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 15,
+          "suporte": 15,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        }
+      },
+      "tempo_medio_s": 0.7470746887966806,
+      "com_dica": 241,
+      "vazamentos": 0,
+      "vazamentos_idxs": [],
+      "dist_pred": {
+        "erro_compreensao": 158,
+        "erro_raciocinio": 29,
+        "erro_estrategia": 42,
+        "erro_transcricao": 8,
+        "erro_calculo": 4
+      }
+    },
+    "C1_visao_qwen25vl_3b": {
+      "rotulo": "C1 · Multimodal local: Qwen2.5-VL 3B (foto direto)",
+      "n": 241,
+      "acertos": 112,
+      "acc": 0.46473029045643155,
+      "ic95": [
+        0.4024896265560166,
+        0.5269709543568465
+      ],
+      "cobertura": 0.995850622406639,
+      "n_respondidos": 240,
+      "acc_cond": 0.4666666666666667,
+      "f1_macro": 0.09221902017291066,
+      "por_classe": {
+        "erro_calculo": {
+          "tp": 112,
+          "fp": 122,
+          "fn": 1,
+          "suporte": 113,
+          "prec": 0.47863247863247865,
+          "rec": 0.9911504424778761,
+          "f1": 0.6455331412103746
+        },
+        "erro_compreensao": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 20,
+          "suporte": 20,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "lacuna_conhecimento": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 45,
+          "suporte": 45,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_estrategia": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 17,
+          "suporte": 17,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_transcricao": {
+          "tp": 0,
+          "fp": 6,
+          "fn": 29,
+          "suporte": 29,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_raciocinio": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "suporte": 2,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        },
+        "erro_atencao": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 15,
+          "suporte": 15,
+          "prec": 0.0,
+          "rec": 0.0,
+          "f1": 0.0
+        }
+      },
+      "tempo_medio_s": 1.6737551867219918,
+      "com_dica": 240,
+      "vazamentos": 1,
+      "vazamentos_idxs": [
+        227
+      ],
+      "dist_pred": {
+        "erro_calculo": 234,
+        "erro_transcricao": 6,
+        "sem_resposta": 1
+      }
+    }
+  },
+  "ece_local": {
+    "A1_regra": {
+      "acc": 0.0,
+      "ic95": [
+        0.0,
+        0.0
+      ],
+      "acertos": 0
+    },
+    "A2_atlas_qwen25_1.5b": {
+      "acc": 0.0,
+      "ic95": [
+        0.0,
+        0.0
+      ],
+      "acertos": 0
+    },
+    "A3_atlas_gemma2_2b": {
+      "acc": 0.0,
+      "ic95": [
+        0.0,
+        0.0
+      ],
+      "acertos": 0
+    },
+    "B1_texto_qwen25_1.5b": {
+      "acc": 0.03319502074688797,
+      "ic95": [
+        0.012448132780082987,
+        0.058091286307053944
+      ],
+      "acertos": 8
+    },
+    "B2_texto_gemma2_2b": {
+      "acc": 0.02074688796680498,
+      "ic95": [
+        0.004149377593360996,
+        0.04149377593360996
+      ],
+      "acertos": 5
+    },
+    "C1_visao_qwen25vl_3b": {
+      "acc": 0.04149377593360996,
+      "ic95": [
+        0.016597510373443983,
+        0.06639004149377593
+      ],
+      "acertos": 10
+    }
+  },
+  "comparacoes": [
+    {
+      "a": "A2_atlas_qwen25_1.5b",
+      "b": "A1_regra",
+      "dif_pp": 0.0,
+      "ic95_pp": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "a": "A3_atlas_gemma2_2b",
+      "b": "A1_regra",
+      "dif_pp": 0.0,
+      "ic95_pp": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "a": "B1_texto_qwen25_1.5b",
+      "b": "A1_regra",
+      "dif_pp": 26.141078838174277,
+      "ic95_pp": [
+        20.74688796680498,
+        31.950207468879665
+      ]
+    },
+    {
+      "a": "B2_texto_gemma2_2b",
+      "b": "A1_regra",
+      "dif_pp": 9.12863070539419,
+      "ic95_pp": [
+        5.809128630705394,
+        13.278008298755188
+      ]
+    },
+    {
+      "a": "B1_texto_qwen25_1.5b",
+      "b": "B2_texto_gemma2_2b",
+      "dif_pp": 17.012448132780083,
+      "ic95_pp": [
+        10.37344398340249,
+        23.651452282157674
+      ]
+    },
+    {
+      "a": "C1_visao_qwen25vl_3b",
+      "b": "B1_texto_qwen25_1.5b",
+      "dif_pp": 20.33195020746888,
+      "ic95_pp": [
+        13.278008298755188,
+        26.970954356846473
+      ]
+    },
+    {
+      "a": "C1_visao_qwen25vl_3b",
+      "b": "B2_texto_gemma2_2b",
+      "dif_pp": 37.344398340248965,
+      "ic95_pp": [
+        29.460580912863072,
+        44.81327800829876
+      ]
+    }
+  ]
+}

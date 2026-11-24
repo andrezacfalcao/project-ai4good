@@ -1,0 +1,241 @@
+{"idx": 0, "explicacao_correta": false, "justificativa": "Erro diferente do principal."}
+{"idx": 1, "explicacao_correta": false, "justificativa": "Erro diferente do descrito na explicação de referência."}
+{"idx": 2, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 3, "explicacao_correta": false, "justificativa": "Erro diferente do referência."}
+{"idx": 4, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 5, "explicacao_correta": false, "justificativa": "Erro diferente; candidata não mencionou porcentuais."}
+{"idx": 6, "explicacao_correta": false, "justificativa": "Erro diferente; referência aponta para combinação incorreta de termos."}
+{"idx": 7, "explicacao_correta": false, "justificativa": "Faltou identificar o erro específico de cálculo e combinação de termos."}
+{"idx": 8, "explicacao_correta": false, "justificativa": "Erro diferente e genérico."}
+{"idx": 9, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos."}
+{"idx": 10, "explicacao_correta": false, "justificativa": "O erro não é sobre a constante k, mas sobre a relação matemática."}
+{"idx": 11, "explicacao_correta": false, "justificativa": "Erro diferente e genérico."}
+{"idx": 12, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 13, "explicacao_correta": false, "justificativa": "Erro diferente e genérico."}
+{"idx": 14, "explicacao_correta": false, "justificativa": "A explicação foi genérica e inventou uma causa falsa."}
+{"idx": 15, "explicacao_correta": false, "justificativa": "O aluno escolheu errado e a justificativa é genérica."}
+{"idx": 16, "explicacao_correta": false, "justificativa": "A candidata apontou a transcrição errada, mas a referência destaca o erro no cálculo."}
+{"idx": 17, "explicacao_correta": false, "justificativa": "A explicação foi genérica e não identificou o erro principal descrito na referência."}
+{"idx": 18, "explicacao_correta": false, "justificativa": "Erro diferente e genérico."}
+{"idx": 19, "explicacao_correta": true, "justificativa": "Ambas identificam o erro de não realizar a subtração correta."}
+{"idx": 20, "explicacao_correta": false, "justificativa": "Faltou identificar erro específico sobre y=-3."}
+{"idx": 21, "explicacao_correta": false, "justificativa": "Foco errado, não identificou o erro de cálculo na simplificação."}
+{"idx": 22, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 23, "explicacao_correta": false, "justificativa": "Erros de simplificação não foram identificados."}
+{"idx": 24, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 25, "explicacao_correta": false, "justificativa": "Erros diferentes foram cometidos."}
+{"idx": 26, "explicacao_correta": false, "justificativa": "A explicação candidata aponta um erro diferente do principal."}
+{"idx": 27, "explicacao_correta": false, "justificativa": "Erro diferente do referência."}
+{"idx": 28, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 29, "explicacao_correta": false, "justificativa": "A explicação foi genérica e apontou outro erro."}
+{"idx": 30, "explicacao_correta": false, "justificativa": "Erros diferentes do referência."}
+{"idx": 31, "explicacao_correta": false, "justificativa": "Incorreto, pois a explicação não identifica o erro no tratamento dos sinais."}
+{"idx": 32, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 33, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica o erro principal descrito na referência."}
+{"idx": 34, "explicacao_correta": false, "justificativa": "Erros diferentes sobre o uso da área do triângulo."}
+{"idx": 35, "explicacao_correta": false, "justificativa": "Erro diferente do descrito na explicação de referência."}
+{"idx": 36, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 37, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica o erro principal descrito na referência."}
+{"idx": 38, "explicacao_correta": false, "justificativa": "Erros diferentes foram identificados."}
+{"idx": 39, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 40, "explicacao_correta": false, "justificativa": "A explicação candidata aponta um erro diferente do referência."}
+{"idx": 41, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica o erro principal descrito na referência."}
+{"idx": 42, "explicacao_correta": true, "justificativa": "Ambas identificam a falta de consideração para os casos da equação de valor absoluto."}
+{"idx": 43, "explicacao_correta": false, "justificativa": "Erros diferentes foram identificados."}
+{"idx": 44, "explicacao_correta": false, "justificativa": "Erros diferentes foram identificados."}
+{"idx": 45, "explicacao_correta": false, "justificativa": "Erros diferentes e genéricos."}
+{"idx": 46, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica a causa matemática central."}
+{"idx": 47, "explicacao_correta": true, "justificativa": "Ambas identificam o erro de não verificar a condição correta para um triângulo retângulo."}
+{"idx": 48, "explicacao_correta": false, "justificativa": "Invertiu o valor correto."}
+{"idx": 49, "explicacao_correta": false, "justificativa": "Faltou identificar o erro específico no quarto passo."}
+{"idx": 50, "explicacao_correta": false, "justificativa": "Inventou causa falsa."}
+{"idx": 51, "explicacao_correta": false, "justificativa": "A justificativa errada e a explicação referência descrevem erros diferentes."}
+{"idx": 52, "explicacao_correta": false, "justificativa": "Erro diferente: -16 vs -1.6"}
+{"idx": 53, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica o erro principal descrito na referência."}
+{"idx": 54, "explicacao_correta": false, "justificativa": "Erro diferente; referência fala sobre expansão de quadrados."}
+{"idx": 55, "explicacao_correta": false, "justificativa": "Erros específicos na multiplicação e ordem das operações não foram identificados."}
+{"idx": 56, "explicacao_correta": false, "justificativa": "Erro diferente; não especificou conversão incorreta de frações mistas."}
+{"idx": 57, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 58, "explicacao_correta": false, "justificativa": "Faltou especificar erro específico de números negativos."}
+{"idx": 59, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 60, "explicacao_correta": true, "justificativa": "Candidata identificou o erro de extrair a raiz cúbica do volume total."}
+{"idx": 61, "explicacao_correta": false, "justificativa": "Erro diferente; referência aponta para combinação de inteiros e frações."}
+{"idx": 62, "explicacao_correta": false, "justificativa": "Incorreto identificar erro principal."}
+{"idx": 63, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 64, "explicacao_correta": false, "justificativa": "Errou ao mudar sinal de -2.6 para +2.6."}
+{"idx": 65, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 66, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 67, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 68, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 69, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 70, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos."}
+{"idx": 71, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 72, "explicacao_correta": false, "justificativa": "A explicação foi genérica e não identificou o erro principal descrito na referência."}
+{"idx": 73, "explicacao_correta": false, "justificativa": "Erro diferente do principal."}
+{"idx": 74, "explicacao_correta": false, "justificativa": "Erros diferentes na interpretação da inequação."}
+{"idx": 75, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos na explicação de referência."}
+{"idx": 76, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 77, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica o erro principal descrito na referência."}
+{"idx": 78, "explicacao_correta": false, "justificativa": "Erros diferentes do principal descrito."}
+{"idx": 79, "explicacao_correta": false, "justificativa": "A explicação é genérica e não identifica o erro específico descrito na referência."}
+{"idx": 80, "explicacao_correta": false, "justificativa": "Erro diferente do referência."}
+{"idx": 81, "explicacao_correta": false, "justificativa": "Erro diferente do referência."}
+{"idx": 82, "explicacao_correta": false, "justificativa": "Erro diferente; candidata não identificou o erro com sinais negativos."}
+{"idx": 83, "explicacao_correta": false, "justificativa": "A explicação candidata difere da referência."}
+{"idx": 84, "explicacao_correta": false, "justificativa": "Erro diferente; candidata não identificou multiplicação incorreta."}
+{"idx": 85, "explicacao_correta": false, "justificativa": "Erro diferente; não menciona sinal da desigualdade."}
+{"idx": 86, "explicacao_correta": false, "justificativa": "Erro diferente do principal identificado."}
+{"idx": 87, "explicacao_correta": false, "justificativa": "Erro diferente, candidata confundiu o tipo de resposta."}
+{"idx": 88, "explicacao_correta": false, "justificativa": "Faltou identificar o erro específico na simplificação."}
+{"idx": 89, "explicacao_correta": false, "justificativa": "Erros diferentes e genéricos."}
+{"idx": 90, "explicacao_correta": false, "justificativa": "Erros diferentes foram apontados."}
+{"idx": 91, "explicacao_correta": false, "justificativa": "Erros diferentes foram identificados."}
+{"idx": 92, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos."}
+{"idx": 93, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 94, "explicacao_correta": false, "justificativa": "Erro diferente."}
+{"idx": 95, "explicacao_correta": false, "justificativa": "Identificou erro incorreto."}
+{"idx": 96, "explicacao_correta": false, "justificativa": "Faltou identificar erro específico de combinação de termos."}
+{"idx": 97, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 98, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 99, "explicacao_correta": false, "justificativa": "Erros diferentes nos cálculos dos parênteses."}
+{"idx": 100, "explicacao_correta": false, "justificativa": "Erro diferente do principal."}
+{"idx": 101, "explicacao_correta": false, "justificativa": "Erro diferente; foi inventado."}
+{"idx": 102, "explicacao_correta": false, "justificativa": "Incorreto erro identificado."}
+{"idx": 103, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 104, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 105, "explicacao_correta": false, "justificativa": "Diferente causa; referência aponta copiar resultado, candidata falha na multiplicação/simplificação."}
+{"idx": 106, "explicacao_correta": false, "justificativa": "Erro diferente; não identificou falta de multiplicação pelo MMC."}
+{"idx": 107, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos na explicação referência."}
+{"idx": 108, "explicacao_correta": false, "justificativa": "Faltou identificar transformar corretamente o coeficiente de x."}
+{"idx": 109, "explicacao_correta": false, "justificativa": "Erro diferente do descrito na explicação referência."}
+{"idx": 110, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 111, "explicacao_correta": false, "justificativa": "Erro diferente; referência aponta para problema específico de multiplicação de polinômios."}
+{"idx": 112, "explicacao_correta": false, "justificativa": "Foco errado na simplificação."}
+{"idx": 113, "explicacao_correta": false, "justificativa": "Erro diferente; não identificou termo constante 3x."}
+{"idx": 114, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 115, "explicacao_correta": false, "justificativa": "Erros diferentes e genérico."}
+{"idx": 116, "explicacao_correta": false, "justificativa": "Faltou identificar erro específico de sinal."}
+{"idx": 117, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos."}
+{"idx": 118, "explicacao_correta": false, "justificativa": "Falta especificar erro no cálculo dos parênteses."}
+{"idx": 119, "explicacao_correta": false, "justificativa": "A explicação é genérica e não identifica a etapa específica correta."}
+{"idx": 120, "explicacao_correta": false, "justificativa": "Incorreto, pois a explicação não identifica o erro específico do sinal negativo."}
+{"idx": 121, "explicacao_correta": false, "justificativa": "Erro diferente do descrito na explicação de referência."}
+{"idx": 122, "explicacao_correta": false, "justificativa": "Falta especificar o erro de expansão dos parênteses."}
+{"idx": 123, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 124, "explicacao_correta": false, "justificativa": "Erro diferente; não tratou corretamente os sinais após a expansão."}
+{"idx": 125, "explicacao_correta": true, "justificativa": "Ambas identificam erros na manipulação de termos."}
+{"idx": 126, "explicacao_correta": false, "justificativa": "O aluno identificou um erro diferente do principal."}
+{"idx": 127, "explicacao_correta": false, "justificativa": "Erros diferentes na interpretação das condições."}
+{"idx": 128, "explicacao_correta": false, "justificativa": "O aluno aceitou ambas as soluções, mas a explicação não identifica corretamente o erro principal."}
+{"idx": 129, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica a condição de diminuir rapidamente o estoque."}
+{"idx": 130, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 131, "explicacao_correta": false, "justificativa": "Causa diferente da referência."}
+{"idx": 132, "explicacao_correta": false, "justificativa": "Erros diferentes e genérico."}
+{"idx": 133, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 134, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 135, "explicacao_correta": false, "justificativa": "Erro diferente; referência aponta cálculo específico, explicação candidata gera novo erro."}
+{"idx": 136, "explicacao_correta": true, "justificativa": "Identificou o erro na forma de escrita da notação científica."}
+{"idx": 137, "explicacao_correta": false, "justificativa": "Erro diferente sobre a aplicação da desigualdade triangular."}
+{"idx": 138, "explicacao_correta": false, "justificativa": "Erro diferente; candidata calculou em vez de converter."}
+{"idx": 139, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 140, "explicacao_correta": false, "justificativa": "Erro diferente do principal."}
+{"idx": 141, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos na explicação de referência."}
+{"idx": 142, "explicacao_correta": true, "justificativa": "Ambas identificam o erro na confusão entre a soma das massas e o cálculo da média."}
+{"idx": 143, "explicacao_correta": true, "justificativa": "Ambas identificam o erro na interpretação da relação entre linhas e árvores."}
+{"idx": 144, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica o erro principal descrito na explicação de referência."}
+{"idx": 145, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 146, "explicacao_correta": false, "justificativa": "Errou sobre o total ser 101."}
+{"idx": 147, "explicacao_correta": false, "justificativa": "Incorreto, pois a explicação não identifica o erro principal da divisão negativa."}
+{"idx": 148, "explicacao_correta": false, "justificativa": "O aluno errou na interpretação do aumento da produção e seu impacto no tempo de construção."}
+{"idx": 149, "explicacao_correta": false, "justificativa": "Erro diferente e justificativa genérica."}
+{"idx": 150, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 151, "explicacao_correta": false, "justificativa": "Erro diferente: subtração incorreta vs. não considerar simetria"}
+{"idx": 152, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 153, "explicacao_correta": false, "justificativa": "Erros diferentes são identificados."}
+{"idx": 154, "explicacao_correta": false, "justificativa": "Erros diferentes dos referenciados."}
+{"idx": 155, "explicacao_correta": false, "justificativa": "Erro diferente e genérico."}
+{"idx": 156, "explicacao_correta": false, "justificativa": "Erros diferentes e genéricos."}
+{"idx": 157, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos."}
+{"idx": 158, "explicacao_correta": false, "justificativa": "Erros diferentes e genéricos."}
+{"idx": 159, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica o erro principal descrito na referência."}
+{"idx": 160, "explicacao_correta": false, "justificativa": "A candidata não identificou o erro principal descrito na explicação de referência."}
+{"idx": 161, "explicacao_correta": false, "justificativa": "O erro é diferente e o candidato não identificou o principal."}
+{"idx": 162, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 163, "explicacao_correta": false, "justificativa": "Erros diferentes foram identificados."}
+{"idx": 164, "explicacao_correta": false, "justificativa": "A explicação candidata é genérica e diferente do erro principal identificado pela referência."}
+{"idx": 165, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos."}
+{"idx": 166, "explicacao_correta": false, "justificativa": "Ignorou a solução negativa."}
+{"idx": 167, "explicacao_correta": false, "justificativa": "A explicação foi genérica e não identificou o erro específico descrito na referência."}
+{"idx": 168, "explicacao_correta": false, "justificativa": "Erros diferentes na identificação do fator comum."}
+{"idx": 169, "explicacao_correta": false, "justificativa": "A explicação foi genérica e diferente do erro principal identificado."}
+{"idx": 170, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 171, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos."}
+{"idx": 172, "explicacao_correta": false, "justificativa": "Erro diferente; candidata não identificou o erro específico na equação."}
+{"idx": 173, "explicacao_correta": false, "justificativa": "Erro diferente do descrito na explicação referência."}
+{"idx": 174, "explicacao_correta": false, "justificativa": "Erros diferentes e genérico."}
+{"idx": 175, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica o erro principal descrito na explicação de referência."}
+{"idx": 176, "explicacao_correta": false, "justificativa": "Errou a fatorização e não seguiu o formato especificado."}
+{"idx": 177, "explicacao_correta": false, "justificativa": "Erros diferentes e genérico."}
+{"idx": 178, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 179, "explicacao_correta": false, "justificativa": "Incorreto, pois a candidata não identificou o erro de sinal e coeficiente."}
+{"idx": 180, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos na explicação referência."}
+{"idx": 181, "explicacao_correta": false, "justificativa": "Erros diferentes e genérico."}
+{"idx": 182, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 183, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 184, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 185, "explicacao_correta": false, "justificativa": "Erro genérico, não identifica o sinal negativo ou a potência correta."}
+{"idx": 186, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 187, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 188, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 189, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 190, "explicacao_correta": false, "justificativa": "Erros diferentes nos sinais."}
+{"idx": 191, "explicacao_correta": false, "justificativa": "Erro diferente do principal identificado."}
+{"idx": 192, "explicacao_correta": false, "justificativa": "Erros diferentes dos referenciados."}
+{"idx": 193, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos."}
+{"idx": 194, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica o erro específico mencionado na explicação de referência."}
+{"idx": 195, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 196, "explicacao_correta": false, "justificativa": "Erro diferente do referencial."}
+{"idx": 197, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 198, "explicacao_correta": false, "justificativa": "A candidata apontou o erro errado."}
+{"idx": 199, "explicacao_correta": false, "justificativa": "Erro diferente; candidata inventou causa falsa."}
+{"idx": 200, "explicacao_correta": false, "justificativa": "A candidata não identificou o erro principal de cálculo descrito na explicação de referência."}
+{"idx": 201, "explicacao_correta": false, "justificativa": "Erros diferentes nos motivos apontados."}
+{"idx": 202, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 203, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 204, "explicacao_correta": false, "justificativa": "Erro diferente do referência."}
+{"idx": 205, "explicacao_correta": false, "justificativa": "Faltou identificar erros específicos de combinação e cálculo."}
+{"idx": 206, "explicacao_correta": false, "justificativa": "Erros diferentes identificados."}
+{"idx": 207, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos."}
+{"idx": 208, "explicacao_correta": false, "justificativa": "Erro diferente do descrito na explicação de referência."}
+{"idx": 209, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica o erro principal descrito na referência."}
+{"idx": 210, "explicacao_correta": false, "justificativa": "Erro diferente do referência."}
+{"idx": 211, "explicacao_correta": true, "justificativa": "Ambas identificam o erro na divisão de raízes quadradas."}
+{"idx": 212, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica a confusão específica com a fórmula de perfeita quadrada."}
+{"idx": 213, "explicacao_correta": false, "justificativa": "Erros diferentes na simplificação."}
+{"idx": 214, "explicacao_correta": false, "justificativa": "A explicação candidata aponta um erro diferente do referência."}
+{"idx": 215, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 216, "explicacao_correta": false, "justificativa": "Erro diferente do principal."}
+{"idx": 217, "explicacao_correta": false, "justificativa": "Erro diferente; explicação inventou causa falsa."}
+{"idx": 218, "explicacao_correta": false, "justificativa": "Erros diferentes dos descritos na explicação de referência."}
+{"idx": 219, "explicacao_correta": false, "justificativa": "Erros diferentes dos da referência."}
+{"idx": 220, "explicacao_correta": false, "justificativa": "Erros diferentes nos sinais das raízes."}
+{"idx": 221, "explicacao_correta": false, "justificativa": "A explicação candidata não identifica o erro principal mencionado na explicação de referência."}
+{"idx": 222, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 223, "explicacao_correta": false, "justificativa": "Erros diferentes foram identificados."}
+{"idx": 224, "explicacao_correta": false, "justificativa": "Erros diferentes foram identificados."}
+{"idx": 225, "explicacao_correta": false, "justificativa": "Incorreto por não identificar erro principal."}
+{"idx": 226, "explicacao_correta": false, "justificativa": "A explicação foi genérica e apontou o erro como de transcrição, enquanto a referência aponta para um erro ao eliminar os denominadores."}
+{"idx": 227, "explicacao_correta": false, "justificativa": "Erro diferente do descrito na explicação de referência."}
+{"idx": 228, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 229, "explicacao_correta": false, "justificativa": "Erro diferente do referência."}
+{"idx": 230, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 231, "explicacao_correta": false, "justificativa": "Erro diferente do referência."}
+{"idx": 232, "explicacao_correta": false, "justificativa": "Erros diferentes e genérico."}
+{"idx": 233, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 234, "explicacao_correta": false, "justificativa": "Erros diferentes e genéricos."}
+{"idx": 235, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 236, "explicacao_correta": false, "justificativa": "Erro diferente; subtração incorreta identificada na explicação referência."}
+{"idx": 237, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 238, "explicacao_correta": false, "justificativa": "Erros diferentes."}
+{"idx": 239, "explicacao_correta": false, "justificativa": "Erro diferente do descrito na explicação de referência."}
+{"idx": 240, "explicacao_correta": false, "justificativa": "Erros diferentes."}
